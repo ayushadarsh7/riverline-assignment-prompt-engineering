@@ -1,0 +1,20 @@
+{
+  "file": "call_05.json",
+  "customer_name": "Deepa Krishnan",
+  "final_score": 35.2,
+  "verdict": "bad",
+  "reason": "FAILED \u2014 1 critical violation(s): amount_confidentiality. Critical violations cap the score at 40.",
+  "analysis": "1 critical violation(s) \u2014 compliance/safety failures that make the call unacceptable. 9 high-severity issue(s) \u2014 significant conversation or strategy failures. 13 medium-severity issue(s) \u2014 missed best practices. 13 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [critical] amount_confidentiality: The agent disclosed the loan amount (fifty thousand rupees) in Turn 4 before explicitly confirming the borrower's identi; [high] convey_urgency: The agent failed to convey any sense of urgency regarding the payment or the potential consequences of not paying, which; [high] no_amount_insistence: The agent initially stated 50k (Turn 4), then repeated it (Turn 27), and later stated 48k (Turn 46, 50), without fully a; [high] amount_hierarchy_order: The agent did not clearly present the Total Outstanding (TOS) and then a distinct Closure Amount (POS) as the primary of; [high] no_premature_amount_disclosure: The agent disclosed the pending loan amount in Turn 4 without first confirming the borrower's identity..",
+  "severity_breakdown": {
+    "critical": 1,
+    "high": 9,
+    "medium": 13,
+    "low": 13
+  },
+  "total_applicable": 60,
+  "total_violations": 36,
+  "critical_gate_triggered": true,
+  "weighted_score_before_cap": 35.2,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

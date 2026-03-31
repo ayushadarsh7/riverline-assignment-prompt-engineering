@@ -1,0 +1,1282 @@
+{
+  "file": "call_02.json",
+  "customer_name": "Rahul Verma",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "score": 54.1,
+  "verdict": "bad",
+  "total_rules": 80,
+  "total_applicable": 61,
+  "total_followed": 33,
+  "total_violations": 28,
+  "total_not_applicable": 19,
+  "violations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "\u092e\u0941\u091d\u0947 \u092f\u0939 \u0938\u0941\u0928\u0915\u0930 \u092c\u0939\u0941\u0924 \u0905\u092b\u093c\u0938\u094b\u0938 \u0939\u0948\u0964",
+      "turn_number": 32,
+      "violation_detail": "The agent repeated the phrase \"\u092e\u0941\u091d\u0947 \u092f\u0939 \u0938\u0941\u0928\u0915\u0930 \u092c\u0939\u0941\u0924 \u0905\u092b\u093c\u0938\u094b\u0938 \u0939\u0948\" at turns 30 and 32. It also repeated \"\u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u0907\u0938 \u092c\u093e\u0924 \u0915\u0940 \u092a\u0942\u0930\u0940 \u0924\u0930\u0939 \u0938\u0947 \u091c\u093e\u0902\u091a \u0915\u0930\u0935\u093e\u090a\u0901\u0917\u093e\" at turns 64 and 72, and explanations about WhatsApp/email at turns 121-122 and 139."
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "\u091c\u0940, \u0905\u092d\u0940 1 \u092c\u091c\u0947?",
+      "turn_number": 149,
+      "violation_detail": "The agent echoed the customer's partial response \"\u0905\u092d\u0940 1\" as \"\u091c\u0940, \u0905\u092d\u0940 1 \u092c\u091c\u0947?\" for clarification instead of rephrasing or asking a different question."
+    },
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": "I am so sorry to hear about your husband's passing, Rahul. That must be incredibly difficult. I understand this situation with the loan is complicated, especially with him having handled it. I want to clarify that even though there's a dispute, at six hundred and sixty-eight days past due, every month adds another negative entry to the credit report. Banks only see an unpaid loan. Resolving the payment does not mean giving up the dispute. You can still pursue it separately. It",
+      "turn_number": 36,
+      "violation_detail": "The agent delivered a very long monologue at turn 36, combining empathy, credit impact, and dispute clarification into a single turn. Another long response at turn 114 also violated this rule."
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence",
+      "rule_type": "violation",
+      "severity": "high",
+      "agent_message": "\u0906\u092a\u0915\u093e \u091c\u094b \u092a\u094d\u0930\u094b\u092a\u0947\u0932\u093f\u0921 \u0915\u093e \u0932\u094b\u0928 \u0939\u0948, \u0909\u0938\u092e\u0947 \u092a\u0948\u0902\u0924\u0940\u0938 \u0939\u095b\u093e\u0930 \u092a\u093e\u0901\u091a \u0938\u094c \u0905\u091f\u094d\u0920\u093e\u0938\u0940 \u0930\u0941\u092a\u092f\u0947 \u092c\u0915\u093e\u092f\u093e \u0926\u093f\u0916 \u0930\u0939\u0947 \u0939\u0948\u0902\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092c\u0924\u093e \u0938\u0915\u0924\u0940 \u0939\u0948\u0902 \u0915\u093f \u0906\u092a\u0915\u094b \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092a\u0930\u0947\u0936\u093e\u0928\u0940 \u0906 \u0930\u0939\u0940 \u0939\u0948?",
+      "turn_number": 17,
+      "violation_detail": "The agent insisted on the outstanding amount at turn 17 after the customer explicitly stated \"\u092e\u0948\u0902\u0928\u0947 \u0915\u094b\u0908 loan \u0928\u0939\u0940\u0902 \u0932\u093f\u092f\u093e \u0925\u093e.\" It also presented inconsistent amounts (50k, 28k, 35k) throughout the call."
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": null,
+      "turn_number": 3,
+      "violation_detail": "The agent failed to present the amount hierarchy (TOS, POS) and the value proposition of removing charges to close the loan. It only mentioned a \"pending\" or \"outstanding\" amount."
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality",
+      "rule_type": "violation",
+      "severity": "critical",
+      "agent_message": "Okay, you have fifty thousand rupees pending.",
+      "turn_number": 3,
+      "violation_detail": "The agent disclosed the loan amount at turn 3 before fully confirming the borrower's identity. It also disclosed amounts to the customer (who identified as the husband's wife) without verifying her authority or confirming her identity as the primary borrower."
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u0905\u092d\u093f\u0937\u0947\u0915 \u092c\u093e\u0924 \u0915\u0930",
+      "turn_number": 13,
+      "violation_detail": "The agent repeated its introduction multiple times (Turn 10, 13, 15) and even changed its name from \"Alex\" to \"Abhishek\" at turns 13 and 15, which is a severe inconsistency."
+    },
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "rule_type": "violation",
+      "severity": "high",
+      "agent_message": "Okay, you have fifty thousand rupees pending.",
+      "turn_number": 3,
+      "violation_detail": "The agent disclosed the loan amount at turn 3 before fully confirming the borrower's identity. The customer later clarified she was the husband's wife, indicating the agent disclosed to a non-primary borrower without verification."
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 3,
+      "violation_detail": "The agent failed to state the total outstanding (TOS) and closure amount (POS) with the value proposition of savings. It only mentioned a generic \"charges I can help remove\" without specific amounts."
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 152,
+      "violation_detail": "The customer repeatedly claimed the loan was already paid by her husband (e.g., turns 22, 55, 98, 100), but the agent did not use the `end_call` function with `claims_already_paid`. Instead, it scheduled a callback for investigation, prolonging the call unnecessarily given the clear claim of payment."
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": null,
+      "turn_number": 18,
+      "violation_detail": "The customer clarified at turn 18 that her husband took the loan, indicating she is not the primary borrower. The agent continued the conversation and disclosed loan details without verifying her authority or handling it as a 'wrong person' scenario."
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u0905\u092d\u093f\u0937\u0947\u0915 \u092c\u093e\u0924 \u0915\u0930",
+      "turn_number": 13,
+      "violation_detail": "The agent re-introduced itself and the call purpose multiple times (turns 10, 13, 15), and even changed its name from Alex to Abhishek, which is not a natural continuation."
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "\u0915\u094d\u092f\u093e \u0906\u092a \u092c\u0924\u093e \u0938\u0915\u0924\u0940 \u0939\u0948\u0902 \u0915\u093f \u0906\u092a\u0915\u094b \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092a\u0930\u0947\u0936\u093e\u0928\u0940 \u0906 \u0930\u0939\u0940 \u0939\u0948?",
+      "turn_number": 17,
+      "violation_detail": "The agent repeated the question about payment difficulty at turn 17, after asking a similar question at turn 3, without rephrasing or exploring new angles."
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "\u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092c\u093e\u0924 \u0938\u092e\u091d \u0917\u092f\u093e \u0939\u0942\u0901\u0964",
+      "turn_number": 56,
+      "violation_detail": "The customer mentioned being harassed by previous calls (\"\u092f\u0939 company \u0935\u093e\u0932\u0947 \u0915\u094d\u092f\u094b\u0902 \u092a\u0930\u0947\u0936\u093e\u0928 \u0915\u0930 \u0930\u0939\u0947 \u0939\u0948\u0902?\" at turn 55), but the agent only acknowledged with \"\u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092c\u093e\u0924 \u0938\u092e\u091d \u0917\u092f\u093e \u0939\u0942\u0901\u0964\" instead of explicitly empathizing with the harassment."
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 152,
+      "violation_detail": "The customer repeatedly stated the loan was already paid and should be closed (e.g., turns 55, 98, 100). The agent did not apologize and end the call, but instead scheduled a callback for investigation."
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "\u0914\u0930 \u0906\u092a \u0915\u0939 \u0930\u0939\u0940 \u0939\u0948\u0902 \u0915\u093f \u0906\u092a \u0905\u092d\u0940 \u0926\u094b \u0938\u094c \u0930\u0941\u092a\u092f\u0947 \u0915\u093e \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?",
+      "turn_number": 84,
+      "violation_detail": "The agent discussed a partial payment offer of 200 rupees (turns 84, 87) while still in the dispute/discovery phase, before the primary dispute (loan already paid) was resolved."
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "Okay, you have fifty thousand rupees pending.",
+      "turn_number": 3,
+      "violation_detail": "The agent repeatedly quoted the \"pending\" or \"outstanding\" amount (TOS equivalent) at turns 3, 7, 10, 17, and 66 without offering a lower closure amount (POS) or framing it as a potential payment."
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 106,
+      "violation_detail": "When the customer stated she could not pay because she is a housewife (turn 104), the agent only acknowledged (\"\u092e\u0948\u0902 \u0938\u092e\u091d\" at turn 106) but did not explore any alternatives like partial payment, more time, or family help."
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "\u0907\u0938 \u0938\u092e\u092f \u0906\u092a\u0915\u0947 \u092a\u094d\u0930\u0949\u092a\u0930\u0932 \u0932\u094b\u0928 \u092a\u0930 \u092a\u0948\u0902\u0924\u0940\u0938 \u0939\u091c\u093c\u093e\u0930 \u092a\u093e\u0902\u091a \u0938\u094c \u0905\u0920\u093e\u0938\u0940 \u0930\u0941\u092a\u092f\u0947 \u092c\u0915\u093e\u092f\u093e \u0926\u093f\u0916 \u0930\u0939\u093e \u0939\u0948\u0964",
+      "turn_number": 66,
+      "violation_detail": "The agent repeatedly stated the outstanding amount (e.g., turns 3, 7, 10, 17, 66) without progressing the conversation towards a clear offer or resolution, especially after the customer's dispute. It also looped on the WhatsApp vs. email issue."
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 87,
+      "violation_detail": "Although the customer offered a 200 rupees payment (turn 75), the agent did not confirm the specific amount, date, or method for this payment, as the conversation shifted to investigation and callback."
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 152,
+      "violation_detail": "When scheduling the callback at turn 152, the agent failed to warn the customer that the outstanding amount might change if they wait too long."
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 152,
+      "violation_detail": "The agent did not call the `end_call` function at the conclusion of the conversation (turn 152), leaving the call hanging without a proper termination."
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": "Okay, you have fifty thousand rupees pending.",
+      "turn_number": 3,
+      "violation_detail": "The agent disclosed loan amounts at turn 3 and turn 10 before fully confirming the borrower's identity. The customer later clarified she was the husband's wife, indicating the agent disclosed to a non-primary borrower without verification."
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "\u0939\u0947\u0932\u094b?",
+      "turn_number": 136,
+      "violation_detail": "The agent said \"\u0939\u0947\u0932\u094b?\" at turn 136, immediately before the customer gave a meaningful response, indicating it might have cut off the customer or used the silence protocol inappropriately during a brief pause."
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "\u0907\u0938 \u0938\u092e\u092f \u0906\u092a\u0915\u0947 \u092a\u094d\u0930\u0949\u092a\u0930\u0932 \u0932\u094b\u0928 \u092a\u0930 \u092a\u0948\u0902\u0924\u0940\u0938 \u0939\u091c\u093c\u093e\u0930 \u092a\u093e\u0902\u091a \u0938\u094c \u0905\u0920\u093e\u0938\u0940 \u0930\u0941\u092a\u092f\u0947 \u092c\u0915\u093e\u092f\u093e \u0926\u093f\u0916 \u0930\u0939\u093e \u0939\u0948\u0964",
+      "turn_number": 66,
+      "violation_detail": "The agent repeatedly stated the outstanding amount (e.g., turns 3, 7, 10, 17, 66) even after it had been disclosed multiple times and the customer was disputing it."
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u0905\u092d\u093f\u0937\u0947\u0915 \u092c\u093e\u0924 \u0915\u0930",
+      "turn_number": 13,
+      "violation_detail": "The agent re-stated its name (and changed it from Alex to Abhishek) and company at turns 13 and 15, and also repeatedly re-stated the loan amount."
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching",
+      "rule_type": "rule",
+      "severity": "critical",
+      "agent_message": "I am so sorry to hear about your husband's passing, Rahul. That must be incredibly difficult. I understand this situation with the loan is complicated, especially with him having handled it. I want to clarify that even though there's a dispute, at six hundred and sixty-eight days past due, every month adds another negative entry to the credit report. Banks only see an unpaid loan. Resolving the payment does not mean giving up the dispute. You can still pursue it separately. It",
+      "turn_number": 36,
+      "violation_detail": "The agent switched back to English at turn 36, despite having previously switched to Hindi (turn 5) and the customer explicitly requesting Hindi multiple times (turns 4, 37, 38)."
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 152,
+      "violation_detail": "The customer repeatedly claimed the loan was already paid by her husband (e.g., turns 22, 55, 98, 100). The agent failed to use the `end_call` function with the `claims_already_paid` reason, instead scheduling a callback for investigation, which prolonged the interaction unnecessarily given the clear claim of payment."
+    }
+  ],
+  "followed_rules": [
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone"
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "no_stage_directions_or_meta"
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "empathy_acknowledgment"
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand"
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "answer_common_questions_directly"
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "no_code_or_function_names_in_speech"
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "forbidden_phrases"
+    },
+    {
+      "rule_id": 13,
+      "rule_name": "number_speaking_format"
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency"
+    },
+    {
+      "rule_id": 19,
+      "rule_name": "no_internal_jargon"
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first"
+    },
+    {
+      "rule_id": 24,
+      "rule_name": "strict_dispute_detection"
+    },
+    {
+      "rule_id": 25,
+      "rule_name": "clarification_is_not_dispute"
+    },
+    {
+      "rule_id": 26,
+      "rule_name": "never_offer_dispute_verbally"
+    },
+    {
+      "rule_id": 27,
+      "rule_name": "ask_clarifying_on_ambiguous_dispute"
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol"
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure"
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges"
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush"
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture"
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange"
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification"
+    },
+    {
+      "rule_id": 42,
+      "rule_name": "no_accusations"
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely"
+    },
+    {
+      "rule_id": 53,
+      "rule_name": "no_additional_discount_promises"
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time"
+    },
+    {
+      "rule_id": 58,
+      "rule_name": "one_word_response_as_agreement"
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer"
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time"
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions"
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats"
+    },
+    {
+      "rule_id": 75,
+      "rule_name": "listen_when_borrower_vents"
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email"
+    }
+  ],
+  "not_applicable_rules": [
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment"
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "stay_in_scope"
+    },
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation"
+    },
+    {
+      "rule_id": 30,
+      "rule_name": "quick_exit_busy"
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals"
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending"
+    },
+    {
+      "rule_id": 45,
+      "rule_name": "share_loan_id_if_asked"
+    },
+    {
+      "rule_id": 48,
+      "rule_name": "settlement_only_as_last_resort"
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation"
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive"
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer"
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling"
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence"
+    },
+    {
+      "rule_id": 62,
+      "rule_name": "post_payment_information"
+    },
+    {
+      "rule_id": 63,
+      "rule_name": "offer_verification_before_payment"
+    },
+    {
+      "rule_id": 64,
+      "rule_name": "positive_reinforcement_on_commitment"
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close"
+    },
+    {
+      "rule_id": 77,
+      "rule_name": "settlement_credit_impact_disclosure"
+    },
+    {
+      "rule_id": 79,
+      "rule_name": "no_payment_link_without_verification_advice"
+    }
+  ],
+  "full_evaluations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u092e\u0941\u091d\u0947 \u092f\u0939 \u0938\u0941\u0928\u0915\u0930 \u092c\u0939\u0941\u0924 \u0905\u092b\u093c\u0938\u094b\u0938 \u0939\u0948\u0964",
+      "turn_number": 32,
+      "violation_detail": "The agent repeated the phrase \"\u092e\u0941\u091d\u0947 \u092f\u0939 \u0938\u0941\u0928\u0915\u0930 \u092c\u0939\u0941\u0924 \u0905\u092b\u093c\u0938\u094b\u0938 \u0939\u0948\" at turns 30 and 32. It also repeated \"\u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u0907\u0938 \u092c\u093e\u0924 \u0915\u0940 \u092a\u0942\u0930\u0940 \u0924\u0930\u0939 \u0938\u0947 \u091c\u093e\u0902\u091a \u0915\u0930\u0935\u093e\u090a\u0901\u0917\u093e\" at turns 64 and 72, and explanations about WhatsApp/email at turns 121-122 and 139."
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u091c\u0940, \u0905\u092d\u0940 1 \u092c\u091c\u0947?",
+      "turn_number": 149,
+      "violation_detail": "The agent echoed the customer's partial response \"\u0905\u092d\u0940 1\" as \"\u091c\u0940, \u0905\u092d\u0940 1 \u092c\u091c\u0947?\" for clarification instead of rephrasing or asking a different question."
+    },
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "I am so sorry to hear about your husband's passing, Rahul. That must be incredibly difficult. I understand this situation with the loan is complicated, especially with him having handled it. I want to clarify that even though there's a dispute, at six hundred and sixty-eight days past due, every month adds another negative entry to the credit report. Banks only see an unpaid loan. Resolving the payment does not mean giving up the dispute. You can still pursue it separately. It",
+      "turn_number": 36,
+      "violation_detail": "The agent delivered a very long monologue at turn 36, combining empathy, credit impact, and dispute clarification into a single turn. Another long response at turn 114 also violated this rule."
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "no_stage_directions_or_meta",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "empathy_acknowledgment",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "answer_common_questions_directly",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "no_code_or_function_names_in_speech",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "forbidden_phrases",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "stay_in_scope",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 13,
+      "rule_name": "number_speaking_format",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "\u0906\u092a\u0915\u093e \u091c\u094b \u092a\u094d\u0930\u094b\u092a\u0947\u0932\u093f\u0921 \u0915\u093e \u0932\u094b\u0928 \u0939\u0948, \u0909\u0938\u092e\u0947 \u092a\u0948\u0902\u0924\u0940\u0938 \u0939\u095b\u093e\u0930 \u092a\u093e\u0901\u091a \u0938\u094c \u0905\u091f\u094d\u0920\u093e\u0938\u0940 \u0930\u0941\u092a\u092f\u0947 \u092c\u0915\u093e\u092f\u093e \u0926\u093f\u0916 \u0930\u0939\u0947 \u0939\u0948\u0902\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092c\u0924\u093e \u0938\u0915\u0924\u0940 \u0939\u0948\u0902 \u0915\u093f \u0906\u092a\u0915\u094b \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092a\u0930\u0947\u0936\u093e\u0928\u0940 \u0906 \u0930\u0939\u0940 \u0939\u0948?",
+      "turn_number": 17,
+      "violation_detail": "The agent insisted on the outstanding amount at turn 17 after the customer explicitly stated \"\u092e\u0948\u0902\u0928\u0947 \u0915\u094b\u0908 loan \u0928\u0939\u0940\u0902 \u0932\u093f\u092f\u093e \u0925\u093e.\" It also presented inconsistent amounts (50k, 28k, 35k) throughout the call."
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 3,
+      "violation_detail": "The agent failed to present the amount hierarchy (TOS, POS) and the value proposition of removing charges to close the loan. It only mentioned a \"pending\" or \"outstanding\" amount."
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality",
+      "rule_type": "violation",
+      "severity": "critical",
+      "score": 1,
+      "agent_message": "Okay, you have fifty thousand rupees pending.",
+      "turn_number": 3,
+      "violation_detail": "The agent disclosed the loan amount at turn 3 before fully confirming the borrower's identity. It also disclosed amounts to the customer (who identified as the husband's wife) without verifying her authority or confirming her identity as the primary borrower."
+    },
+    {
+      "rule_id": 19,
+      "rule_name": "no_internal_jargon",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u0905\u092d\u093f\u0937\u0947\u0915 \u092c\u093e\u0924 \u0915\u0930",
+      "turn_number": 13,
+      "violation_detail": "The agent repeated its introduction multiple times (Turn 10, 13, 15) and even changed its name from \"Alex\" to \"Abhishek\" at turns 13 and 15, which is a severe inconsistency."
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "Okay, you have fifty thousand rupees pending.",
+      "turn_number": 3,
+      "violation_detail": "The agent disclosed the loan amount at turn 3 before fully confirming the borrower's identity. The customer later clarified she was the husband's wife, indicating the agent disclosed to a non-primary borrower without verification."
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 3,
+      "violation_detail": "The agent failed to state the total outstanding (TOS) and closure amount (POS) with the value proposition of savings. It only mentioned a generic \"charges I can help remove\" without specific amounts."
+    },
+    {
+      "rule_id": 24,
+      "rule_name": "strict_dispute_detection",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 25,
+      "rule_name": "clarification_is_not_dispute",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 26,
+      "rule_name": "never_offer_dispute_verbally",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 27,
+      "rule_name": "ask_clarifying_on_ambiguous_dispute",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 152,
+      "violation_detail": "The customer repeatedly claimed the loan was already paid by her husband (e.g., turns 22, 55, 98, 100), but the agent did not use the `end_call` function with `claims_already_paid`. Instead, it scheduled a callback for investigation, prolonging the call unnecessarily given the clear claim of payment."
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 18,
+      "violation_detail": "The customer clarified at turn 18 that her husband took the loan, indicating she is not the primary borrower. The agent continued the conversation and disclosed loan details without verifying her authority or handling it as a 'wrong person' scenario."
+    },
+    {
+      "rule_id": 30,
+      "rule_name": "quick_exit_busy",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u0905\u092d\u093f\u0937\u0947\u0915 \u092c\u093e\u0924 \u0915\u0930",
+      "turn_number": 13,
+      "violation_detail": "The agent re-introduced itself and the call purpose multiple times (turns 10, 13, 15), and even changed its name from Alex to Abhishek, which is not a natural continuation."
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u0915\u094d\u092f\u093e \u0906\u092a \u092c\u0924\u093e \u0938\u0915\u0924\u0940 \u0939\u0948\u0902 \u0915\u093f \u0906\u092a\u0915\u094b \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092a\u0930\u0947\u0936\u093e\u0928\u0940 \u0906 \u0930\u0939\u0940 \u0939\u0948?",
+      "turn_number": 17,
+      "violation_detail": "The agent repeated the question about payment difficulty at turn 17, after asking a similar question at turn 3, without rephrasing or exploring new angles."
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 42,
+      "rule_name": "no_accusations",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092c\u093e\u0924 \u0938\u092e\u091d \u0917\u092f\u093e \u0939\u0942\u0901\u0964",
+      "turn_number": 56,
+      "violation_detail": "The customer mentioned being harassed by previous calls (\"\u092f\u0939 company \u0935\u093e\u0932\u0947 \u0915\u094d\u092f\u094b\u0902 \u092a\u0930\u0947\u0936\u093e\u0928 \u0915\u0930 \u0930\u0939\u0947 \u0939\u0948\u0902?\" at turn 55), but the agent only acknowledged with \"\u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092c\u093e\u0924 \u0938\u092e\u091d \u0917\u092f\u093e \u0939\u0942\u0901\u0964\" instead of explicitly empathizing with the harassment."
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 152,
+      "violation_detail": "The customer repeatedly stated the loan was already paid and should be closed (e.g., turns 55, 98, 100). The agent did not apologize and end the call, but instead scheduled a callback for investigation."
+    },
+    {
+      "rule_id": 45,
+      "rule_name": "share_loan_id_if_asked",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u0914\u0930 \u0906\u092a \u0915\u0939 \u0930\u0939\u0940 \u0939\u0948\u0902 \u0915\u093f \u0906\u092a \u0905\u092d\u0940 \u0926\u094b \u0938\u094c \u0930\u0941\u092a\u092f\u0947 \u0915\u093e \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?",
+      "turn_number": 84,
+      "violation_detail": "The agent discussed a partial payment offer of 200 rupees (turns 84, 87) while still in the dispute/discovery phase, before the primary dispute (loan already paid) was resolved."
+    },
+    {
+      "rule_id": 48,
+      "rule_name": "settlement_only_as_last_resort",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "Okay, you have fifty thousand rupees pending.",
+      "turn_number": 3,
+      "violation_detail": "The agent repeatedly quoted the \"pending\" or \"outstanding\" amount (TOS equivalent) at turns 3, 7, 10, 17, and 66 without offering a lower closure amount (POS) or framing it as a potential payment."
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 53,
+      "rule_name": "no_additional_discount_promises",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 106,
+      "violation_detail": "When the customer stated she could not pay because she is a housewife (turn 104), the agent only acknowledged (\"\u092e\u0948\u0902 \u0938\u092e\u091d\" at turn 106) but did not explore any alternatives like partial payment, more time, or family help."
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u0907\u0938 \u0938\u092e\u092f \u0906\u092a\u0915\u0947 \u092a\u094d\u0930\u0949\u092a\u0930\u0932 \u0932\u094b\u0928 \u092a\u0930 \u092a\u0948\u0902\u0924\u0940\u0938 \u0939\u091c\u093c\u093e\u0930 \u092a\u093e\u0902\u091a \u0938\u094c \u0905\u0920\u093e\u0938\u0940 \u0930\u0941\u092a\u092f\u0947 \u092c\u0915\u093e\u092f\u093e \u0926\u093f\u0916 \u0930\u0939\u093e \u0939\u0948\u0964",
+      "turn_number": 66,
+      "violation_detail": "The agent repeatedly stated the outstanding amount (e.g., turns 3, 7, 10, 17, 66) without progressing the conversation towards a clear offer or resolution, especially after the customer's dispute. It also looped on the WhatsApp vs. email issue."
+    },
+    {
+      "rule_id": 58,
+      "rule_name": "one_word_response_as_agreement",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 87,
+      "violation_detail": "Although the customer offered a 200 rupees payment (turn 75), the agent did not confirm the specific amount, date, or method for this payment, as the conversation shifted to investigation and callback."
+    },
+    {
+      "rule_id": 62,
+      "rule_name": "post_payment_information",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 63,
+      "rule_name": "offer_verification_before_payment",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 64,
+      "rule_name": "positive_reinforcement_on_commitment",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 152,
+      "violation_detail": "When scheduling the callback at turn 152, the agent failed to warn the customer that the outstanding amount might change if they wait too long."
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 152,
+      "violation_detail": "The agent did not call the `end_call` function at the conclusion of the conversation (turn 152), leaving the call hanging without a proper termination."
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "Okay, you have fifty thousand rupees pending.",
+      "turn_number": 3,
+      "violation_detail": "The agent disclosed loan amounts at turn 3 and turn 10 before fully confirming the borrower's identity. The customer later clarified she was the husband's wife, indicating the agent disclosed to a non-primary borrower without verification."
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u0939\u0947\u0932\u094b?",
+      "turn_number": 136,
+      "violation_detail": "The agent said \"\u0939\u0947\u0932\u094b?\" at turn 136, immediately before the customer gave a meaningful response, indicating it might have cut off the customer or used the silence protocol inappropriately during a brief pause."
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u0907\u0938 \u0938\u092e\u092f \u0906\u092a\u0915\u0947 \u092a\u094d\u0930\u0949\u092a\u0930\u0932 \u0932\u094b\u0928 \u092a\u0930 \u092a\u0948\u0902\u0924\u0940\u0938 \u0939\u091c\u093c\u093e\u0930 \u092a\u093e\u0902\u091a \u0938\u094c \u0905\u0920\u093e\u0938\u0940 \u0930\u0941\u092a\u092f\u0947 \u092c\u0915\u093e\u092f\u093e \u0926\u093f\u0916 \u0930\u0939\u093e \u0939\u0948\u0964",
+      "turn_number": 66,
+      "violation_detail": "The agent repeatedly stated the outstanding amount (e.g., turns 3, 7, 10, 17, 66) even after it had been disclosed multiple times and the customer was disputing it."
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u0905\u092d\u093f\u0937\u0947\u0915 \u092c\u093e\u0924 \u0915\u0930",
+      "turn_number": 13,
+      "violation_detail": "The agent re-stated its name (and changed it from Alex to Abhishek) and company at turns 13 and 15, and also repeatedly re-stated the loan amount."
+    },
+    {
+      "rule_id": 75,
+      "rule_name": "listen_when_borrower_vents",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching",
+      "rule_type": "rule",
+      "severity": "critical",
+      "score": 1,
+      "agent_message": "I am so sorry to hear about your husband's passing, Rahul. That must be incredibly difficult. I understand this situation with the loan is complicated, especially with him having handled it. I want to clarify that even though there's a dispute, at six hundred and sixty-eight days past due, every month adds another negative entry to the credit report. Banks only see an unpaid loan. Resolving the payment does not mean giving up the dispute. You can still pursue it separately. It",
+      "turn_number": 36,
+      "violation_detail": "The agent switched back to English at turn 36, despite having previously switched to Hindi (turn 5) and the customer explicitly requesting Hindi multiple times (turns 4, 37, 38)."
+    },
+    {
+      "rule_id": 77,
+      "rule_name": "settlement_credit_impact_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 79,
+      "rule_name": "no_payment_link_without_verification_advice",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 152,
+      "violation_detail": "The customer repeatedly claimed the loan was already paid by her husband (e.g., turns 22, 55, 98, 100). The agent failed to use the `end_call` function with the `claims_already_paid` reason, instead scheduling a callback for investigation, which prolonged the interaction unnecessarily given the clear claim of payment."
+    }
+  ]
+}

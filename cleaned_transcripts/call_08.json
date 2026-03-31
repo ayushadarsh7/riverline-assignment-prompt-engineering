@@ -1,0 +1,90 @@
+{
+  "customer_name": "Suresh Rao",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "transcript": [
+    {
+      "speaker": "agent",
+      "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment? Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Hi, Harry."
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello, Evan."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, give me just a moment..."
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Are you still there?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? No, sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "I see. Suresh Rao, I'm calling about your DemoLender education loan. We're showing a pending amount of fifty thousand rupees. Can you tell me a little about why you haven't been able to make the payments?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Arthur."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, I understand. It seems I have reached the wrong person. I will go ahead and end this call."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 5,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 11,
+      "function": "end_call",
+      "params": {
+        "reason": "wrong_party"
+      }
+    }
+  ]
+}

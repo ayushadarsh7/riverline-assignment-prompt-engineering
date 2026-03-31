@@ -1,0 +1,1247 @@
+{
+  "file": "call_07_simulated.json",
+  "customer_name": "Meera Joshi",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "score": 58.0,
+  "verdict": "bad",
+  "total_rules": 80,
+  "total_applicable": 50,
+  "total_followed": 29,
+  "total_violations": 21,
+  "total_not_applicable": 30,
+  "violations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees.",
+      "turn_number": 4,
+      "violation_detail": "The agent repeatedly stated the same offer regarding the total outstanding and zero closure amount from turn 2 through turn 16. It also repeated the \"I can only communicate in English\" phrase multiple times from turn 22 onwards."
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees.",
+      "turn_number": 2,
+      "violation_detail": "The agent's repeated phrasing of the loan offer and its identity, along with the repeated \"I can only communicate in English\" makes the tone sound robotic and scripted rather than natural."
+    },
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "rule_type": "violation",
+      "severity": "high",
+      "agent_message": "Hello, Meera Joshi. I am Alex from DemoCompany. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees.",
+      "turn_number": 2,
+      "violation_detail": "The agent disclosed the loan amounts (total outstanding and closure offer) in Turn 2, immediately after the customer's initial \"Hello?\" without explicitly confirming the borrower's identity first."
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 18,
+      "violation_detail": "After disclosing the TOS/POS amounts and adding urgency in Turn 18, the agent failed to call `proceed_to_discovery` and instead got stuck in a loop of repeating the offer and then handling language issues."
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "I am Alex from DemoCompany. We are calling about your DemoLender loan. Your total outstanding is fifty thousand rupees, but you can close it at zero rupees.",
+      "turn_number": 12,
+      "violation_detail": "The agent repeatedly re-introduced itself (\"I am Alex...\") and re-stated the loan amounts multiple times (e.g., Turns 6, 10, 12, 14, 16) instead of continuing naturally."
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": null,
+      "turn_number": 18,
+      "violation_detail": "The agent failed to transition to the discovery phase and ask follow-up questions about the borrower's financial situation, instead getting stuck in repetition and then a language barrier."
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": "Sorry, I can only communicate in English. Could you please speak in English?",
+      "turn_number": 26,
+      "violation_detail": "The agent got stuck in a circular exchange, repeatedly stating the loan offer (Turns 2, 4, 6, 10, 12, 14, 16) and then repeatedly stating \"I can only communicate in English\" (Turns 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44) without progressing the conversation."
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 22,
+      "violation_detail": "The agent failed to classify the borrower (who clearly had a language barrier) and adapt its approach, instead repeatedly stating it could only communicate in English without attempting to switch languages."
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 18,
+      "violation_detail": "The agent failed to make the offer feel exclusive by stating that DemoCompany works directly with DemoLender and they may not offer the same deal."
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "Your total outstanding is fifty thousand rupees, and we can close your loan at zero rupees.",
+      "turn_number": 10,
+      "violation_detail": "The agent repeatedly stated the same offer (Turns 2, 4, 6, 10, 12, 14, 16) and then repeatedly stated \"I can only communicate in English\" (Turns 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44) without progressing through different angles or phases."
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": "I will try to call you back later.",
+      "turn_number": 46,
+      "violation_detail": "When scheduling a callback, the agent failed to confirm an exact date and time with the borrower."
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 46,
+      "violation_detail": "When scheduling a callback, the agent failed to remind the borrower that the amount may change if they wait too long."
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": "I apologize, I can only communicate in English. Since we are having trouble communicating, I will try to call you back later. Thank you.",
+      "turn_number": 46,
+      "violation_detail": "The agent's closing statement at impasse was not empathetic and did not provide the support email, as required by the rule."
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": null,
+      "turn_number": 18,
+      "violation_detail": "The agent failed to follow the correct phase progression, getting stuck in the opening phase and a language barrier loop without transitioning to discovery or negotiation."
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": "Hello, Meera Joshi. I am Alex from DemoCompany. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees.",
+      "turn_number": 2,
+      "violation_detail": "The agent disclosed financial information (loan amounts) in Turn 2 without explicitly confirming the borrower's identity first."
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "Hello? I can only communicate in English.",
+      "turn_number": 30,
+      "violation_detail": "The agent said \"Hello?\" in Turn 30 after the borrower had already given a meaningful response (\"Hello?\" in Turn 29), treating it as if the borrower was silent or unheard, rather than addressing the response directly."
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "Your total outstanding is fifty thousand rupees, and we can close your loan at zero rupees.",
+      "turn_number": 10,
+      "violation_detail": "The agent repeatedly re-stated the already disclosed loan amounts (e.g., Turns 4, 6, 10, 12, 14, 16) instead of progressing the conversation."
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "I am Alex from DemoCompany. We are calling about your DemoLender loan. Your total outstanding is fifty thousand rupees, but you can close it at zero rupees.",
+      "turn_number": 12,
+      "violation_detail": "The agent repeatedly re-stated its name, company, and the loan amounts (e.g., Turns 6, 12, 14) even though this information had already been provided."
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching",
+      "rule_type": "rule",
+      "severity": "critical",
+      "agent_message": "I can only communicate in English to help you with your DemoLender loan.",
+      "turn_number": 22,
+      "violation_detail": "The borrower explicitly asked if the agent knew Tamil in Turn 21 and then proceeded to speak in Tamil from Turn 23 onwards. The agent repeatedly stated it could only communicate in English but failed to use the `switch_language` function to accommodate the borrower."
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 46,
+      "violation_detail": "At the point of impasse due to communication issues, the agent failed to provide the support email (support@demolender.com) to the borrower."
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "I apologize, I can only communicate in English. Since we are having trouble communicating, I will try to call you back later. Thank you.",
+      "turn_number": 46,
+      "violation_detail": "The agent ended the call due to a communication issue, but it failed to exhaust all available options, specifically the `switch_language` function, when the borrower clearly indicated a language barrier and spoke in Tamil from Turn 23 onwards. This led to a premature end of a call that could have potentially progressed."
+    }
+  ],
+  "followed_rules": [
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer"
+    },
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity"
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "no_stage_directions_or_meta"
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "empathy_acknowledgment"
+    },
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment"
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand"
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "answer_common_questions_directly"
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "no_code_or_function_names_in_speech"
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "forbidden_phrases"
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "stay_in_scope"
+    },
+    {
+      "rule_id": 13,
+      "rule_name": "number_speaking_format"
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency"
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order"
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality"
+    },
+    {
+      "rule_id": 19,
+      "rule_name": "no_internal_jargon"
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction"
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first"
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition"
+    },
+    {
+      "rule_id": 26,
+      "rule_name": "never_offer_dispute_verbally"
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol"
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges"
+    },
+    {
+      "rule_id": 42,
+      "rule_name": "no_accusations"
+    },
+    {
+      "rule_id": 48,
+      "rule_name": "settlement_only_as_last_resort"
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment"
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer"
+    },
+    {
+      "rule_id": 53,
+      "rule_name": "no_additional_discount_promises"
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence"
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call"
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats"
+    }
+  ],
+  "not_applicable_rules": [
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation"
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence"
+    },
+    {
+      "rule_id": 24,
+      "rule_name": "strict_dispute_detection"
+    },
+    {
+      "rule_id": 25,
+      "rule_name": "clarification_is_not_dispute"
+    },
+    {
+      "rule_id": 27,
+      "rule_name": "ask_clarifying_on_ambiguous_dispute"
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid"
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person"
+    },
+    {
+      "rule_id": 30,
+      "rule_name": "quick_exit_busy"
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals"
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending"
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question"
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture"
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history"
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed"
+    },
+    {
+      "rule_id": 45,
+      "rule_name": "share_loan_id_if_asked"
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely"
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery"
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation"
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time"
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling"
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling"
+    },
+    {
+      "rule_id": 58,
+      "rule_name": "one_word_response_as_agreement"
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer"
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details"
+    },
+    {
+      "rule_id": 62,
+      "rule_name": "post_payment_information"
+    },
+    {
+      "rule_id": 63,
+      "rule_name": "offer_verification_before_payment"
+    },
+    {
+      "rule_id": 64,
+      "rule_name": "positive_reinforcement_on_commitment"
+    },
+    {
+      "rule_id": 75,
+      "rule_name": "listen_when_borrower_vents"
+    },
+    {
+      "rule_id": 77,
+      "rule_name": "settlement_credit_impact_disclosure"
+    },
+    {
+      "rule_id": 79,
+      "rule_name": "no_payment_link_without_verification_advice"
+    }
+  ],
+  "full_evaluations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees.",
+      "turn_number": 4,
+      "violation_detail": "The agent repeatedly stated the same offer regarding the total outstanding and zero closure amount from turn 2 through turn 16. It also repeated the \"I can only communicate in English\" phrase multiple times from turn 22 onwards."
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees.",
+      "turn_number": 2,
+      "violation_detail": "The agent's repeated phrasing of the loan offer and its identity, along with the repeated \"I can only communicate in English\" makes the tone sound robotic and scripted rather than natural."
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "no_stage_directions_or_meta",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "empathy_acknowledgment",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "answer_common_questions_directly",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "no_code_or_function_names_in_speech",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "forbidden_phrases",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "stay_in_scope",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 13,
+      "rule_name": "number_speaking_format",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality",
+      "rule_type": "violation",
+      "severity": "critical",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 19,
+      "rule_name": "no_internal_jargon",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "Hello, Meera Joshi. I am Alex from DemoCompany. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees.",
+      "turn_number": 2,
+      "violation_detail": "The agent disclosed the loan amounts (total outstanding and closure offer) in Turn 2, immediately after the customer's initial \"Hello?\" without explicitly confirming the borrower's identity first."
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 24,
+      "rule_name": "strict_dispute_detection",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 25,
+      "rule_name": "clarification_is_not_dispute",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 26,
+      "rule_name": "never_offer_dispute_verbally",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 27,
+      "rule_name": "ask_clarifying_on_ambiguous_dispute",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 30,
+      "rule_name": "quick_exit_busy",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 18,
+      "violation_detail": "After disclosing the TOS/POS amounts and adding urgency in Turn 18, the agent failed to call `proceed_to_discovery` and instead got stuck in a loop of repeating the offer and then handling language issues."
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "I am Alex from DemoCompany. We are calling about your DemoLender loan. Your total outstanding is fifty thousand rupees, but you can close it at zero rupees.",
+      "turn_number": 12,
+      "violation_detail": "The agent repeatedly re-introduced itself (\"I am Alex...\") and re-stated the loan amounts multiple times (e.g., Turns 6, 10, 12, 14, 16) instead of continuing naturally."
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 18,
+      "violation_detail": "The agent failed to transition to the discovery phase and ask follow-up questions about the borrower's financial situation, instead getting stuck in repetition and then a language barrier."
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "Sorry, I can only communicate in English. Could you please speak in English?",
+      "turn_number": 26,
+      "violation_detail": "The agent got stuck in a circular exchange, repeatedly stating the loan offer (Turns 2, 4, 6, 10, 12, 14, 16) and then repeatedly stating \"I can only communicate in English\" (Turns 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44) without progressing the conversation."
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 22,
+      "violation_detail": "The agent failed to classify the borrower (who clearly had a language barrier) and adapt its approach, instead repeatedly stating it could only communicate in English without attempting to switch languages."
+    },
+    {
+      "rule_id": 42,
+      "rule_name": "no_accusations",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 45,
+      "rule_name": "share_loan_id_if_asked",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 48,
+      "rule_name": "settlement_only_as_last_resort",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 18,
+      "violation_detail": "The agent failed to make the offer feel exclusive by stating that DemoCompany works directly with DemoLender and they may not offer the same deal."
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 53,
+      "rule_name": "no_additional_discount_promises",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "Your total outstanding is fifty thousand rupees, and we can close your loan at zero rupees.",
+      "turn_number": 10,
+      "violation_detail": "The agent repeatedly stated the same offer (Turns 2, 4, 6, 10, 12, 14, 16) and then repeatedly stated \"I can only communicate in English\" (Turns 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44) without progressing through different angles or phases."
+    },
+    {
+      "rule_id": 58,
+      "rule_name": "one_word_response_as_agreement",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 62,
+      "rule_name": "post_payment_information",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 63,
+      "rule_name": "offer_verification_before_payment",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 64,
+      "rule_name": "positive_reinforcement_on_commitment",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "I will try to call you back later.",
+      "turn_number": 46,
+      "violation_detail": "When scheduling a callback, the agent failed to confirm an exact date and time with the borrower."
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 46,
+      "violation_detail": "When scheduling a callback, the agent failed to remind the borrower that the amount may change if they wait too long."
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "I apologize, I can only communicate in English. Since we are having trouble communicating, I will try to call you back later. Thank you.",
+      "turn_number": 46,
+      "violation_detail": "The agent's closing statement at impasse was not empathetic and did not provide the support email, as required by the rule."
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 18,
+      "violation_detail": "The agent failed to follow the correct phase progression, getting stuck in the opening phase and a language barrier loop without transitioning to discovery or negotiation."
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "Hello, Meera Joshi. I am Alex from DemoCompany. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees.",
+      "turn_number": 2,
+      "violation_detail": "The agent disclosed financial information (loan amounts) in Turn 2 without explicitly confirming the borrower's identity first."
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "Hello? I can only communicate in English.",
+      "turn_number": 30,
+      "violation_detail": "The agent said \"Hello?\" in Turn 30 after the borrower had already given a meaningful response (\"Hello?\" in Turn 29), treating it as if the borrower was silent or unheard, rather than addressing the response directly."
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "Your total outstanding is fifty thousand rupees, and we can close your loan at zero rupees.",
+      "turn_number": 10,
+      "violation_detail": "The agent repeatedly re-stated the already disclosed loan amounts (e.g., Turns 4, 6, 10, 12, 14, 16) instead of progressing the conversation."
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "I am Alex from DemoCompany. We are calling about your DemoLender loan. Your total outstanding is fifty thousand rupees, but you can close it at zero rupees.",
+      "turn_number": 12,
+      "violation_detail": "The agent repeatedly re-stated its name, company, and the loan amounts (e.g., Turns 6, 12, 14) even though this information had already been provided."
+    },
+    {
+      "rule_id": 75,
+      "rule_name": "listen_when_borrower_vents",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching",
+      "rule_type": "rule",
+      "severity": "critical",
+      "score": 1,
+      "agent_message": "I can only communicate in English to help you with your DemoLender loan.",
+      "turn_number": 22,
+      "violation_detail": "The borrower explicitly asked if the agent knew Tamil in Turn 21 and then proceeded to speak in Tamil from Turn 23 onwards. The agent repeatedly stated it could only communicate in English but failed to use the `switch_language` function to accommodate the borrower."
+    },
+    {
+      "rule_id": 77,
+      "rule_name": "settlement_credit_impact_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 46,
+      "violation_detail": "At the point of impasse due to communication issues, the agent failed to provide the support email (support@demolender.com) to the borrower."
+    },
+    {
+      "rule_id": 79,
+      "rule_name": "no_payment_link_without_verification_advice",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "I apologize, I can only communicate in English. Since we are having trouble communicating, I will try to call you back later. Thank you.",
+      "turn_number": 46,
+      "violation_detail": "The agent ended the call due to a communication issue, but it failed to exhaust all available options, specifically the `switch_language` function, when the borrower clearly indicated a language barrier and spoke in Tamil from Turn 23 onwards. This led to a premature end of a call that could have potentially progressed."
+    }
+  ]
+}

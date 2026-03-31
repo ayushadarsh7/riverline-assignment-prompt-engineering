@@ -1,0 +1,156 @@
+{
+  "customer_name": "Priya Sharma",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "thirty five thousand",
+  "settlement_amount": "twenty five thousand",
+  "transcript": [
+    {
+      "speaker": "customer",
+      "text": "Yes."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. To confirm, am I speaking with Priya Sharma?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. Sorry. How how is it possible?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just thirty five thousand rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay."
+    },
+    {
+      "speaker": "agent",
+      "text": "You can close at thirty five thousand instead of fifty thousand. That saves you the difference."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. I can hear from echo. I'm not able to hear your voice properly."
+    },
+    {
+      "speaker": "agent",
+      "text": "I apologize for the echo. Let me try to speak more clearly. Can you hear me better now?"
+    },
+    {
+      "speaker": "customer",
+      "text": "I can hear you. But it's like an echo."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. I'm trying to adjust. Is it still echoing?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Voice is not clear."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm sorry about the connection. Are you able to hear me at all now?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Yeah. Tell me."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm here. We are offering to close your DemoLender loan for thirty five thousand rupees, which is less than your total outstanding."
+    },
+    {
+      "speaker": "customer",
+      "text": "Can you please explain it?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Certainly. Your total outstanding is fifty thousand rupees. We can waive the extra charges, allowing you to close the loan at thirty five thousand rupees. This offer is available now."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Okay."
+    },
+    {
+      "speaker": "agent",
+      "text": "Are you still facing issues with the audio?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. Okay. Yeah. Yeah. I can hear you. If I pay XX,XXX means that outstanding will be removed."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, that's correct. If you pay thirty five thousand rupees, your loan will be closed, and all remaining charges will be removed."
+    },
+    {
+      "speaker": "customer",
+      "text": "Is that your"
+    },
+    {
+      "speaker": "agent",
+      "text": "Please go on."
+    },
+    {
+      "speaker": "customer",
+      "text": "you please share more details about it? Because I don't I mean, currently, I don't have XX,XXX."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you might not have the full thirty five thousand rupees right now. This is a pending obligation that requires immediate attention. When do you think you might be able to arrange the payment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "With me. But I will check and get back to you later."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you need to check. This thirty five thousand closure offer is available now, and it's important to act on it before it expires. When could I call you back to discuss this?"
+    },
+    {
+      "speaker": "customer",
+      "text": "My month end."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, so you mean around March 31st or April 1st? I can schedule a call for you then. Would that work?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Yes. Yeah. Correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. I can schedule a call for you on April 1st. Would morning or afternoon be better?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. What's your name?"
+    },
+    {
+      "speaker": "agent",
+      "text": "My name is Alex."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. Okay, Oishi. We'll connect by next week. Thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's Alex. I understand you'd like to connect next week. Can we set a specific day and time, perhaps early next week, to ensure this offer is still available?"
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 24,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 29,
+      "function": "proceed_to_negotiation",
+      "params": {}
+    }
+  ]
+}

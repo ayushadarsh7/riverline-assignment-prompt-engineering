@@ -1,0 +1,57 @@
+{
+  "customer_name": "Suresh Rao",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "transcript": [
+    {
+      "speaker": "customer",
+      "text": "Hello? Hi, Harry."
+    },
+    {
+      "speaker": "agent",
+      "text": "Am I speaking with Suresh Rao?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Is Suresh Rao there?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello, Evan."
+    },
+    {
+      "speaker": "agent",
+      "text": "Is Suresh Rao available?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I need to confirm I have the right person before I can continue. Is this Suresh Rao?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? No, sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "I will try calling back at a better time."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 10,
+      "function": "end_call",
+      "params": {
+        "reason": "voicemail"
+      }
+    }
+  ]
+}

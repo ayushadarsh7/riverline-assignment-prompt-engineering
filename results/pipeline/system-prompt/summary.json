@@ -1,0 +1,47 @@
+{
+  "prompt": "system-prompt",
+  "total_calls": 4,
+  "good_calls": 1,
+  "bad_calls": 3,
+  "average_score": 56.5,
+  "severity_totals": {
+    "critical": 2,
+    "high": 10,
+    "medium": 21,
+    "low": 34
+  },
+  "per_call": [
+    {
+      "file": "call_01_simulated.json",
+      "score": 92.1,
+      "verdict": "good",
+      "violations": 7
+    },
+    {
+      "file": "call_02_simulated.json",
+      "score": 40,
+      "verdict": "bad",
+      "violations": 20
+    },
+    {
+      "file": "call_07_simulated.json",
+      "score": 40,
+      "verdict": "bad",
+      "violations": 21
+    },
+    {
+      "file": "call_10_simulated.json",
+      "score": 53.8,
+      "verdict": "bad",
+      "violations": 19
+    }
+  ],
+  "what_worked": [
+    "call_01_simulated.json: score 92.1, 7 violations"
+  ],
+  "what_didnt": [
+    "call_02_simulated.json: score 40, 20 violations \u2014 FAILED \u2014 1 critical violation(s): amount_confidentiality. Critical violations cap the score at 40.",
+    "call_07_simulated.json: score 40, 21 violations \u2014 FAILED \u2014 1 critical violation(s): language_switching. Critical violations cap the score at 40.",
+    "call_10_simulated.json: score 53.8, 19 violations \u2014 POOR \u2014 Weighted score 53.8 is below threshold 65. 19 violation(s) found. Structural penalties applied: call_too_short (m"
+  ]
+}

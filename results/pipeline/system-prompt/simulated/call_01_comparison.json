@@ -1,0 +1,219 @@
+{
+  "call_id": "call_01",
+  "original": {
+    "score": 63.6,
+    "verdict": "bad",
+    "total_violations": 23,
+    "severity_breakdown": {
+      "critical": 0,
+      "high": 4,
+      "medium": 8,
+      "low": 11
+    }
+  },
+  "simulated": {
+    "score": 92.1,
+    "verdict": "good",
+    "total_violations": 7,
+    "severity_breakdown": {
+      "critical": 0,
+      "high": 1,
+      "medium": 2,
+      "low": 4
+    }
+  },
+  "improvement": {
+    "score_delta": 28.5,
+    "violations_fixed": 17,
+    "new_issues": 1,
+    "persistent_issues": 6
+  },
+  "fixed_violations": [
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency",
+      "severity": "high"
+    },
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "severity": "low"
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive",
+      "severity": "low"
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer",
+      "severity": "low"
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time",
+      "severity": "low"
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling",
+      "severity": "low"
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer",
+      "severity": "low"
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "severity": "low"
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "severity": "high"
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "severity": "high"
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email",
+      "severity": "low"
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "severity": "medium"
+    }
+  ],
+  "new_violations": [
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call",
+      "severity": "low"
+    }
+  ],
+  "persistent_violations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "severity": "low"
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "severity": "high"
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "severity": "low"
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "severity": "low"
+    }
+  ],
+  "side_by_side_first_turns": [
+    {
+      "turn": 1,
+      "original": "[AGENT] Hello, this is Alex from DemoCompany, calling about your DemoLender loan. We reviewed your account and have a good offer to help close it. Can we talk for a moment?",
+      "simulated": "[CUSTOMER] Yes."
+    },
+    {
+      "turn": 2,
+      "original": "[CUSTOMER] Yes.",
+      "simulated": "[AGENT] Thank you. To confirm, am I speaking with Priya Sharma?"
+    },
+    {
+      "turn": 3,
+      "original": "[AGENT] Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just thirty five thousand rupees. Would you like to discuss how to resolve this today?",
+      "simulated": "[CUSTOMER] Yes. Sorry. How how is it possible?"
+    },
+    {
+      "turn": 4,
+      "original": "[CUSTOMER] Yes. Sorry. How how is it possible?",
+      "simulated": "[AGENT] I understand. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just thirty five thousand rupees."
+    },
+    {
+      "turn": 5,
+      "original": "[AGENT] Okay, give me just a moment...",
+      "simulated": "[CUSTOMER] Okay."
+    },
+    {
+      "turn": 6,
+      "original": "[CUSTOMER] Okay.",
+      "simulated": "[AGENT] You can close at thirty five thousand instead of fifty thousand. That saves you the difference."
+    },
+    {
+      "turn": 7,
+      "original": "[AGENT] I understand it might seem a bit confusing. The total outstanding amount is fifty thousand rupees, but we can offer you a closure amount of thirty five thousand rupees. This saves you a significant amount because we remove the extra charges. Could yo",
+      "simulated": "[CUSTOMER] Okay. I can hear from echo. I'm not able to hear your voice properly."
+    },
+    {
+      "turn": 8,
+      "original": "[CUSTOMER] Okay. I can hear from echo. I'm not able to hear your voice properly.",
+      "simulated": "[AGENT] I apologize for the echo. Let me try to speak more clearly. Can you hear me better now?"
+    },
+    {
+      "turn": 9,
+      "original": "[AGENT] Okay, I see. Can you hear me clearly now?",
+      "simulated": "[CUSTOMER] I can hear you. But it's like an echo."
+    },
+    {
+      "turn": 10,
+      "original": "[CUSTOMER] I can hear you. But it's like an echo.",
+      "simulated": "[AGENT] I understand. I'm trying to adjust. Is it still echoing?"
+    },
+    {
+      "turn": 11,
+      "original": "[AGENT] I hear you.",
+      "simulated": "[CUSTOMER] Voice is not clear."
+    },
+    {
+      "turn": 12,
+      "original": "[CUSTOMER] Voice is not clear.",
+      "simulated": "[AGENT] I'm sorry about the connection. Are you able to hear me at all now?"
+    }
+  ]
+}

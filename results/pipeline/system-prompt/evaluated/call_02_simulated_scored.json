@@ -1,0 +1,20 @@
+{
+  "file": "call_02_simulated.json",
+  "customer_name": "Rahul Verma",
+  "final_score": 40,
+  "verdict": "bad",
+  "reason": "FAILED \u2014 1 critical violation(s): amount_confidentiality. Critical violations cap the score at 40.",
+  "analysis": "1 critical violation(s) \u2014 compliance/safety failures that make the call unacceptable. 3 high-severity issue(s) \u2014 significant conversation or strategy failures. 7 medium-severity issue(s) \u2014 missed best practices. 9 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [critical] amount_confidentiality: The agent disclosed the total outstanding and closure amount in Turn 2, before confirming the borrower's identity (which; [high] no_premature_amount_disclosure: The agent disclosed the loan amounts (TOS and POS) in Turn 2, which was before the borrower's identity was confirmed in ; [high] dig_deeper_dont_rush: The agent failed to dig deeper into the borrower's financial situation after she stated she was a \"simple housewife\" and; [high] identity_verification_before_amounts: The agent disclosed financial information (TOS and POS) in Turn 2 before explicitly confirming the borrower's identity i; [medium] quick_exit_already_paid: After the borrower repeatedly claimed the loan was fully paid by her husband (e.g., Turn 19, 43, 47, 53, 77, 83, 85), th.",
+  "severity_breakdown": {
+    "critical": 1,
+    "high": 3,
+    "medium": 7,
+    "low": 9
+  },
+  "total_applicable": 66,
+  "total_violations": 20,
+  "critical_gate_triggered": true,
+  "weighted_score_before_cap": 71.8,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

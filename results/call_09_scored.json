@@ -1,0 +1,20 @@
+{
+  "file": "call_09.json",
+  "customer_name": "Kavita Menon",
+  "final_score": 73.0,
+  "verdict": "good",
+  "reason": "PASSED \u2014 Score 73.0 meets threshold 65. 22 minor violation(s).",
+  "analysis": "3 high-severity issue(s) \u2014 significant conversation or strategy failures. 9 medium-severity issue(s) \u2014 missed best practices. 10 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [high] no_amount_insistence: After the customer stated their outstanding amount was around thirty-nine thousand (four EMIs), the agent began to insis; [high] dig_deeper_dont_rush: The agent rushed to ask about payment capacity without first digging deeper into the customer's financial situation or r; [high] correct_phase_transitions: The agent prematurely called `proceed_to_negotiation` at Turn 3, skipping the necessary opening and discovery phases.; [medium] silence_handling_protocol: The agent said 'Hello?' at Turn 18, treating the customer as silent, even though the customer had just responded 'Yeah' ; [medium] proceed_to_discovery_after_disclosure: The agent failed to call `proceed_to_discovery` after disclosing amounts (Turn 6, 9) and engaging the borrower. Instead,.",
+  "severity_breakdown": {
+    "critical": 0,
+    "high": 3,
+    "medium": 9,
+    "low": 10
+  },
+  "total_applicable": 62,
+  "total_violations": 22,
+  "critical_gate_triggered": false,
+  "weighted_score_before_cap": 73.0,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

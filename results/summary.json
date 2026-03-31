@@ -1,0 +1,121 @@
+{
+  "model": "gemini-2.5-flash",
+  "verdict_threshold": 70,
+  "total_calls": 1,
+  "good_count": 0,
+  "bad_count": 1,
+  "good_calls": [],
+  "bad_calls": [
+    "call_09.json"
+  ],
+  "scores": {
+    "call_09.json": 66.1
+  },
+  "most_common_violations": [
+    {
+      "name": "phrase_repetition",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "echoing_customer",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "response_brevity",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "proceed_to_discovery_after_disclosure",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "dig_deeper_dont_rush",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "only_proceed_after_clear_picture",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "make_offer_exclusive",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "credit_education_one_point_at_a_time",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "need_to_think_handling",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "conversation_progression_no_looping",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "callback_confirm_date_time",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "amount_may_change_warning",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "must_call_end_call",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "correct_phase_transitions",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    },
+    {
+      "name": "do_not_repeat_already_disclosed_amounts",
+      "count": 1,
+      "calls": [
+        "call_09.json"
+      ]
+    }
+  ]
+}

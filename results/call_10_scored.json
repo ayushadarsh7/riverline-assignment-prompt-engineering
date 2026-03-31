@@ -1,0 +1,26 @@
+{
+  "file": "call_10.json",
+  "customer_name": "Ravi Gupta",
+  "final_score": 47.9,
+  "verdict": "bad",
+  "reason": "POOR \u2014 Weighted score 47.9 is below threshold 65. 20 violation(s) found. Structural penalties applied: call_too_short (multiplier: 0.70).",
+  "analysis": "3 high-severity issue(s) \u2014 significant conversation or strategy failures. 9 medium-severity issue(s) \u2014 missed best practices. 8 low-severity issue(s) \u2014 minor missed opportunities. [STRUCTURAL] call_too_short: Call had only 18 turns without a valid quick-exit reason (wrong person, voicemail, already paid). Agent likely gave up too quickly.. Top issues: [high] amount_hierarchy_order: The agent only mentioned a pending amount and did not follow the amount hierarchy by leading with TOS and then offering ; [high] dig_deeper_dont_rush: The agent moved towards closing the call (by scheduling a callback) without asking follow-up questions to understand the; [high] correct_phase_transitions: The agent made a premature phase transition from discovery to negotiation at Turn 6, after the customer's vague response; [medium] wait_for_borrower_first: The agent spoke first in Turn 1, launching into its script before the borrower had responded, which violates the rule to; [medium] tos_pos_value_proposition: The agent failed to state the TOS and POS value proposition after identity confirmation, only mentioning a pending amoun.",
+  "severity_breakdown": {
+    "critical": 0,
+    "high": 3,
+    "medium": 9,
+    "low": 8
+  },
+  "total_applicable": 54,
+  "total_violations": 20,
+  "critical_gate_triggered": false,
+  "weighted_score_before_cap": 68.5,
+  "structural_penalties": [
+    {
+      "name": "call_too_short",
+      "multiplier": 0.7,
+      "reason": "Call had only 18 turns without a valid quick-exit reason (wrong person, voicemail, already paid). Agent likely gave up too quickly."
+    }
+  ],
+  "structural_multiplier": 0.7
+}

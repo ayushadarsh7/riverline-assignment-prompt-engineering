@@ -1,0 +1,20 @@
+{
+  "file": "call_02.json",
+  "customer_name": "Rahul Verma",
+  "final_score": 40,
+  "verdict": "bad",
+  "reason": "FAILED \u2014 2 critical violation(s): amount_confidentiality, language_switching. Critical violations cap the score at 40.",
+  "analysis": "2 critical violation(s) \u2014 compliance/safety failures that make the call unacceptable. 5 high-severity issue(s) \u2014 significant conversation or strategy failures. 12 medium-severity issue(s) \u2014 missed best practices. 9 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [critical] amount_confidentiality: The agent disclosed the loan amount at turn 3 before fully confirming the borrower's identity. It also disclosed amounts; [critical] language_switching: The agent switched back to English at turn 36, despite having previously switched to Hindi (turn 5) and the customer exp; [high] no_amount_insistence: The agent insisted on the outstanding amount at turn 17 after the customer explicitly stated \"\u092e\u0948\u0902\u0928\u0947 \u0915\u094b\u0908 loan \u0928\u0939\u0940\u0902 \u0932\u093f\u092f\u093e \u0925; [high] amount_hierarchy_order: The agent failed to present the amount hierarchy (TOS, POS) and the value proposition of removing charges to close the l; [high] no_premature_amount_disclosure: The agent disclosed the loan amount at turn 3 before fully confirming the borrower's identity. The customer later clarif.",
+  "severity_breakdown": {
+    "critical": 2,
+    "high": 5,
+    "medium": 12,
+    "low": 9
+  },
+  "total_applicable": 61,
+  "total_violations": 28,
+  "critical_gate_triggered": true,
+  "weighted_score_before_cap": 53.0,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

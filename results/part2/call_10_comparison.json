@@ -1,0 +1,224 @@
+{
+  "call_id": "call_10",
+  "original": {
+    "score": 47.9,
+    "verdict": "bad",
+    "total_violations": 20,
+    "severity_breakdown": {
+      "critical": 0,
+      "high": 3,
+      "medium": 9,
+      "low": 8
+    }
+  },
+  "simulated": {
+    "score": 59.9,
+    "verdict": "bad",
+    "total_violations": 9,
+    "severity_breakdown": {
+      "critical": 0,
+      "high": 4,
+      "medium": 3,
+      "low": 2
+    }
+  },
+  "improvement": {
+    "score_delta": 12.0,
+    "violations_fixed": 16,
+    "new_issues": 5,
+    "persistent_issues": 4
+  },
+  "fixed_violations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "severity": "low"
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer",
+      "severity": "low"
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order",
+      "severity": "high"
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "severity": "low"
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling",
+      "severity": "low"
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time",
+      "severity": "low"
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "severity": "low"
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close",
+      "severity": "low"
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email",
+      "severity": "low"
+    }
+  ],
+  "new_violations": [
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency",
+      "severity": "high"
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call",
+      "severity": "low"
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats",
+      "severity": "high"
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "severity": "low"
+    }
+  ],
+  "persistent_violations": [
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "severity": "high"
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "severity": "high"
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "severity": "medium"
+    }
+  ],
+  "side_by_side_first_turns": [
+    {
+      "turn": 1,
+      "original": "[AGENT] Hello, thank you for calling. This is Alex from DemoCompany. Am I speaking with Ravi Gupta?",
+      "simulated": "[CUSTOMER] Yes."
+    },
+    {
+      "turn": 2,
+      "original": "[CUSTOMER] Yes.",
+      "simulated": "[AGENT] Am I speaking with Ravi Gupta?"
+    },
+    {
+      "turn": 3,
+      "original": "[AGENT] Got it. I am calling about your DemoLender loan. You have fifty thousand rupees pending. Is there anything that has been making it difficult to clear this?",
+      "simulated": "[CUSTOMER] Yeah. Yeah. I I can see."
+    },
+    {
+      "turn": 4,
+      "original": "[AGENT] Okay, give me just a moment... Okay, Ravi Gupta, to help me understand better, could you tell me a little bit about what's making it difficult to pay the fifty-five thousand rupees for your DemoLender loan right now?",
+      "simulated": "[AGENT] I understand. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees."
+    },
+    {
+      "turn": 5,
+      "original": "[CUSTOMER] Yeah.",
+      "simulated": "[CUSTOMER] I I said I can't say not see."
+    },
+    {
+      "turn": 6,
+      "original": "[CUSTOMER] Yeah. I I can see.",
+      "simulated": "[AGENT] I understand you are having trouble with the connection. The offer is to close your loan for zero rupees, down from fifty thousand."
+    },
+    {
+      "turn": 7,
+      "original": "[AGENT] Okay, I hear you. Could you perhaps elaborate a little on what you mean by \"I can see\"? Any information helps me understand your situation",
+      "simulated": "[CUSTOMER] Yeah. I I can share. Not a problem."
+    },
+    {
+      "turn": 8,
+      "original": "[CUSTOMER] I I said I can't say not see.",
+      "simulated": "[AGENT] Great. This offer to close at zero rupees is available now. Failure to pay will result in escalation."
+    },
+    {
+      "turn": 9,
+      "original": "[AGENT] Got it, you said \"I can't say.\" I understand. Would you be comfortable sharing a little bit about why you can't say, or what's making it difficult to discuss?",
+      "simulated": "[CUSTOMER] No. You asked me a question. Right? Why are you pulling out my account details now?"
+    },
+    {
+      "turn": 10,
+      "original": "[CUSTOMER] Yeah. I I can share.",
+      "simulated": "[AGENT] I'm here about your DemoLender loan. The total outstanding is fifty thousand rupees. We can close it for zero rupees."
+    },
+    {
+      "turn": 11,
+      "original": "[CUSTOMER] Not a problem.",
+      "simulated": "[CUSTOMER] Okay. Go ahead."
+    },
+    {
+      "turn": 12,
+      "original": "[AGENT] Let me pull up your account details...",
+      "simulated": "[AGENT] This zero rupee closure offer is available now. When can you arrange this?"
+    }
+  ]
+}

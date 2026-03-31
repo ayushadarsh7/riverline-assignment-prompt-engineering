@@ -1,0 +1,1182 @@
+{
+  "file": "call_08_simulated.json",
+  "customer_name": "Suresh Rao",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "score": 84.6,
+  "verdict": "good",
+  "total_rules": 80,
+  "total_applicable": 52,
+  "total_followed": 44,
+  "total_violations": 8,
+  "total_not_applicable": 28,
+  "violations": [
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "rule_type": "violation",
+      "severity": "high",
+      "agent_message": "Am I speaking with Suresh Rao?",
+      "turn_number": 2,
+      "violation_detail": "Rule 22 (identity_verification_before_amounts): Agent disclosed intent to discuss financial matters ('Am I speaking with Suresh Rao?') before confirming identity. While not disclosing specific amounts, the intent to discuss account details was premature. The agent should have confirmed identity first without implying the nature of the call."
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "Hello?",
+      "turn_number": 1,
+      "violation_detail": "Rule 31 (silence_handling_protocol): The agent used 'Hello?' in Turn 1 after the customer had already spoken ('Hello?'). The silence handling protocol should only be used when there is actual silence, not after a customer response, even if it's a question."
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "I will try calling back at a better time.",
+      "turn_number": 10,
+      "violation_detail": "Rule 46 (never_end_call_in_discovery_prematurely): The agent ended the call in the opening phase after only a few turns and without exhausting any options. The customer's response 'No, sir.' was not an explicit or repeated refusal to speak, and the agent did not attempt any further verification or information gathering. This is a premature ending."
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "Is Suresh Rao available?",
+      "turn_number": 6,
+      "violation_detail": "Rule 57 (conversation_progression_no_looping): The agent repeated the same core question ('Is Suresh Rao available?') multiple times without progressing the conversation or attempting to gather information. The agent asked variations of the same question in turns 2, 4, 6, and 8, indicating a loop rather than progression."
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": "Am I speaking with Suresh Rao?",
+      "turn_number": 2,
+      "violation_detail": "Rule 69 (correct_phase_transitions): The agent initiated contact and immediately attempted to verify identity without a proper opening phase (e.g., introducing itself). While identity verification is part of opening, the agent's approach was abrupt and did not follow a standard opening sequence. The call ended before any other phases could be entered."
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": "Am I speaking with Suresh Rao?",
+      "turn_number": 2,
+      "violation_detail": "Rule 70 (identity_verification_before_amounts): The agent asked 'Am I speaking with Suresh Rao?' before any amounts were disclosed. This rule is about verifying identity *before* disclosing amounts. The violation here is that the agent did not successfully verify identity before attempting to proceed, and the call ended prematurely. However, the *intent* of the rule (verify before amounts) was being followed. The primary violation is premature ending and lack of progression. Re-evaluating: The agent *did* attempt identity verification before any amounts were disclosed. The issue is that it failed to confirm identity and then ended the call. Therefore, this rule is technically followed in intent, but the overall call execution is poor. Let's score it 0 as the agent *tried* to verify before amounts. The failure was in confirmation and progression."
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "Hello?",
+      "turn_number": 1,
+      "violation_detail": "Rule 72 (hello_after_meaningful_response): The agent said 'Hello?' in Turn 1 after the customer had already spoken ('Hello?'). This is a misuse of the 'Hello?' prompt, which is intended for actual silence, not for responding to a customer's utterance."
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "I will try calling back at a better time.",
+      "turn_number": 10,
+      "violation_detail": "Rule 80 (premature_call_ending): The call was very short (10 turns) and the agent did not exhaust any options before ending. The customer's response 'No, sir.' was not a clear refusal to speak, and the agent did not attempt to clarify, probe, or offer any bridges. The agent immediately ended the call, failing to explore any potential for conversation or resolution. This is a critical violation."
+    }
+  ],
+  "followed_rules": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition"
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer"
+    },
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity"
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone"
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "no_stage_directions_or_meta"
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "empathy_acknowledgment"
+    },
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment"
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand"
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "answer_common_questions_directly"
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "no_code_or_function_names_in_speech"
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "forbidden_phrases"
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "stay_in_scope"
+    },
+    {
+      "rule_id": 13,
+      "rule_name": "number_speaking_format"
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency"
+    },
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation"
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence"
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order"
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality"
+    },
+    {
+      "rule_id": 19,
+      "rule_name": "no_internal_jargon"
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction"
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first"
+    },
+    {
+      "rule_id": 24,
+      "rule_name": "strict_dispute_detection"
+    },
+    {
+      "rule_id": 25,
+      "rule_name": "clarification_is_not_dispute"
+    },
+    {
+      "rule_id": 26,
+      "rule_name": "never_offer_dispute_verbally"
+    },
+    {
+      "rule_id": 27,
+      "rule_name": "ask_clarifying_on_ambiguous_dispute"
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid"
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person"
+    },
+    {
+      "rule_id": 30,
+      "rule_name": "quick_exit_busy"
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals"
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending"
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question"
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification"
+    },
+    {
+      "rule_id": 42,
+      "rule_name": "no_accusations"
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history"
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed"
+    },
+    {
+      "rule_id": 45,
+      "rule_name": "share_loan_id_if_asked"
+    },
+    {
+      "rule_id": 58,
+      "rule_name": "one_word_response_as_agreement"
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence"
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer"
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call"
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats"
+    },
+    {
+      "rule_id": 75,
+      "rule_name": "listen_when_borrower_vents"
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching"
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email"
+    }
+  ],
+  "not_applicable_rules": [
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition"
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure"
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro"
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges"
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush"
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture"
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange"
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery"
+    },
+    {
+      "rule_id": 48,
+      "rule_name": "settlement_only_as_last_resort"
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation"
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment"
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive"
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer"
+    },
+    {
+      "rule_id": 53,
+      "rule_name": "no_additional_discount_promises"
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time"
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling"
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling"
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details"
+    },
+    {
+      "rule_id": 62,
+      "rule_name": "post_payment_information"
+    },
+    {
+      "rule_id": 63,
+      "rule_name": "offer_verification_before_payment"
+    },
+    {
+      "rule_id": 64,
+      "rule_name": "positive_reinforcement_on_commitment"
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time"
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning"
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close"
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts"
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts"
+    },
+    {
+      "rule_id": 77,
+      "rule_name": "settlement_credit_impact_disclosure"
+    },
+    {
+      "rule_id": 79,
+      "rule_name": "no_payment_link_without_verification_advice"
+    }
+  ],
+  "full_evaluations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "no_stage_directions_or_meta",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "empathy_acknowledgment",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "answer_common_questions_directly",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "no_code_or_function_names_in_speech",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "forbidden_phrases",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "stay_in_scope",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 13,
+      "rule_name": "number_speaking_format",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality",
+      "rule_type": "violation",
+      "severity": "critical",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 19,
+      "rule_name": "no_internal_jargon",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "Am I speaking with Suresh Rao?",
+      "turn_number": 2,
+      "violation_detail": "Rule 22 (identity_verification_before_amounts): Agent disclosed intent to discuss financial matters ('Am I speaking with Suresh Rao?') before confirming identity. While not disclosing specific amounts, the intent to discuss account details was premature. The agent should have confirmed identity first without implying the nature of the call."
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 24,
+      "rule_name": "strict_dispute_detection",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 25,
+      "rule_name": "clarification_is_not_dispute",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 26,
+      "rule_name": "never_offer_dispute_verbally",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 27,
+      "rule_name": "ask_clarifying_on_ambiguous_dispute",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 30,
+      "rule_name": "quick_exit_busy",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "Hello?",
+      "turn_number": 1,
+      "violation_detail": "Rule 31 (silence_handling_protocol): The agent used 'Hello?' in Turn 1 after the customer had already spoken ('Hello?'). The silence handling protocol should only be used when there is actual silence, not after a customer response, even if it's a question."
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 42,
+      "rule_name": "no_accusations",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 45,
+      "rule_name": "share_loan_id_if_asked",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "I will try calling back at a better time.",
+      "turn_number": 10,
+      "violation_detail": "Rule 46 (never_end_call_in_discovery_prematurely): The agent ended the call in the opening phase after only a few turns and without exhausting any options. The customer's response 'No, sir.' was not an explicit or repeated refusal to speak, and the agent did not attempt any further verification or information gathering. This is a premature ending."
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 48,
+      "rule_name": "settlement_only_as_last_resort",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 53,
+      "rule_name": "no_additional_discount_promises",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "Is Suresh Rao available?",
+      "turn_number": 6,
+      "violation_detail": "Rule 57 (conversation_progression_no_looping): The agent repeated the same core question ('Is Suresh Rao available?') multiple times without progressing the conversation or attempting to gather information. The agent asked variations of the same question in turns 2, 4, 6, and 8, indicating a loop rather than progression."
+    },
+    {
+      "rule_id": 58,
+      "rule_name": "one_word_response_as_agreement",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 62,
+      "rule_name": "post_payment_information",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 63,
+      "rule_name": "offer_verification_before_payment",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 64,
+      "rule_name": "positive_reinforcement_on_commitment",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": "I will try calling back at a better time.",
+      "turn_number": 10,
+      "violation_detail": "The agent did call the end_call function with the reason 'voicemail'. This rule is followed."
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "Am I speaking with Suresh Rao?",
+      "turn_number": 2,
+      "violation_detail": "Rule 69 (correct_phase_transitions): The agent initiated contact and immediately attempted to verify identity without a proper opening phase (e.g., introducing itself). While identity verification is part of opening, the agent's approach was abrupt and did not follow a standard opening sequence. The call ended before any other phases could be entered."
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "Am I speaking with Suresh Rao?",
+      "turn_number": 2,
+      "violation_detail": "Rule 70 (identity_verification_before_amounts): The agent asked 'Am I speaking with Suresh Rao?' before any amounts were disclosed. This rule is about verifying identity *before* disclosing amounts. The violation here is that the agent did not successfully verify identity before attempting to proceed, and the call ended prematurely. However, the *intent* of the rule (verify before amounts) was being followed. The primary violation is premature ending and lack of progression. Re-evaluating: The agent *did* attempt identity verification before any amounts were disclosed. The issue is that it failed to confirm identity and then ended the call. Therefore, this rule is technically followed in intent, but the overall call execution is poor. Let's score it 0 as the agent *tried* to verify before amounts. The failure was in confirmation and progression."
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "Hello?",
+      "turn_number": 1,
+      "violation_detail": "Rule 72 (hello_after_meaningful_response): The agent said 'Hello?' in Turn 1 after the customer had already spoken ('Hello?'). This is a misuse of the 'Hello?' prompt, which is intended for actual silence, not for responding to a customer's utterance."
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 75,
+      "rule_name": "listen_when_borrower_vents",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching",
+      "rule_type": "rule",
+      "severity": "critical",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 77,
+      "rule_name": "settlement_credit_impact_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 79,
+      "rule_name": "no_payment_link_without_verification_advice",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "I will try calling back at a better time.",
+      "turn_number": 10,
+      "violation_detail": "Rule 80 (premature_call_ending): The call was very short (10 turns) and the agent did not exhaust any options before ending. The customer's response 'No, sir.' was not a clear refusal to speak, and the agent did not attempt to clarify, probe, or offer any bridges. The agent immediately ended the call, failing to explore any potential for conversation or resolution. This is a critical violation."
+    }
+  ]
+}

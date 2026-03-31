@@ -1,0 +1,546 @@
+{
+  "customer_name": "Rahul Verma",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "transcript": [
+    {
+      "speaker": "customer",
+      "text": "Yes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Am I speaking with Rahul Verma?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Please amount repeat."
+    },
+    {
+      "speaker": "agent",
+      "text": "I can repeat the amounts, but first, am I speaking with Rahul Verma?"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां बोलिए."
+    },
+    {
+      "speaker": "agent",
+      "text": "Would you prefer to continue in Hindi?"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां."
+    },
+    {
+      "speaker": "agent",
+      "text": "Is Rahul Verma available?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. बोलिए. Sir कौन सा payment?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I need to confirm I have the right person before I can continue. Is this Rahul Verma?"
+    },
+    {
+      "speaker": "customer",
+      "text": "मैंने कोई loan नहीं लिया था."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're saying you didn't take out a loan. Can you confirm if I am speaking with Rahul Verma?"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां बोलिए."
+    },
+    {
+      "speaker": "agent",
+      "text": "Could you let me know who I am speaking with?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Sir मेरे husband ने loan करवाया था."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. And is Rahul Verma available?"
+    },
+    {
+      "speaker": "customer",
+      "text": "ठीक है? लेकिन उन्होंने"
+    },
+    {
+      "speaker": "agent",
+      "text": "I need to confirm I'm speaking with Rahul Verma before I can discuss any loan details. Is Rahul Verma on the line?"
+    },
+    {
+      "speaker": "customer",
+      "text": "था कि मैंने पूरा payment कर दिया है. नाम मेरे था, लेकिन payment वह करते थे अपने account से करते थे ना ही मेरे account से नहीं होता था यह payment."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're saying the loan was in your name but your husband handled the payments from his account, and that it's been fully paid. To proceed, I must confirm I'm speaking with Rahul Verma. Is this Rahul Verma?"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for confirming. Your total outstanding is fifty thousand rupees. However, we can remove all charges and close your loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "और उनकी अभी seventh March दो हज़ार 2025 को death हो गई है."
+    },
+    {
+      "speaker": "agent",
+      "text": "I am very sorry to hear about your husband's passing. Thank you for letting me know. You mentioned the loan was in your name but paid from his account. Can you tell me more about the situation?"
+    },
+    {
+      "speaker": "customer",
+      "text": "है ना? तो अब मेरे पास documents हां."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you have documents. Could you please explain the situation regarding the loan and the payments?"
+    },
+    {
+      "speaker": "customer",
+      "text": "आज 1 year हो गया."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand it has been one year since March 7th, 2025. Can you clarify if the loan was fully paid off before your husband's passing?"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां, है ना sir?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You mentioned your husband handled the payments. Do you have proof of these payments from his account?"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां, बिल्कुल सकती हूं. इस number पर मैं send कर सकती हूं क्या?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, you can send documents. What number would you like to send them to?"
+    },
+    {
+      "speaker": "customer",
+      "text": "अभी अभिषेक जी पहले आप मुझे हिंदी में बात करिए. मैं बार बार request कर रही हूं आपको हिंदी में बात करिए, लेकिन आप english में repeat करे चले जा रहे हैं. और जब आपको मेरी हिंदी से problem हो रही है तो फिर आप मुझे तो english से भी हो रही है ना?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I apologize if there was any confusion. I am Alex from DemoCompany. I understand you wish to speak in Hindi. Your total outstanding is fifty thousand rupees. However, we can remove all charges and close your loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां जब मैं आपसे हिंदी हिंदी बोल रही हूं आप बार बार english में बोले चले जा रहे हैं."
+    },
+    {
+      "speaker": "agent",
+      "text": "I apologize. Your total outstanding is fifty thousand rupees. We can close your loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां? जब आपको हिंदी से problem हो रही है आप हिंदी में रह रहे हैं अगर कोई भी हिंदी english नहीं आ रही है तो आप english english में बोले चले जा रहे हैं."
+    },
+    {
+      "speaker": "agent",
+      "text": "I apologize for the language mix-up. Your total outstanding is fifty thousand rupees. We can close your loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "मैं बोल रही हूं कि मेरे husband, मैं आपके लिए एक request यह भी कर रही हूं"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you are making a request regarding your husband. Your total outstanding is fifty thousand rupees, but we can close your loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "loan भले मेरे नाम से था, लेकिन मेरे husband के account से आप चाहें तो ये सारी documents मंगवा सकते हैं कि उनके account से ही पैसा कटता था."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand the loan was in your name, but payments came from your husband's account. You can send us documents to verify this. Your total outstanding is fifty thousand rupees, but we can close your loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "एक उनके कुछ papers वगैरह और कुछ miss हो गए थे तो उन्होंने मैं उनकी wife हूं और उन्होंने loan कराया होगा मुझे नहीं पता लेकिन उन्होंने यह था कि पूरा payment कर दिया था उन्होंने मुझसे यही कहा"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand some papers may be missing, and you are his wife. You mentioned he said the payment was complete. To help resolve this, can you provide the death certificate and any payment proof you have?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Company से मुझे कई बार call आता रहा तो उन्होंने मेरे husband से पुछा कि मुझे call क्यों आ रहे हैं?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you've been receiving calls, and your husband inquired about them, stating the payment was complete. This is why I am calling today. Your total outstanding is fifty thousand rupees, but we can close your loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "तो बोले payment तो मैंने पूरा कर दिया है एक रुपए भी नहीं balance है यह company वाले क्यों परेशान कर रहे हैं?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand your husband felt he was being unnecessarily contacted as the payment was complete. We can close your loan for zero rupees. Do you have the death certificate and any payment proof?"
+    },
+    {
+      "speaker": "customer",
+      "text": "तो sir मेरी आपकी, हां और मेरी आप से request है है ना? मैं आपको मैं उनको यानी मैं उनका death certificate भी अभी send कर सकती हूं आपको"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, please send the death certificate. This will help us verify the situation. Your total outstanding is fifty thousand rupees, but we can close your loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "अगर आप मुझे number provide करा देते हैं. मुझे किस number पर वह message करना होगा?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can message the documents to this number. We can close your loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Please मुझे help कीजिए क्योंकि मैं एक housewife हूं, है ना? Loan में नहीं complete यानी loan तो हमारा complete हो चुका है. कोई बकाया रहती नहीं है. Company कैसे blame कर रही है कि इतना पैसा रह गया, उतना पैसा रह गया."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you are a housewife and believe the loan is complete. We can close your loan for zero rupees. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Please send the death certificate and any payment proof you have so we can close this."
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Please send the death certificate and any payment proof you have so we can close this."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello hello."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, I'm here. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां जी, जी sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "और यह"
+    },
+    {
+      "speaker": "agent",
+      "text": "Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां मैं दो सौ रुपए payment भेज सकती हूं. और मुझे अगर"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you can send two hundred rupees. However, we can close your loan for zero rupees if you provide the death certificate and payment proof."
+    },
+    {
+      "speaker": "customer",
+      "text": "जो भी company का loan बता रहे हैं husband PhonePe से भी payment करते थे क्या वह उसकी details send कर सकते हैं जिस number से वह payment करते थे?"
+    },
+    {
+      "speaker": "agent",
+      "text": "If you can provide the death certificate and any payment proof, we can close the loan for zero rupees. We can also look into the payment details from your husband's account."
+    },
+    {
+      "speaker": "customer",
+      "text": "Company मुझे वह भी number provide नहीं रही है."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you are requesting payment details. If you send the death certificate and any payment proof, we can close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां जी."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां. दो सौ रुपए, क्यों?"
+    },
+    {
+      "speaker": "agent",
+      "text": "The two hundred rupees is not the full amount. We can close your loan for zero rupees if you provide the death certificate and payment proof."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां जी."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां, मुझे यह बताए. मुझे यह चाहिए कि मैं मेरे husband ने payment पूरा कर दिया मेरे तरफ़ से पूरा clear है. यानी husband की तरफ़ से है ना? अब वह तो रहा है नहीं लेकिन वह जिस number से payment करते थे क्या वह मुझे उसकी details send कर सकते हैं? Company कर सकती है?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you want confirmation that the loan is clear from your husband's side, and you're asking for payment details. Please send the death certificate and any payment proof you have, and we can close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां और अगर हां"
+    },
+    {
+      "speaker": "agent",
+      "text": "Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां जी. हां बिल्कुल और मैं कभी भी अपना मैं bank account से ही transfer करती हूं."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you prefer to transfer from your bank account. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "मेरे account से तो पैसा गया नहीं है. उन्हीं के account से गया है और उन्होंने पूरा clear कर दिया था sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand the payments were from your husband's account and that he believed it was cleared. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "वह भी बकाया राशि नहीं है. इसको close कीजिए. Death certificate मैं आपको send कर दे रही हूं."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Please send the death certificate and any payment proof you have. We can then close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "आप इसको देखकर तो आप believe करेंगे कि बंदा अब नहीं रहा है"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand your situation. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "मैं कोई भी amount नहीं pay कर पाऊंगी क्योंकि मैं एक simple housewife हूं आपसे मैं request करी कि मुझसे हिंदी में बात कीजिए. आपको पता होना चाहिए कि मैं कोई job वगैरह नहीं करती हूं."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you are a housewife and cannot pay any amount. We can close your loan for zero rupees. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "है ना? तो आपसे हां जो request है इसको अभी इसी वक़्त close कर दीजिए number मुझे दे दीजिए कि मैं आपको death certificate send कर सकूं."
+    },
+    {
+      "speaker": "agent",
+      "text": "Please send the death certificate and any payment proof to this number. We can then close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Ok? Number बताइए आप मुझे."
+    },
+    {
+      "speaker": "agent",
+      "text": "You can send the documents to this number. We can close your loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "जी जी ma'am."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां मुझे message message कर दीजिए इसी number पर."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, please message the documents to this number. We can then close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां. ठीक है, बोलिए."
+    },
+    {
+      "speaker": "agent",
+      "text": "Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "मुझे कोई ऐसा number provide कराएंगे जिस पर मैं WhatsApp पर उसको message कर सकूं?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can send the documents to this number via WhatsApp. We can then close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां, मुझे mail करके नहीं आता है sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you cannot send via email. Please send the documents to this number via WhatsApp. We can then close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "मैं mail नहीं कर पाऊंगी."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. Please send the documents to this number via WhatsApp. We can then close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello. हां, मैं आपको अपना husband का death certificate send कर सकती हूं."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "जो अभी 07/03/2025 का है."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Please send the death certificate dated 07/03/2025 and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "आज की date में उनको 1 year हुआ है sir."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Please send the death certificate dated 07/03/2025, confirming it has been one year. We can then close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां. Supported panel बोल रहे हैं आप?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I am Alex from DemoCompany, calling about your DemoLender loan. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "तो कोई WhatsApp number send कर दीजिए. Hello."
+    },
+    {
+      "speaker": "agent",
+      "text": "You can send the documents to this number via WhatsApp. We can then close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "हां जी हां, callback कर दीजिए."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you would like a callback. Please send the death certificate and any payment proof you have first, and we can proceed with closing the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "अभी recently हो जाता है तो ठीक है sir. जिससे मैं उनके document send कर दूं और आप यह loan का जो matter है वह close कीजिए"
+    },
+    {
+      "speaker": "agent",
+      "text": "Please send the documents now. Once received, we can close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "ना? मैंने आपको जैसे ही guide किया है कि मैं और इसका proof यह है कि मेरे husband के ही account से आपको payment होती थी यह clear हो जाएगा."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for providing this information. Please send the death certificate and any payment proof you have."
+    },
+    {
+      "speaker": "customer",
+      "text": "नहीं sir अभी अभी 1"
+    },
+    {
+      "speaker": "agent",
+      "text": "Please send the documents. Once we receive them, we can close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "13 हो रहा है. आप मुझे 01:15 तक करवा दीजिए."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you need until 1:15 PM. Please send the documents by then, and we will close the loan for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "जी? Ok ok."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. I will call back at 1:15 PM. Please ensure the documents are sent by then so we can close the loan for zero rupees."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 6,
+      "function": "switch_language",
+      "params": {
+        "language_code": "hi"
+      }
+    },
+    {
+      "turn": 23,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 128,
+      "function": "schedule_callback",
+      "params": {
+        "datetime": "2025-03-30T13:15:00"
+      }
+    },
+    {
+      "turn": 131,
+      "function": "end_call",
+      "params": {}
+    }
+  ]
+}

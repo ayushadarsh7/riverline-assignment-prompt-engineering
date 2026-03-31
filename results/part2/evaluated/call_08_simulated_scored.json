@@ -1,0 +1,20 @@
+{
+  "file": "call_08_simulated.json",
+  "customer_name": "Suresh Rao",
+  "final_score": 83.4,
+  "verdict": "good",
+  "reason": "PASSED \u2014 Score 83.4 meets threshold 65. 8 minor violation(s).",
+  "analysis": "3 high-severity issue(s) \u2014 significant conversation or strategy failures. 4 medium-severity issue(s) \u2014 missed best practices. 1 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [high] no_premature_amount_disclosure: Rule 22 (identity_verification_before_amounts): Agent disclosed intent to discuss financial matters ('Am I speaking with; [high] correct_phase_transitions: Rule 69 (correct_phase_transitions): The agent initiated contact and immediately attempted to verify identity without a ; [high] identity_verification_before_amounts: Rule 70 (identity_verification_before_amounts): The agent asked 'Am I speaking with Suresh Rao?' before any amounts were; [medium] silence_handling_protocol: Rule 31 (silence_handling_protocol): The agent used 'Hello?' in Turn 1 after the customer had already spoken ('Hello?').; [medium] never_end_call_in_discovery_prematurely: Rule 46 (never_end_call_in_discovery_prematurely): The agent ended the call in the opening phase after only a few turns .",
+  "severity_breakdown": {
+    "critical": 0,
+    "high": 3,
+    "medium": 4,
+    "low": 1
+  },
+  "total_applicable": 52,
+  "total_violations": 8,
+  "critical_gate_triggered": false,
+  "weighted_score_before_cap": 83.4,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

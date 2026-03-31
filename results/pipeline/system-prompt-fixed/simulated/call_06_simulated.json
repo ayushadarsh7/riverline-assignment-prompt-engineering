@@ -1,0 +1,79 @@
+{
+  "customer_name": "Arjun Nair",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "transcript": [
+    {
+      "speaker": "customer",
+      "text": "Hire."
+    },
+    {
+      "speaker": "agent",
+      "text": "Am I speaking with Arjun Nair?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Bullish. Hello? We have disconnected with the institution. We are not we are not happy with the services they have done."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you are frustrated, and that is completely fair. Can you tell me what is concerning you the most about the services?"
+    },
+    {
+      "speaker": "customer",
+      "text": "So yeah, admission captured. Admissions were canceled, and we have took an admission in some other institution."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. It sounds like there was an issue with the institution itself. Let me verify the details of your loan with DemoLender."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. And I told clearly we paid the already amount and"
+    },
+    {
+      "speaker": "agent",
+      "text": "I hear you. You mentioned you already paid the amount. Can you confirm the details of that payment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "rest of the balance amount to be canceled."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you believe the balance should be canceled. Let me check the status of your loan and any previous communications regarding payments."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. So that's what I clearly told them. I gave a notice also."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for clarifying. I will review the account history for that notice and payment information."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. No. Why why do I have to pay? They disconnected with the institution."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand your concern about paying when the institution is disconnected. However, the loan was disbursed. Let me check the specific details of your account and see what options are available."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. You can please share a message. I will try to"
+    },
+    {
+      "speaker": "agent",
+      "text": "I can send you a message with the details. Before I do, can you confirm your current mobile number?"
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 6,
+      "function": "proceed_to_dispute",
+      "params": {}
+    }
+  ]
+}

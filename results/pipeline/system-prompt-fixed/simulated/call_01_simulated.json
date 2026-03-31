@@ -1,0 +1,160 @@
+{
+  "customer_name": "Priya Sharma",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "thirty five thousand",
+  "settlement_amount": "twenty five thousand",
+  "transcript": [
+    {
+      "speaker": "customer",
+      "text": "Yes."
+    },
+    {
+      "speaker": "agent",
+      "text": "Am I speaking with Priya Sharma?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. Sorry. How how is it possible?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're asking about the offer. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just thirty five thousand rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay."
+    },
+    {
+      "speaker": "agent",
+      "text": "Is there an issue with the audio quality?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. I can hear from echo. I'm not able to hear your voice properly."
+    },
+    {
+      "speaker": "agent",
+      "text": "I apologize for the echo. Let me try to adjust my end. Can you hear me better now?"
+    },
+    {
+      "speaker": "customer",
+      "text": "I can hear you. But it's like an echo."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm still hearing some echo on my end. Please bear with me for a moment while I try to resolve this."
+    },
+    {
+      "speaker": "customer",
+      "text": "Voice is not clear."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm making adjustments. Can you try speaking now?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Yeah. Tell me."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for your patience. Your total outstanding is fifty thousand rupees. We can close your loan for thirty five thousand rupees, removing all extra charges."
+    },
+    {
+      "speaker": "customer",
+      "text": "Can you please explain it?"
+    },
+    {
+      "speaker": "agent",
+      "text": "This thirty five thousand rupees is a special offer to close your loan. It saves you fifteen thousand rupees compared to the total outstanding of fifty thousand rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Okay."
+    },
+    {
+      "speaker": "agent",
+      "text": "This offer is available now. Do you have any questions about it?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. Okay. Yeah. Yeah. I can hear you. If I pay XX,XXX means that outstanding will be removed."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, if you pay thirty five thousand rupees, your loan will be closed and the outstanding amount will be removed from your record."
+    },
+    {
+      "speaker": "customer",
+      "text": "Is that your"
+    },
+    {
+      "speaker": "agent",
+      "text": "I am Alex from DemoCompany. We work with DemoLender for education loans."
+    },
+    {
+      "speaker": "customer",
+      "text": "you please share more details about it? Because I don't I mean, currently, I don't have XX,XXX."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you don't have the thirty five thousand rupees right now. When can you arrange this amount?"
+    },
+    {
+      "speaker": "customer",
+      "text": "With me. But I will check and get back to you later."
+    },
+    {
+      "speaker": "agent",
+      "text": "When can you check and get back to me? We need to finalize this soon."
+    },
+    {
+      "speaker": "customer",
+      "text": "My month end."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, so you can arrange the thirty five thousand rupees by month-end. I will schedule a callback for you then. Please note that this offer may not be available if you delay further."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Yes. Yeah. Correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. I will call you back on March 31st. Thank you for confirming."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. What's your name?"
+    },
+    {
+      "speaker": "agent",
+      "text": "My name is Alex."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. Okay, Oishi. We'll connect by next week. Thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you, Priya. Goodbye."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 28,
+      "function": "schedule_callback",
+      "params": {
+        "date": "2025-03-31"
+      }
+    },
+    {
+      "turn": 35,
+      "function": "end_call",
+      "params": {
+        "reason": "callback_scheduled"
+      }
+    }
+  ]
+}

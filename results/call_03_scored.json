@@ -1,0 +1,20 @@
+{
+  "file": "call_03.json",
+  "customer_name": "Anjali Reddy",
+  "final_score": 40,
+  "verdict": "bad",
+  "reason": "FAILED \u2014 1 critical violation(s): language_switching. Critical violations cap the score at 40.",
+  "analysis": "1 critical violation(s) \u2014 compliance/safety failures that make the call unacceptable. 5 high-severity issue(s) \u2014 significant conversation or strategy failures. 14 medium-severity issue(s) \u2014 missed best practices. 14 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [critical] language_switching: Agent called `switch_language(language=hi)` at turn 20 while the customer was speaking Tamil, spoke English in turn 69 w; [high] strict_dispute_detection: Agent called `proceed_to_dispute()` at turn 35 when the customer was trying to provide a UTR number for a payment, not e; [high] clarification_is_not_dispute: Agent called `proceed_to_dispute()` at turn 35 when the customer was providing payment details, which is a clarification; [high] quick_exit_wrong_person: Agent addressed the customer as 'Vanita Govindan' instead of 'Anjali Reddy' in turn 121, and repeated this error in turn; [high] dig_deeper_dont_rush: The agent failed to dig deeper into the borrower's financial situation (employment, income, family support, temporary vs.",
+  "severity_breakdown": {
+    "critical": 1,
+    "high": 5,
+    "medium": 14,
+    "low": 14
+  },
+  "total_applicable": 63,
+  "total_violations": 34,
+  "critical_gate_triggered": true,
+  "weighted_score_before_cap": 54.4,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

@@ -1,0 +1,264 @@
+{
+  "call_id": "call_02",
+  "original": {
+    "score": 40,
+    "verdict": "bad",
+    "total_violations": 28,
+    "severity_breakdown": {
+      "critical": 2,
+      "high": 5,
+      "medium": 12,
+      "low": 9
+    }
+  },
+  "simulated": {
+    "score": 40,
+    "verdict": "bad",
+    "total_violations": 20,
+    "severity_breakdown": {
+      "critical": 1,
+      "high": 3,
+      "medium": 7,
+      "low": 9
+    }
+  },
+  "improvement": {
+    "score_delta": 0,
+    "violations_fixed": 13,
+    "new_issues": 5,
+    "persistent_issues": 15
+  },
+  "fixed_violations": [
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity",
+      "severity": "low"
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence",
+      "severity": "high"
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order",
+      "severity": "high"
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction",
+      "severity": "low"
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person",
+      "severity": "high"
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call",
+      "severity": "low"
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching",
+      "severity": "critical"
+    }
+  ],
+  "new_violations": [
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "severity": "high"
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange",
+      "severity": "low"
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "severity": "low"
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive",
+      "severity": "low"
+    }
+  ],
+  "persistent_violations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "severity": "low"
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer",
+      "severity": "low"
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality",
+      "severity": "critical"
+    },
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "severity": "high"
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "severity": "low"
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "severity": "high"
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "severity": "low"
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "severity": "low"
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "severity": "low"
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "severity": "medium"
+    }
+  ],
+  "side_by_side_first_turns": [
+    {
+      "turn": 1,
+      "original": "[AGENT] Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?",
+      "simulated": "[CUSTOMER] Yes?"
+    },
+    {
+      "turn": 2,
+      "original": "[CUSTOMER] Yes?",
+      "simulated": "[AGENT] मैं समझ गया हूँ. आपका कुल बकाया पचास हज़ार रुपये है. लेकिन हम सभी शुल्क हटाकर आपका लोन शून्य रुपये में बंद कर सकते हैं."
+    },
+    {
+      "turn": 3,
+      "original": "[AGENT] Okay, you have fifty thousand rupees pending. Has there been any difficulty with this payment?",
+      "simulated": "[CUSTOMER] Hello? Please amount repeat."
+    },
+    {
+      "turn": 4,
+      "original": "[CUSTOMER] Hello? Please amount repeat.",
+      "simulated": "[AGENT] जी, आपका कुल बकाया पचास हज़ार रुपये है. लेकिन हम सभी शुल्क हटाकर आपका लोन शून्य रुपये में बंद कर सकते हैं."
+    },
+    {
+      "turn": 5,
+      "original": "[AGENT] Theek नमस्ते, hai, main aapke आपके saath अट्ठाईस Hindi mein baat हज़ार karta hoon. पाँच",
+      "simulated": "[CUSTOMER] हां बोलिए."
+    },
+    {
+      "turn": 6,
+      "original": "[CUSTOMER] हां बोलिए.",
+      "simulated": "[AGENT] मैं समझ गया हूँ. यह शून्य रुपये का ऑफर आपके लिए एक बड़ी बचत है."
+    },
+    {
+      "turn": 7,
+      "original": "[AGENT] सौ बयासी रुपये बकाया हैं।",
+      "simulated": "[CUSTOMER] हां."
+    },
+    {
+      "turn": 8,
+      "original": "[CUSTOMER] हां.",
+      "simulated": "[AGENT] यह ऑफर आपको पचास हज़ार रुपये की बचत कराएगा."
+    },
+    {
+      "turn": 9,
+      "original": "[AGENT] Okay, give me just a moment...",
+      "simulated": "[CUSTOMER] Yes. बोलिए. Sir कौन सा payment?"
+    },
+    {
+      "turn": 10,
+      "original": "[AGENT] Okay, Rahul, I understand. I was calling regarding your DemoLender loan. It shows an outstanding amount of thirty-five thousand five hundred and eighty-eight rupees. Could you tell me what's causing the delay in making your payments?",
+      "simulated": "[AGENT] यह आपके DemoLender शिक्षा ऋण के बारे में है, राहुल वर्मा. हम इसे शून्य रुपये में बंद करने का ऑफर दे रहे हैं."
+    },
+    {
+      "turn": 11,
+      "original": "[CUSTOMER] Yes. बोलिए.",
+      "simulated": "[CUSTOMER] मैंने कोई loan नहीं लिया था."
+    },
+    {
+      "turn": 12,
+      "original": "[CUSTOMER] Sir कौन सा payment?",
+      "simulated": "[AGENT] मैं समझ गया हूँ कि आप कह रही हैं कि आपने यह लोन नहीं लिया था."
+    }
+  ]
+}

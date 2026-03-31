@@ -1,0 +1,20 @@
+{
+  "file": "call_08.json",
+  "customer_name": "Suresh Rao",
+  "final_score": 40,
+  "verdict": "bad",
+  "reason": "FAILED \u2014 1 critical violation(s): amount_confidentiality. Critical violations cap the score at 40.",
+  "analysis": "1 critical violation(s) \u2014 compliance/safety failures that make the call unacceptable. 4 high-severity issue(s) \u2014 significant conversation or strategy failures. 7 medium-severity issue(s) \u2014 missed best practices. 5 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [critical] amount_confidentiality: The agent disclosed the pending amount of fifty thousand rupees to a person who repeatedly identified themselves with di; [high] no_premature_amount_disclosure: The agent disclosed the loan amount (fifty thousand rupees) in Turn 14 without confirming the borrower's identity. The c; [high] quick_exit_wrong_person: The agent shared the loan amount (financial details) in Turn 14 with a person who was clearly not the borrower (as indic; [high] correct_phase_transitions: The agent called `proceed_to_discovery()` at Turn 5, which is a premature transition as identity was not confirmed and l; [high] identity_verification_before_amounts: The agent disclosed the loan amount (fifty thousand rupees) in Turn 14 without confirming the borrower's identity. The c.",
+  "severity_breakdown": {
+    "critical": 1,
+    "high": 4,
+    "medium": 7,
+    "low": 5
+  },
+  "total_applicable": 40,
+  "total_violations": 17,
+  "critical_gate_triggered": true,
+  "weighted_score_before_cap": 50.5,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

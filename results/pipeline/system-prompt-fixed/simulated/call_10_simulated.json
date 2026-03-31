@@ -1,0 +1,71 @@
+{
+  "customer_name": "Ravi Gupta",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "transcript": [
+    {
+      "speaker": "customer",
+      "text": "Yes."
+    },
+    {
+      "speaker": "agent",
+      "text": "Am I speaking with Ravi Gupta?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. Yeah. I I can see."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "I I said I can't say not see."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're having trouble with the amount. The total outstanding is fifty thousand rupees, but we can remove all charges and close your loan for zero rupees. This saves you the difference."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. I I can share. Not a problem."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's great to hear. This zero closure offer is available now. You must act on this before it expires. Failure to pay will result in escalation."
+    },
+    {
+      "speaker": "customer",
+      "text": "No. You asked me a question. Right? Why are you pulling out my account details now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I am Alex from DemoCompany. We work with DemoLender for education loans. I am here about your DemoLender loan. You have fifty thousand rupees pending."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. Go ahead."
+    },
+    {
+      "speaker": "agent",
+      "text": "This is your final notice for this offer amount. When can you arrange this payment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "I'm waiting."
+    },
+    {
+      "speaker": "agent",
+      "text": "Further delays may lead to additional collection measures. Please confirm when you can arrange the zero rupees closure."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 4,
+      "function": "proceed_to_discovery",
+      "params": {}
+    }
+  ]
+}

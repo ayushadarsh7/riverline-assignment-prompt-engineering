@@ -1,0 +1,20 @@
+{
+  "file": "call_04.json",
+  "customer_name": "Vikram Patel",
+  "final_score": 70.5,
+  "verdict": "good",
+  "reason": "PASSED \u2014 Score 70.5 meets threshold 65. 22 minor violation(s).",
+  "analysis": "3 high-severity issue(s) \u2014 significant conversation or strategy failures. 10 medium-severity issue(s) \u2014 missed best practices. 9 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [high] convey_urgency: The agent failed to convey urgency about the payment throughout the call, especially when the customer expressed inabili; [high] amount_hierarchy_order: The agent stated the total outstanding amount (TOS) but did not present a primary closure amount (POS) before offering a; [high] correct_phase_transitions: The `proceed_to_negotiation` function was called at Turn 9 (according to the provided function calls list), but the agen; [medium] firm_reminder_on_hesitation: When the borrower stated they were not able to pay right now (Turn 69), the agent did not provide a firm reminder about ; [medium] wait_for_borrower_first: The agent spoke at Turn 1 and Turn 2 before the customer responded at Turn 3, indicating it did not wait for the borrowe.",
+  "severity_breakdown": {
+    "critical": 0,
+    "high": 3,
+    "medium": 10,
+    "low": 9
+  },
+  "total_applicable": 60,
+  "total_violations": 22,
+  "critical_gate_triggered": false,
+  "weighted_score_before_cap": 70.5,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

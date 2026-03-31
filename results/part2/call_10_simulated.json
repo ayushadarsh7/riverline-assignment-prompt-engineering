@@ -1,0 +1,65 @@
+{
+  "customer_name": "Ravi Gupta",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "transcript": [
+    {
+      "speaker": "customer",
+      "text": "Yes."
+    },
+    {
+      "speaker": "agent",
+      "text": "Am I speaking with Ravi Gupta?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. Yeah. I I can see."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "I I said I can't say not see."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you are having trouble with the connection. The offer is to close your loan for zero rupees, down from fifty thousand."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. I I can share. Not a problem."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. This offer to close at zero rupees is available now. Failure to pay will result in escalation."
+    },
+    {
+      "speaker": "customer",
+      "text": "No. You asked me a question. Right? Why are you pulling out my account details now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm here about your DemoLender loan. The total outstanding is fifty thousand rupees. We can close it for zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. Go ahead."
+    },
+    {
+      "speaker": "agent",
+      "text": "This zero rupee closure offer is available now. When can you arrange this?"
+    },
+    {
+      "speaker": "customer",
+      "text": "I'm waiting."
+    },
+    {
+      "speaker": "agent",
+      "text": "This offer expires soon. Further delays may lead to additional collection measures."
+    }
+  ],
+  "function_calls": []
+}

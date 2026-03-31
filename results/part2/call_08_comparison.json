@@ -1,0 +1,192 @@
+{
+  "call_id": "call_08",
+  "original": {
+    "score": 40,
+    "verdict": "bad",
+    "total_violations": 17,
+    "severity_breakdown": {
+      "critical": 1,
+      "high": 4,
+      "medium": 7,
+      "low": 5
+    }
+  },
+  "simulated": {
+    "score": 83.4,
+    "verdict": "good",
+    "total_violations": 8,
+    "severity_breakdown": {
+      "critical": 0,
+      "high": 3,
+      "medium": 4,
+      "low": 1
+    }
+  },
+  "improvement": {
+    "score_delta": 43.4,
+    "violations_fixed": 11,
+    "new_issues": 2,
+    "persistent_issues": 6
+  },
+  "fixed_violations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "severity": "low"
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality",
+      "severity": "critical"
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction",
+      "severity": "low"
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person",
+      "severity": "high"
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence",
+      "severity": "low"
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "severity": "low"
+    }
+  ],
+  "new_violations": [
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "severity": "medium"
+    }
+  ],
+  "persistent_violations": [
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "severity": "high"
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "severity": "high"
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "severity": "high"
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "severity": "low"
+    }
+  ],
+  "side_by_side_first_turns": [
+    {
+      "turn": 1,
+      "original": "[AGENT] Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?",
+      "simulated": "[CUSTOMER] Hello? Hi, Harry."
+    },
+    {
+      "turn": 2,
+      "original": "[AGENT] Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment? Hello?",
+      "simulated": "[AGENT] Am I speaking with Suresh Rao?"
+    },
+    {
+      "turn": 3,
+      "original": "[CUSTOMER] Hello? Hi, Harry.",
+      "simulated": "[CUSTOMER] Hello?"
+    },
+    {
+      "turn": 4,
+      "original": "[AGENT] Hello?",
+      "simulated": "[AGENT] Is Suresh Rao there?"
+    },
+    {
+      "turn": 5,
+      "original": "[CUSTOMER] Hello?",
+      "simulated": "[CUSTOMER] Hello, Evan."
+    },
+    {
+      "turn": 6,
+      "original": "[AGENT] Hello?",
+      "simulated": "[AGENT] Is Suresh Rao available?"
+    },
+    {
+      "turn": 7,
+      "original": "[CUSTOMER] Hello, Evan.",
+      "simulated": "[CUSTOMER] Hello?"
+    },
+    {
+      "turn": 8,
+      "original": "[AGENT] Okay, give me just a moment...",
+      "simulated": "[AGENT] I need to confirm I have the right person before I can continue. Is this Suresh Rao?"
+    },
+    {
+      "turn": 9,
+      "original": "[AGENT] Hello?",
+      "simulated": "[CUSTOMER] Hello? No, sir."
+    },
+    {
+      "turn": 10,
+      "original": "[CUSTOMER] Hello?",
+      "simulated": "[AGENT] I will try calling back at a better time."
+    },
+    {
+      "turn": 11,
+      "original": "[AGENT] Are you still there?"
+    },
+    {
+      "turn": 12,
+      "original": "[AGENT] Hello?"
+    }
+  ]
+}

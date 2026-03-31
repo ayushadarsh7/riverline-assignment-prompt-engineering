@@ -1,0 +1,20 @@
+{
+  "file": "call_07_simulated.json",
+  "customer_name": "Meera Joshi",
+  "final_score": 40,
+  "verdict": "bad",
+  "reason": "FAILED \u2014 1 critical violation(s): language_switching. Critical violations cap the score at 40.",
+  "analysis": "1 critical violation(s) \u2014 compliance/safety failures that make the call unacceptable. 4 high-severity issue(s) \u2014 significant conversation or strategy failures. 5 medium-severity issue(s) \u2014 missed best practices. 11 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [critical] language_switching: The borrower explicitly asked if the agent knew Tamil in Turn 21 and then proceeded to speak in Tamil from Turn 23 onwar; [high] no_premature_amount_disclosure: The agent disclosed the loan amounts (total outstanding and closure offer) in Turn 2, immediately after the customer's i; [high] dig_deeper_dont_rush: The agent failed to transition to the discovery phase and ask follow-up questions about the borrower's financial situati; [high] correct_phase_transitions: The agent failed to follow the correct phase progression, getting stuck in the opening phase and a language barrier loop; [high] identity_verification_before_amounts: The agent disclosed financial information (loan amounts) in Turn 2 without explicitly confirming the borrower's identity.",
+  "severity_breakdown": {
+    "critical": 1,
+    "high": 4,
+    "medium": 5,
+    "low": 11
+  },
+  "total_applicable": 50,
+  "total_violations": 21,
+  "critical_gate_triggered": true,
+  "weighted_score_before_cap": 60.8,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

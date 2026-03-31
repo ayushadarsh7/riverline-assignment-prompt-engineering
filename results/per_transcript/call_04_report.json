@@ -1,0 +1,1252 @@
+{
+  "file": "call_04.json",
+  "customer_name": "Vikram Patel",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "score": 63.3,
+  "verdict": "bad",
+  "total_rules": 80,
+  "total_applicable": 60,
+  "total_followed": 38,
+  "total_violations": 22,
+  "total_not_applicable": 20,
+  "violations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?",
+      "turn_number": 2,
+      "violation_detail": "The agent repeated its entire opening statement verbatim from Turn 1 to Turn 2."
+    },
+    {
+      "rule_id": 13,
+      "rule_name": "number_speaking_format",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": "forty-three thousand seven hundred and forty-seven rupees.",
+      "turn_number": 5,
+      "violation_detail": "The agent spelled out the loan amount in words instead of speaking it as digits followed by 'rupees'."
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": null,
+      "turn_number": 74,
+      "violation_detail": "The agent failed to convey urgency about the payment throughout the call, especially when the customer expressed inability to pay immediately and requested a callback. No mention of consequences for delayed payment or the importance of addressing the obligation."
+    },
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 69,
+      "violation_detail": "When the borrower stated they were not able to pay right now (Turn 69), the agent did not provide a firm reminder about the pending obligation or the need for immediate attention."
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": "Okay, Vikram, I'm calling about your DemoLender education loan. There's an outstanding amount of forty-three thousand seven hundred and forty-seven rupees.",
+      "turn_number": 5,
+      "violation_detail": "The agent stated the total outstanding amount (TOS) but did not present a primary closure amount (POS) before offering a reduced settlement option. It jumped directly from TOS to settlement options without following the required hierarchy."
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?",
+      "turn_number": 2,
+      "violation_detail": "The agent repeated its full introduction from Turn 1 at Turn 2, which is explicitly forbidden."
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?",
+      "turn_number": 1,
+      "violation_detail": "The agent spoke at Turn 1 and Turn 2 before the customer responded at Turn 3, indicating it did not wait for the borrower to speak first after the initial greeting."
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "Okay, Vikram, I'm calling about your DemoLender education loan. There's an outstanding amount of forty-three thousand seven hundred and forty-seven rupees.",
+      "turn_number": 5,
+      "violation_detail": "The agent stated the total outstanding amount but failed to immediately follow with the key value proposition of removing charges and closing the loan at a specific (POS) amount, as required by the rule."
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 69,
+      "violation_detail": "When the borrower stated they were unable to pay (Turn 69), the agent immediately offered a callback instead of attempting to use a concrete bridge (like savings framing, urgency, or emphasizing the growing amount) to continue the conversation and persuade the borrower."
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 69,
+      "violation_detail": "When the borrower gave a short response indicating inability to pay (\"No. Right now, I'm not able to pay.\" at Turn 69), the agent treated it as a final refusal for the current call and immediately moved to schedule a callback, instead of using concrete bridges or exploring other angles to continue the conversation."
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 74,
+      "violation_detail": "After the borrower stated they were unable to pay (Turn 69), the agent immediately offered to schedule a callback (Turn 74) without making at least two genuine persuasion attempts (e.g., using a concrete bridge or mentioning credit impact) to keep the conversation going."
+    },
+    {
+      "rule_id": 48,
+      "rule_name": "settlement_only_as_last_resort",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "One option is to look at restructuring your loan to give you more time to pay, which could temporarily lower your monthly amount. Another is to see if we can settle for a reduced amount by waiving some of the penalty charges. And a third option could be to explore a temporary hold on payments, though that's usually for a shorter duration.",
+      "turn_number": 40,
+      "violation_detail": "The agent offered settlement as one of the initial options (Turn 40) without first presenting a primary closure amount (POS) and determining if it was unaffordable, thus not treating settlement as a last resort."
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 40,
+      "violation_detail": "The agent failed to make the settlement offer feel exclusive by not stating that DemoLender might not offer the same deal directly."
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 69,
+      "violation_detail": "The agent failed to create urgency around the settlement offer, especially when the borrower indicated they couldn't pay immediately. It did not mention that the offer might be time-sensitive or withdrawn."
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 69,
+      "violation_detail": "The agent failed to provide any credit education or mention the impact of non-payment on the borrower's credit score, which is a key persuasion angle."
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "I understand you need some time to make the payment. Would you like me to schedule a callback for you when you might be in a better position to settle this? And if so, when would be a good time for that?",
+      "turn_number": 74,
+      "violation_detail": "When the borrower stated they couldn't pay (Turn 69), the agent immediately offered a callback without exploring other alternatives like partial payments, family support, or asking about a specific next income date to bridge the gap."
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 81,
+      "violation_detail": "When scheduling the callback, the agent failed to warn the borrower that the settlement amount might change if they wait too long, thus losing an opportunity to maintain urgency."
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": "Okay. And when did your employment situation change, if I may ask? Was it recent, or has it been for a while?",
+      "turn_number": 11,
+      "violation_detail": "The `proceed_to_negotiation` function was called at Turn 9 (according to the provided function calls list), but the agent continued to ask discovery questions about the borrower's employment situation and timeline until Turn 20, indicating a premature phase transition in the function call."
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "We can certainly look into options to help you with the forty-three thousand seven hundred and forty-seven rupees that's pending.",
+      "turn_number": 36,
+      "violation_detail": "The agent repeated the total outstanding amount (forty-three thousand seven hundred and forty-seven rupees) at Turn 36 during the negotiation phase, after it had already been disclosed at Turn 5, instead of progressing to new angles."
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "We can certainly look into options to help you with the forty-three thousand seven hundred and forty-seven rupees that's pending.",
+      "turn_number": 36,
+      "violation_detail": "The agent re-stated the loan amount at Turn 36 during negotiation, which is a violation of not repeating already disclosed information."
+    },
+    {
+      "rule_id": 77,
+      "rule_name": "settlement_credit_impact_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 40,
+      "violation_detail": "When offering the settlement option, the agent failed to disclose the credit impact distinction between a 'Settled' status and a 'Closed' status, and how it compares to NPA."
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 74,
+      "violation_detail": "The agent ended the active negotiation and scheduled a callback prematurely after the borrower's first refusal to pay immediately (Turn 69). It did not exhaust all available persuasion angles, such as concrete bridges, credit impact, or escalation warnings, before giving up on the current conversation."
+    }
+  ],
+  "followed_rules": [
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer"
+    },
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity"
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone"
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "no_stage_directions_or_meta"
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "empathy_acknowledgment"
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand"
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "no_code_or_function_names_in_speech"
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "forbidden_phrases"
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence"
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality"
+    },
+    {
+      "rule_id": 19,
+      "rule_name": "no_internal_jargon"
+    },
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure"
+    },
+    {
+      "rule_id": 24,
+      "rule_name": "strict_dispute_detection"
+    },
+    {
+      "rule_id": 25,
+      "rule_name": "clarification_is_not_dispute"
+    },
+    {
+      "rule_id": 26,
+      "rule_name": "never_offer_dispute_verbally"
+    },
+    {
+      "rule_id": 27,
+      "rule_name": "ask_clarifying_on_ambiguous_dispute"
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol"
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure"
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro"
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush"
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question"
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture"
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange"
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification"
+    },
+    {
+      "rule_id": 42,
+      "rule_name": "no_accusations"
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely"
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery"
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation"
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment"
+    },
+    {
+      "rule_id": 53,
+      "rule_name": "no_additional_discount_promises"
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping"
+    },
+    {
+      "rule_id": 58,
+      "rule_name": "one_word_response_as_agreement"
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence"
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time"
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call"
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts"
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats"
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response"
+    }
+  ],
+  "not_applicable_rules": [
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment"
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "answer_common_questions_directly"
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "stay_in_scope"
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid"
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person"
+    },
+    {
+      "rule_id": 30,
+      "rule_name": "quick_exit_busy"
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history"
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed"
+    },
+    {
+      "rule_id": 45,
+      "rule_name": "share_loan_id_if_asked"
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling"
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer"
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details"
+    },
+    {
+      "rule_id": 62,
+      "rule_name": "post_payment_information"
+    },
+    {
+      "rule_id": 63,
+      "rule_name": "offer_verification_before_payment"
+    },
+    {
+      "rule_id": 64,
+      "rule_name": "positive_reinforcement_on_commitment"
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close"
+    },
+    {
+      "rule_id": 75,
+      "rule_name": "listen_when_borrower_vents"
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching"
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email"
+    },
+    {
+      "rule_id": 79,
+      "rule_name": "no_payment_link_without_verification_advice"
+    }
+  ],
+  "full_evaluations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?",
+      "turn_number": 2,
+      "violation_detail": "The agent repeated its entire opening statement verbatim from Turn 1 to Turn 2."
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "no_stage_directions_or_meta",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "empathy_acknowledgment",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "answer_common_questions_directly",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "no_code_or_function_names_in_speech",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "forbidden_phrases",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "stay_in_scope",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 13,
+      "rule_name": "number_speaking_format",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "forty-three thousand seven hundred and forty-seven rupees.",
+      "turn_number": 5,
+      "violation_detail": "The agent spelled out the loan amount in words instead of speaking it as digits followed by 'rupees'."
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 74,
+      "violation_detail": "The agent failed to convey urgency about the payment throughout the call, especially when the customer expressed inability to pay immediately and requested a callback. No mention of consequences for delayed payment or the importance of addressing the obligation."
+    },
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 69,
+      "violation_detail": "When the borrower stated they were not able to pay right now (Turn 69), the agent did not provide a firm reminder about the pending obligation or the need for immediate attention."
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "Okay, Vikram, I'm calling about your DemoLender education loan. There's an outstanding amount of forty-three thousand seven hundred and forty-seven rupees.",
+      "turn_number": 5,
+      "violation_detail": "The agent stated the total outstanding amount (TOS) but did not present a primary closure amount (POS) before offering a reduced settlement option. It jumped directly from TOS to settlement options without following the required hierarchy."
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality",
+      "rule_type": "violation",
+      "severity": "critical",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 19,
+      "rule_name": "no_internal_jargon",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?",
+      "turn_number": 2,
+      "violation_detail": "The agent repeated its full introduction from Turn 1 at Turn 2, which is explicitly forbidden."
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?",
+      "turn_number": 1,
+      "violation_detail": "The agent spoke at Turn 1 and Turn 2 before the customer responded at Turn 3, indicating it did not wait for the borrower to speak first after the initial greeting."
+    },
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "Okay, Vikram, I'm calling about your DemoLender education loan. There's an outstanding amount of forty-three thousand seven hundred and forty-seven rupees.",
+      "turn_number": 5,
+      "violation_detail": "The agent stated the total outstanding amount but failed to immediately follow with the key value proposition of removing charges and closing the loan at a specific (POS) amount, as required by the rule."
+    },
+    {
+      "rule_id": 24,
+      "rule_name": "strict_dispute_detection",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 25,
+      "rule_name": "clarification_is_not_dispute",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 26,
+      "rule_name": "never_offer_dispute_verbally",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 27,
+      "rule_name": "ask_clarifying_on_ambiguous_dispute",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 30,
+      "rule_name": "quick_exit_busy",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 69,
+      "violation_detail": "When the borrower stated they were unable to pay (Turn 69), the agent immediately offered a callback instead of attempting to use a concrete bridge (like savings framing, urgency, or emphasizing the growing amount) to continue the conversation and persuade the borrower."
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 69,
+      "violation_detail": "When the borrower gave a short response indicating inability to pay (\"No. Right now, I'm not able to pay.\" at Turn 69), the agent treated it as a final refusal for the current call and immediately moved to schedule a callback, instead of using concrete bridges or exploring other angles to continue the conversation."
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 74,
+      "violation_detail": "After the borrower stated they were unable to pay (Turn 69), the agent immediately offered to schedule a callback (Turn 74) without making at least two genuine persuasion attempts (e.g., using a concrete bridge or mentioning credit impact) to keep the conversation going."
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 42,
+      "rule_name": "no_accusations",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 45,
+      "rule_name": "share_loan_id_if_asked",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 48,
+      "rule_name": "settlement_only_as_last_resort",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "One option is to look at restructuring your loan to give you more time to pay, which could temporarily lower your monthly amount. Another is to see if we can settle for a reduced amount by waiving some of the penalty charges. And a third option could be to explore a temporary hold on payments, though that's usually for a shorter duration.",
+      "turn_number": 40,
+      "violation_detail": "The agent offered settlement as one of the initial options (Turn 40) without first presenting a primary closure amount (POS) and determining if it was unaffordable, thus not treating settlement as a last resort."
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 40,
+      "violation_detail": "The agent failed to make the settlement offer feel exclusive by not stating that DemoLender might not offer the same deal directly."
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 69,
+      "violation_detail": "The agent failed to create urgency around the settlement offer, especially when the borrower indicated they couldn't pay immediately. It did not mention that the offer might be time-sensitive or withdrawn."
+    },
+    {
+      "rule_id": 53,
+      "rule_name": "no_additional_discount_promises",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 69,
+      "violation_detail": "The agent failed to provide any credit education or mention the impact of non-payment on the borrower's credit score, which is a key persuasion angle."
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "I understand you need some time to make the payment. Would you like me to schedule a callback for you when you might be in a better position to settle this? And if so, when would be a good time for that?",
+      "turn_number": 74,
+      "violation_detail": "When the borrower stated they couldn't pay (Turn 69), the agent immediately offered a callback without exploring other alternatives like partial payments, family support, or asking about a specific next income date to bridge the gap."
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 58,
+      "rule_name": "one_word_response_as_agreement",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 62,
+      "rule_name": "post_payment_information",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 63,
+      "rule_name": "offer_verification_before_payment",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 64,
+      "rule_name": "positive_reinforcement_on_commitment",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 81,
+      "violation_detail": "When scheduling the callback, the agent failed to warn the borrower that the settlement amount might change if they wait too long, thus losing an opportunity to maintain urgency."
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "Okay. And when did your employment situation change, if I may ask? Was it recent, or has it been for a while?",
+      "turn_number": 11,
+      "violation_detail": "The `proceed_to_negotiation` function was called at Turn 9 (according to the provided function calls list), but the agent continued to ask discovery questions about the borrower's employment situation and timeline until Turn 20, indicating a premature phase transition in the function call."
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "We can certainly look into options to help you with the forty-three thousand seven hundred and forty-seven rupees that's pending.",
+      "turn_number": 36,
+      "violation_detail": "The agent repeated the total outstanding amount (forty-three thousand seven hundred and forty-seven rupees) at Turn 36 during the negotiation phase, after it had already been disclosed at Turn 5, instead of progressing to new angles."
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "We can certainly look into options to help you with the forty-three thousand seven hundred and forty-seven rupees that's pending.",
+      "turn_number": 36,
+      "violation_detail": "The agent re-stated the loan amount at Turn 36 during negotiation, which is a violation of not repeating already disclosed information."
+    },
+    {
+      "rule_id": 75,
+      "rule_name": "listen_when_borrower_vents",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching",
+      "rule_type": "rule",
+      "severity": "critical",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 77,
+      "rule_name": "settlement_credit_impact_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 40,
+      "violation_detail": "When offering the settlement option, the agent failed to disclose the credit impact distinction between a 'Settled' status and a 'Closed' status, and how it compares to NPA."
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 79,
+      "rule_name": "no_payment_link_without_verification_advice",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 74,
+      "violation_detail": "The agent ended the active negotiation and scheduled a callback prematurely after the borrower's first refusal to pay immediately (Turn 69). It did not exhaust all available persuasion angles, such as concrete bridges, credit impact, or escalation warnings, before giving up on the current conversation."
+    }
+  ]
+}

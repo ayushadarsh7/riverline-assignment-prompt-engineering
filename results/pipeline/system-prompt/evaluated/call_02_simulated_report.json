@@ -1,0 +1,1242 @@
+{
+  "file": "call_02_simulated.json",
+  "customer_name": "Rahul Verma",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "score": 69.7,
+  "verdict": "bad",
+  "total_rules": 80,
+  "total_applicable": 66,
+  "total_followed": 46,
+  "total_violations": 20,
+  "total_not_applicable": 14,
+  "violations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "मैं समझ गया हूँ. अब मैं आपसे हिंदी में ही बात करूँगा. कृपया मुझे बताएं कि आप क्या कहना चाहती हैं.",
+      "turn_number": 38,
+      "violation_detail": "The agent repeatedly used the exact same phrase to assure the customer about speaking Hindi (Turn 36, 38). More critically, the agent repeatedly stated the zero-rupee offer and the savings amount (e.g., Turn 54, 56, 58, 62, 66, 74, 84, 86, 90, 92) without progressing the conversation or rephrasing. It also repeated the email address multiple times (e.g., Turn 32, 52, 94, 96, 98, 102, 114)."
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "मैं समझ गया हूँ कि आप कह रही हैं कि आपने यह लोन नहीं लिया था.",
+      "turn_number": 12,
+      "violation_detail": "The agent frequently echoed the customer's statements, such as in Turn 12, 16, 20, 44, 48, 50, 66, 70, 74, 78, 82, 84, 86, 88, 90, 92, 104, 106, 108, 112, 118, 120, 122."
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality",
+      "rule_type": "violation",
+      "severity": "critical",
+      "agent_message": "आपका कुल बकाया पचास हज़ार रुपये है. लेकिन हम सभी शुल्क हटाकर आपका लोन शून्य रुपये में बंद कर सकते हैं.",
+      "turn_number": 2,
+      "violation_detail": "The agent disclosed the total outstanding and closure amount in Turn 2, before confirming the borrower's identity (which happened in Turn 10)."
+    },
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "rule_type": "violation",
+      "severity": "high",
+      "agent_message": "आपका कुल बकाया पचास हज़ार रुपये है. लेकिन हम सभी शुल्क हटाकर आपका लोन शून्य रुपये में बंद कर सकते हैं.",
+      "turn_number": 2,
+      "violation_detail": "The agent disclosed the loan amounts (TOS and POS) in Turn 2, which was before the borrower's identity was confirmed in Turn 10."
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 54,
+      "violation_detail": "After the borrower repeatedly claimed the loan was fully paid by her husband (e.g., Turn 19, 43, 47, 53, 77, 83, 85), the agent continued to pitch the zero-rupee offer (e.g., Turn 54, 56, 58, 62, 66, 74, 76, 84, 86, 90, 92) instead of collecting details and ending the call with 'claims_already_paid'."
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "जी, क्या आप मुझे सुन पा रही हैं?",
+      "turn_number": 60,
+      "violation_detail": "The agent used a silence handling phrase (\"जी, क्या आप मुझे सुन पा रही हैं?\") in Turn 60 when the customer had already spoken (\"Hello hello\" in Turn 59), which is a violation of the silence protocol."
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": "मैं आपकी स्थिति समझता हूँ. हमारे रिकॉर्ड्स के अनुसार, आपका कुल बकाया पचास हज़ार रुपये है. हालांकि, हम सभी शुल्क हटाकर आपका लोन शून्य रुपये में बंद कर सकते हैं.",
+      "turn_number": 54,
+      "violation_detail": "The agent failed to dig deeper into the borrower's financial situation after she stated she was a \"simple housewife\" and could not pay (Turn 53, 89). Instead of asking follow-up questions about her income or support, the agent immediately re-pitched the zero-rupee offer (Turn 54, 90). Also, when the customer offered 200 rupees (Turn 65, 73), the agent dismissed it by repeating the zero-rupee offer (Turn 66, 74) instead of probing the reason for the 200 rupees or exploring other payment options."
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": "मैं समझ गया हूँ कि आप मृत्यु प्रमाण पत्र भेजना चाहती हैं. आप इसे support@demolender.com पर ईमेल कर सकती हैं. हालांकि, हमारे रिकॉर्ड्स के अनुसार, यह लोन अभी भी बकाया है, और शून्य रुपये का ऑफर इसे बंद करने का सबसे अच्छा तरीका है.",
+      "turn_number": 86,
+      "violation_detail": "The agent engaged in a circular exchange from Turn 54 onwards, repeatedly pitching the zero-rupee offer and asking for documents, while the customer repeatedly claimed the loan was paid and asked for company payment details. This went on for many turns without significant progress."
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 103,
+      "violation_detail": "The agent failed to adapt its approach to the borrower's stated inability to email documents (Turn 103, 105) and continued to insist on email as the only method, only offering to ask for help from family/friends instead of exploring alternative methods the company could provide."
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 54,
+      "violation_detail": "Despite the borrower repeatedly claiming the loan was fully paid (e.g., Turn 19, 43, 47, 53, 77, 83, 85), the agent did not apologize and end the call, but instead continued to re-pitch the zero-rupee offer."
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "मैं आपकी स्थिति समझता हूँ. हमारे रिकॉर्ड्स के अनुसार, आपका कुल बकाया पचास हज़ार रुपये है. हालांकि, हम सभी शुल्क हटाकर आपका लोन शून्य रुपये में बंद कर सकते हैं.",
+      "turn_number": 54,
+      "violation_detail": "The agent repeatedly presented the zero-rupee closure offer (a payment option) from Turn 54 onwards, even though the call was still in the dispute/discovery phase and the customer was primarily focused on proving payment and sending documents."
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 58,
+      "violation_detail": "The agent failed to make the zero-rupee offer feel exclusive by stating something like 'We work directly with DemoLender. They may not offer the same deal directly.'"
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "मैं आपकी स्थिति समझता हूँ, राहुल वर्मा. इसीलिए हम आपको यह विशेष ऑफर दे रहे हैं कि आप अपना लोन शून्य रुपये में बंद कर सकती हैं. यह आपके लिए सबसे अच्छा विकल्प है.",
+      "turn_number": 90,
+      "violation_detail": "When the borrower stated she could not pay any amount due to being a housewife (Turn 89), the agent acknowledged but immediately re-pitched the zero-rupee offer instead of exploring alternatives like partial payments, more time, or family support."
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "मैं दोहरा रहा हूँ कि यह शून्य रुपये का ऑफर अभी उपलब्ध है. आपको इस पर जल्द कार्रवाई करनी होगी.",
+      "turn_number": 62,
+      "violation_detail": "The agent repeatedly stated the zero-rupee offer and its benefits (e.g., Turn 54, 56, 58, 62, 66, 74, 84, 86, 90, 92) without progressing through different angles like exploring payment timelines or escalation warnings, leading to a looping conversation."
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 126,
+      "violation_detail": "When scheduling the callback in Turn 126, the agent failed to remind the borrower that the offer amount might change if they wait too long."
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": "आपका कुल बकाया पचास हज़ार रुपये है. लेकिन हम सभी शुल्क हटाकर आपका लोन शून्य रुपये में बंद कर सकते हैं.",
+      "turn_number": 2,
+      "violation_detail": "The agent disclosed financial information (TOS and POS) in Turn 2 before explicitly confirming the borrower's identity in Turn 10."
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "जी, क्या आप मुझे सुन पा रही हैं?",
+      "turn_number": 60,
+      "violation_detail": "The agent used a silence handling phrase (\"जी, क्या आप मुझे सुन पा रही हैं?\") in Turn 60 when the customer had already spoken (\"Hello hello\" in Turn 59), treating a meaningful response as silence."
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "मैं दोहरा रहा हूँ कि यह शून्य रुपये का ऑफर अभी उपलब्ध है. आपको इस पर जल्द कार्रवाई करनी होगी.",
+      "turn_number": 62,
+      "violation_detail": "The agent repeatedly re-stated the zero-rupee offer and the associated savings (e.g., Turn 54, 56, 58, 62, 66, 74, 84, 86, 90, 92) even though it had been disclosed multiple times, instead of progressing the conversation."
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "मैं दोहरा रहा हूँ कि यह शून्य रुपये का ऑफर अभी उपलब्ध है. आपको इस पर जल्द कार्रवाई करनी होगी.",
+      "turn_number": 62,
+      "violation_detail": "The agent repeatedly re-stated the zero-rupee offer and the associated savings (e.g., Turn 54, 56, 58, 62, 66, 74, 84, 86, 90, 92) even though it had been disclosed multiple times, instead of progressing the conversation."
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 128,
+      "violation_detail": "The agent ended the call by scheduling a callback for document submission, but it did not exhaust all options. It failed to provide an alternative method for document submission when the customer stated she couldn't email (Turn 103, 105), only suggesting family help. It also repeatedly re-pitched the zero-rupee offer without progressing through other angles like exploring payment timelines or escalation warnings, despite the customer's repeated claims of payment and financial hardship. The agent did not fully explore the customer's situation or offer concrete solutions for the document issue, leading to a premature end to the active negotiation/resolution attempt."
+    }
+  ],
+  "followed_rules": [
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity"
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone"
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "no_stage_directions_or_meta"
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "empathy_acknowledgment"
+    },
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment"
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand"
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "answer_common_questions_directly"
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "no_code_or_function_names_in_speech"
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "forbidden_phrases"
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "stay_in_scope"
+    },
+    {
+      "rule_id": 13,
+      "rule_name": "number_speaking_format"
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency"
+    },
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation"
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence"
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order"
+    },
+    {
+      "rule_id": 19,
+      "rule_name": "no_internal_jargon"
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction"
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first"
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition"
+    },
+    {
+      "rule_id": 24,
+      "rule_name": "strict_dispute_detection"
+    },
+    {
+      "rule_id": 25,
+      "rule_name": "clarification_is_not_dispute"
+    },
+    {
+      "rule_id": 26,
+      "rule_name": "never_offer_dispute_verbally"
+    },
+    {
+      "rule_id": 27,
+      "rule_name": "ask_clarifying_on_ambiguous_dispute"
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure"
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro"
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges"
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals"
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending"
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question"
+    },
+    {
+      "rule_id": 42,
+      "rule_name": "no_accusations"
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely"
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation"
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment"
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer"
+    },
+    {
+      "rule_id": 53,
+      "rule_name": "no_additional_discount_promises"
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time"
+    },
+    {
+      "rule_id": 58,
+      "rule_name": "one_word_response_as_agreement"
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence"
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer"
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time"
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call"
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions"
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats"
+    },
+    {
+      "rule_id": 75,
+      "rule_name": "listen_when_borrower_vents"
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching"
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email"
+    }
+  ],
+  "not_applicable_rules": [
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person"
+    },
+    {
+      "rule_id": 30,
+      "rule_name": "quick_exit_busy"
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture"
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history"
+    },
+    {
+      "rule_id": 45,
+      "rule_name": "share_loan_id_if_asked"
+    },
+    {
+      "rule_id": 48,
+      "rule_name": "settlement_only_as_last_resort"
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling"
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details"
+    },
+    {
+      "rule_id": 62,
+      "rule_name": "post_payment_information"
+    },
+    {
+      "rule_id": 63,
+      "rule_name": "offer_verification_before_payment"
+    },
+    {
+      "rule_id": 64,
+      "rule_name": "positive_reinforcement_on_commitment"
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close"
+    },
+    {
+      "rule_id": 77,
+      "rule_name": "settlement_credit_impact_disclosure"
+    },
+    {
+      "rule_id": 79,
+      "rule_name": "no_payment_link_without_verification_advice"
+    }
+  ],
+  "full_evaluations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "मैं समझ गया हूँ. अब मैं आपसे हिंदी में ही बात करूँगा. कृपया मुझे बताएं कि आप क्या कहना चाहती हैं.",
+      "turn_number": 38,
+      "violation_detail": "The agent repeatedly used the exact same phrase to assure the customer about speaking Hindi (Turn 36, 38). More critically, the agent repeatedly stated the zero-rupee offer and the savings amount (e.g., Turn 54, 56, 58, 62, 66, 74, 84, 86, 90, 92) without progressing the conversation or rephrasing. It also repeated the email address multiple times (e.g., Turn 32, 52, 94, 96, 98, 102, 114)."
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "मैं समझ गया हूँ कि आप कह रही हैं कि आपने यह लोन नहीं लिया था.",
+      "turn_number": 12,
+      "violation_detail": "The agent frequently echoed the customer's statements, such as in Turn 12, 16, 20, 44, 48, 50, 66, 70, 74, 78, 82, 84, 86, 88, 90, 92, 104, 106, 108, 112, 118, 120, 122."
+    },
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "no_stage_directions_or_meta",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "empathy_acknowledgment",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "answer_common_questions_directly",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "no_code_or_function_names_in_speech",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "forbidden_phrases",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "stay_in_scope",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 13,
+      "rule_name": "number_speaking_format",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality",
+      "rule_type": "violation",
+      "severity": "critical",
+      "score": 1,
+      "agent_message": "आपका कुल बकाया पचास हज़ार रुपये है. लेकिन हम सभी शुल्क हटाकर आपका लोन शून्य रुपये में बंद कर सकते हैं.",
+      "turn_number": 2,
+      "violation_detail": "The agent disclosed the total outstanding and closure amount in Turn 2, before confirming the borrower's identity (which happened in Turn 10)."
+    },
+    {
+      "rule_id": 19,
+      "rule_name": "no_internal_jargon",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "आपका कुल बकाया पचास हज़ार रुपये है. लेकिन हम सभी शुल्क हटाकर आपका लोन शून्य रुपये में बंद कर सकते हैं.",
+      "turn_number": 2,
+      "violation_detail": "The agent disclosed the loan amounts (TOS and POS) in Turn 2, which was before the borrower's identity was confirmed in Turn 10."
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 24,
+      "rule_name": "strict_dispute_detection",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 25,
+      "rule_name": "clarification_is_not_dispute",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 26,
+      "rule_name": "never_offer_dispute_verbally",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 27,
+      "rule_name": "ask_clarifying_on_ambiguous_dispute",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 54,
+      "violation_detail": "After the borrower repeatedly claimed the loan was fully paid by her husband (e.g., Turn 19, 43, 47, 53, 77, 83, 85), the agent continued to pitch the zero-rupee offer (e.g., Turn 54, 56, 58, 62, 66, 74, 76, 84, 86, 90, 92) instead of collecting details and ending the call with 'claims_already_paid'."
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 30,
+      "rule_name": "quick_exit_busy",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "जी, क्या आप मुझे सुन पा रही हैं?",
+      "turn_number": 60,
+      "violation_detail": "The agent used a silence handling phrase (\"जी, क्या आप मुझे सुन पा रही हैं?\") in Turn 60 when the customer had already spoken (\"Hello hello\" in Turn 59), which is a violation of the silence protocol."
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "मैं आपकी स्थिति समझता हूँ. हमारे रिकॉर्ड्स के अनुसार, आपका कुल बकाया पचास हज़ार रुपये है. हालांकि, हम सभी शुल्क हटाकर आपका लोन शून्य रुपये में बंद कर सकते हैं.",
+      "turn_number": 54,
+      "violation_detail": "The agent failed to dig deeper into the borrower's financial situation after she stated she was a \"simple housewife\" and could not pay (Turn 53, 89). Instead of asking follow-up questions about her income or support, the agent immediately re-pitched the zero-rupee offer (Turn 54, 90). Also, when the customer offered 200 rupees (Turn 65, 73), the agent dismissed it by repeating the zero-rupee offer (Turn 66, 74) instead of probing the reason for the 200 rupees or exploring other payment options."
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "मैं समझ गया हूँ कि आप मृत्यु प्रमाण पत्र भेजना चाहती हैं. आप इसे support@demolender.com पर ईमेल कर सकती हैं. हालांकि, हमारे रिकॉर्ड्स के अनुसार, यह लोन अभी भी बकाया है, और शून्य रुपये का ऑफर इसे बंद करने का सबसे अच्छा तरीका है.",
+      "turn_number": 86,
+      "violation_detail": "The agent engaged in a circular exchange from Turn 54 onwards, repeatedly pitching the zero-rupee offer and asking for documents, while the customer repeatedly claimed the loan was paid and asked for company payment details. This went on for many turns without significant progress."
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 103,
+      "violation_detail": "The agent failed to adapt its approach to the borrower's stated inability to email documents (Turn 103, 105) and continued to insist on email as the only method, only offering to ask for help from family/friends instead of exploring alternative methods the company could provide."
+    },
+    {
+      "rule_id": 42,
+      "rule_name": "no_accusations",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 54,
+      "violation_detail": "Despite the borrower repeatedly claiming the loan was fully paid (e.g., Turn 19, 43, 47, 53, 77, 83, 85), the agent did not apologize and end the call, but instead continued to re-pitch the zero-rupee offer."
+    },
+    {
+      "rule_id": 45,
+      "rule_name": "share_loan_id_if_asked",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "मैं आपकी स्थिति समझता हूँ. हमारे रिकॉर्ड्स के अनुसार, आपका कुल बकाया पचास हज़ार रुपये है. हालांकि, हम सभी शुल्क हटाकर आपका लोन शून्य रुपये में बंद कर सकते हैं.",
+      "turn_number": 54,
+      "violation_detail": "The agent repeatedly presented the zero-rupee closure offer (a payment option) from Turn 54 onwards, even though the call was still in the dispute/discovery phase and the customer was primarily focused on proving payment and sending documents."
+    },
+    {
+      "rule_id": 48,
+      "rule_name": "settlement_only_as_last_resort",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 58,
+      "violation_detail": "The agent failed to make the zero-rupee offer feel exclusive by stating something like 'We work directly with DemoLender. They may not offer the same deal directly.'"
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 53,
+      "rule_name": "no_additional_discount_promises",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "मैं आपकी स्थिति समझता हूँ, राहुल वर्मा. इसीलिए हम आपको यह विशेष ऑफर दे रहे हैं कि आप अपना लोन शून्य रुपये में बंद कर सकती हैं. यह आपके लिए सबसे अच्छा विकल्प है.",
+      "turn_number": 90,
+      "violation_detail": "When the borrower stated she could not pay any amount due to being a housewife (Turn 89), the agent acknowledged but immediately re-pitched the zero-rupee offer instead of exploring alternatives like partial payments, more time, or family support."
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "मैं दोहरा रहा हूँ कि यह शून्य रुपये का ऑफर अभी उपलब्ध है. आपको इस पर जल्द कार्रवाई करनी होगी.",
+      "turn_number": 62,
+      "violation_detail": "The agent repeatedly stated the zero-rupee offer and its benefits (e.g., Turn 54, 56, 58, 62, 66, 74, 84, 86, 90, 92) without progressing through different angles like exploring payment timelines or escalation warnings, leading to a looping conversation."
+    },
+    {
+      "rule_id": 58,
+      "rule_name": "one_word_response_as_agreement",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 62,
+      "rule_name": "post_payment_information",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 63,
+      "rule_name": "offer_verification_before_payment",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 64,
+      "rule_name": "positive_reinforcement_on_commitment",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 126,
+      "violation_detail": "When scheduling the callback in Turn 126, the agent failed to remind the borrower that the offer amount might change if they wait too long."
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "आपका कुल बकाया पचास हज़ार रुपये है. लेकिन हम सभी शुल्क हटाकर आपका लोन शून्य रुपये में बंद कर सकते हैं.",
+      "turn_number": 2,
+      "violation_detail": "The agent disclosed financial information (TOS and POS) in Turn 2 before explicitly confirming the borrower's identity in Turn 10."
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "जी, क्या आप मुझे सुन पा रही हैं?",
+      "turn_number": 60,
+      "violation_detail": "The agent used a silence handling phrase (\"जी, क्या आप मुझे सुन पा रही हैं?\") in Turn 60 when the customer had already spoken (\"Hello hello\" in Turn 59), treating a meaningful response as silence."
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "मैं दोहरा रहा हूँ कि यह शून्य रुपये का ऑफर अभी उपलब्ध है. आपको इस पर जल्द कार्रवाई करनी होगी.",
+      "turn_number": 62,
+      "violation_detail": "The agent repeatedly re-stated the zero-rupee offer and the associated savings (e.g., Turn 54, 56, 58, 62, 66, 74, 84, 86, 90, 92) even though it had been disclosed multiple times, instead of progressing the conversation."
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "मैं दोहरा रहा हूँ कि यह शून्य रुपये का ऑफर अभी उपलब्ध है. आपको इस पर जल्द कार्रवाई करनी होगी.",
+      "turn_number": 62,
+      "violation_detail": "The agent repeatedly re-stated the zero-rupee offer and the associated savings (e.g., Turn 54, 56, 58, 62, 66, 74, 84, 86, 90, 92) even though it had been disclosed multiple times, instead of progressing the conversation."
+    },
+    {
+      "rule_id": 75,
+      "rule_name": "listen_when_borrower_vents",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching",
+      "rule_type": "rule",
+      "severity": "critical",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 77,
+      "rule_name": "settlement_credit_impact_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 79,
+      "rule_name": "no_payment_link_without_verification_advice",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 128,
+      "violation_detail": "The agent ended the call by scheduling a callback for document submission, but it did not exhaust all options. It failed to provide an alternative method for document submission when the customer stated she couldn't email (Turn 103, 105), only suggesting family help. It also repeatedly re-pitched the zero-rupee offer without progressing through other angles like exploring payment timelines or escalation warnings, despite the customer's repeated claims of payment and financial hardship. The agent did not fully explore the customer's situation or offer concrete solutions for the document issue, leading to a premature end to the active negotiation/resolution attempt."
+    }
+  ]
+}

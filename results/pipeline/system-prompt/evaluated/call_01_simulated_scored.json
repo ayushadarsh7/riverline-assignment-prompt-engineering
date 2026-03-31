@@ -1,0 +1,20 @@
+{
+  "file": "call_01_simulated.json",
+  "customer_name": "Priya Sharma",
+  "final_score": 92.1,
+  "verdict": "good",
+  "reason": "PASSED \u2014 Score 92.1 meets threshold 65. 7 minor violation(s).",
+  "analysis": "1 high-severity issue(s) \u2014 significant conversation or strategy failures. 2 medium-severity issue(s) \u2014 missed best practices. 4 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [high] dig_deeper_dont_rush: When the customer stated they don't have the money (Turn 23), the agent immediately asked *when* they could pay, instead; [medium] only_proceed_after_clear_picture: The agent called `proceed_to_negotiation` at Turn 29 after the customer indicated a callback date, but the agent did not; [medium] conversation_progression_no_looping: The agent repeatedly stated the closure amount and offer (Turns 4, 6, 14, 16, 20) without progressing through different ; [low] phrase_repetition: The agent repeatedly stated the core offer (TOS vs POS) in turns 4, 6, 14, 16, and 20 without progressing the conversati; [low] must_call_end_call: The agent did not call the `end_call` function. The transcript simply ended after the agent's last message..",
+  "severity_breakdown": {
+    "critical": 0,
+    "high": 1,
+    "medium": 2,
+    "low": 4
+  },
+  "total_applicable": 61,
+  "total_violations": 7,
+  "critical_gate_triggered": false,
+  "weighted_score_before_cap": 92.1,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

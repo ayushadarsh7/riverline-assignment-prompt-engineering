@@ -1,0 +1,20 @@
+{
+  "file": "call_01.json",
+  "customer_name": "Priya Sharma",
+  "final_score": 63.6,
+  "verdict": "bad",
+  "reason": "POOR \u2014 Weighted score 63.6 is below threshold 65. 23 violation(s) found.",
+  "analysis": "4 high-severity issue(s) \u2014 significant conversation or strategy failures. 8 medium-severity issue(s) \u2014 missed best practices. 11 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [high] convey_urgency: The agent failed to convey any urgency about payment throughout the call, especially after the customer indicated they c; [high] dig_deeper_dont_rush: When the borrower stated they didn't have the funds, the agent asked about a manageable amount or payment date but faile; [high] correct_phase_transitions: The agent transitioned to negotiation (`proceed_to_negotiation`) in Turn 12 when the call was still experiencing connect; [high] identity_verification_before_amounts: The agent disclosed financial information (loan amounts) in Turn 3 after a simple 'Yes' from the customer, but before ex; [medium] identity_concealment: When asked for its name, the agent directly stated 'My name is Alex' instead of deflecting with 'I'm just here to help w.",
+  "severity_breakdown": {
+    "critical": 0,
+    "high": 4,
+    "medium": 8,
+    "low": 11
+  },
+  "total_applicable": 55,
+  "total_violations": 23,
+  "critical_gate_triggered": false,
+  "weighted_score_before_cap": 63.6,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

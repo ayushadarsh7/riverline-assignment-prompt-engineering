@@ -1,0 +1,65 @@
+{
+  "customer_name": "Ravi Gupta",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "transcript": [
+    {
+      "speaker": "customer",
+      "text": "Yes."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for confirming. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. Yeah. I I can see."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. This zero closure offer is available now. What has prevented you from paying the loan so far?"
+    },
+    {
+      "speaker": "customer",
+      "text": "I I said I can't say not see."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. Could you please tell me what has been the main challenge in making payments for your loan?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. I I can share. Not a problem."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Please tell me, what has made it difficult to manage the payments for this loan?"
+    },
+    {
+      "speaker": "customer",
+      "text": "No. You asked me a question. Right? Why are you pulling out my account details now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand your concern. I'm not pulling out details, I'm just trying to understand your situation better so I can help you with this special offer to close your loan at zero rupees. What has been the reason for the delay in payments?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. Go ahead."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Could you please share what has been the primary reason for not being able to pay your loan amount?"
+    },
+    {
+      "speaker": "customer",
+      "text": "I'm waiting."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm waiting for your response as well. What has made it difficult to pay your loan?"
+    }
+  ],
+  "function_calls": []
+}

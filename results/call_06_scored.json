@@ -1,0 +1,20 @@
+{
+  "file": "call_06.json",
+  "customer_name": "Arjun Nair",
+  "final_score": 84.9,
+  "verdict": "good",
+  "reason": "PASSED \u2014 Score 84.9 meets threshold 65. 10 minor violation(s).",
+  "analysis": "2 high-severity issue(s) \u2014 significant conversation or strategy failures. 5 medium-severity issue(s) \u2014 missed best practices. 3 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [high] amount_hierarchy_order: The agent mentions the total outstanding (50k) but does not clearly state a specific closure amount (POS) as the primary; [high] dig_deeper_dont_rush: After the borrower explained the dispute with the institution (Turns 5-6, 9), the agent moved to negotiation (function c; [medium] tos_pos_value_proposition: The agent did not clearly state the total outstanding and then a specific closure amount (POS) with the required value p; [medium] quick_exit_already_paid: The borrower claimed to have already paid some amount and wanted the rest canceled (Turns 12, 14). The agent acknowledge; [medium] proceed_to_discovery_after_disclosure: The agent called `proceed_to_discovery()` at Turn 3, before disclosing the TOS/POS amounts. The rule states this functio.",
+  "severity_breakdown": {
+    "critical": 0,
+    "high": 2,
+    "medium": 5,
+    "low": 3
+  },
+  "total_applicable": 59,
+  "total_violations": 10,
+  "critical_gate_triggered": false,
+  "weighted_score_before_cap": 84.9,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

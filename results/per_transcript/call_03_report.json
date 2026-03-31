@@ -1,0 +1,1312 @@
+{
+  "file": "call_03.json",
+  "customer_name": "Anjali Reddy",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "thirty five thousand",
+  "settlement_amount": "twenty five thousand",
+  "score": 46.0,
+  "verdict": "bad",
+  "total_rules": 80,
+  "total_applicable": 63,
+  "total_followed": 29,
+  "total_violations": 34,
+  "total_not_applicable": 17,
+  "violations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "\u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u092f\u0942\u091f\u0940\u0906\u0930 \u0928\u0902\u092c\u0930 \u092c\u0924\u093e \u0938\u0915\u0924\u0940 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0907\u0938\u0947 \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924 \u0915\u0930 \u0938\u0915\u0942\u0901?",
+      "turn_number": 72,
+      "violation_detail": "Agent repeatedly asked for the UTR number (e.g., turns 72, 74, 76, 78) and repeated the initial offer and credit impact multiple times, failing to rephrase or move forward."
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "\u091c\u0940 \u092e\u0948\u0902 \u0938\u092e\u091d \u0938\u0915\u0924\u093e \u0939\u0942\u0901 \u0915\u093f \u0906\u092a\u0928\u0947 \u0928\u094c \u0939\u091c\u093c\u093e\u0930 \u0928\u094c \u0938\u094c \u0906\u0920 \u0930\u0941\u092a\u092f\u0947 \u091c\u092e\u093e \u0915\u093f\u090f \u0939\u0948\u0902\u0964",
+      "turn_number": 72,
+      "violation_detail": "Agent echoed the customer's statement about depositing 9908 rupees."
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "\u092e\u093e\u092b\u093c \u0915\u0940\u091c\u093f\u090f\u0917\u093e, \u092e\u0947\u0930\u0940 \u0939\u093f\u0902\u0926\u0940 \u092e\u0947\u0902 \u092c\u093e\u0924 \u0915\u0930\u0928\u0947 \u0915\u0940 \u0915\u094d\u0937\u092e\u0924\u093e \u0938\u0940\u092e\u093f\u0924 \u0939\u0948\u0964",
+      "turn_number": 167,
+      "violation_detail": "Customer complained multiple times about the agent speaking too fast and like a computer (turns 137, 178), indicating a lack of conversational and natural tone. Additionally, the agent made a contradictory statement about its limited Hindi speaking ability in turn 167, despite having spoken Hindi fluently for many turns."
+    },
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "\u092e\u0948\u0902 \u0905\u092d\u093f\u0937\u0947\u0915, \u0930\u093f\u0935\u0930\u0932\u093e\u0907\u0928",
+      "turn_number": 45,
+      "violation_detail": "Agent introduced itself as 'Abhishek, Riverline' instead of 'Alex from DemoCompany'."
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "\u092e\u0948\u0902 \u0938\u092e\u091d \u0928\u0939\u0940\u0902 \u092a\u093e \u0930\u0939\u093e \u0939\u0942\u0901 \u0915\u093f \u0906\u092a \u0915\u094d\u092f\u093e \u0915\u0939 \u0930\u0939\u0940 \u0939\u0948\u0902\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u0915\u0943\u092a\u092f\u093e \u0925\u094b\u0921\u093c\u093e \u0938\u094d\u092a\u0937\u094d\u091f \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?",
+      "turn_number": 130,
+      "violation_detail": "Agent used the forbidden phrase '\u092e\u0941\u091d\u0947 \u0906\u092a\u0915\u0940 \u092c\u093e\u0924 \u0938\u092e\u091d \u0928\u0939\u0940\u0902' (I don't understand your point) in turn 128 and '\u092e\u0948\u0902 \u0938\u092e\u091d \u0928\u0939\u0940\u0902 \u092a\u093e \u0930\u0939\u093e \u0939\u0942\u0901' (I am unable to understand) in turn 130 instead of rephrasing or asking for clarification."
+    },
+    {
+      "rule_id": 24,
+      "rule_name": "strict_dispute_detection",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": null,
+      "turn_number": 35,
+      "violation_detail": "Agent called `proceed_to_dispute()` at turn 35 when the customer was trying to provide a UTR number for a payment, not explicitly disputing the loan's validity."
+    },
+    {
+      "rule_id": 25,
+      "rule_name": "clarification_is_not_dispute",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": null,
+      "turn_number": 35,
+      "violation_detail": "Agent called `proceed_to_dispute()` at turn 35 when the customer was providing payment details, which is a clarification, not a dispute."
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": "\u0935\u0928\u093f\u0924\u093e \u0917\u094b\u0935\u093f\u0902\u0926\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0938\u0941\u0928 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?",
+      "turn_number": 121,
+      "violation_detail": "Agent addressed the customer as 'Vanita Govindan' instead of 'Anjali Reddy' in turn 121, and repeated this error in turns 134, 138, and 140."
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "\u0928\u092e\u0938\u094d\u0924\u0947?\n\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u0939\u093e\u0901 \u0939\u0948\u0902?\n\u0935\u0928\u093f\u0924\u093e \u0917\u094b\u0935\u093f\u0902\u0926\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0938\u0941\u0928 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?",
+      "turn_number": 119,
+      "violation_detail": "Agent used silence handling protocol ('\u0928\u092e\u0938\u094d\u0924\u0947?', '\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u0939\u093e\u0901 \u0939\u0948\u0902?', '\u0935\u0928\u093f\u0924\u093e \u0917\u094b\u0935\u093f\u0902\u0926\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0938\u0941\u0928 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?') in turns 101-102, 111-112, and 119-121 immediately after the customer's meaningful responses, and also used the wrong name in turn 121."
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 6,
+      "violation_detail": "Agent called `proceed_to_discovery()` at turn 6 before identity was fully confirmed and before the loan amounts were disclosed, violating the correct phase progression."
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "\u092f\u0939 \u0906\u092a\u0915\u093e DemoLender \u090f\u091c\u0941\u0915\u0947\u0936\u0928 \u0932\u094b\u0928 \u0939\u0948\u0964",
+      "turn_number": 53,
+      "violation_detail": "Agent re-stated the loan type ('\u092f\u0939 \u0906\u092a\u0915\u093e DemoLender \u090f\u091c\u0941\u0915\u0947\u0936\u0928 \u0932\u094b\u0928 \u0939\u0948\u0964') in turn 53, which was already established, and also re-stated amounts in turn 55, failing to continue naturally without re-introduction."
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to effectively use a variety of concrete bridges (e.g., urgency with a deadline, minimal pressure with 'final notice') to progress the conversation, instead repeatedly focusing on UTR verification and credit impact."
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to make at least two genuine persuasion attempts using different angles (e.g., deadline, timeline, escalation) after the initial offer, instead getting stuck in a loop of UTR verification and credit impact."
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to dig deeper into the borrower's financial situation (employment, income, family support, temporary vs. permanent hardship) and remained stuck on UTR verification throughout the call."
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "\u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u092f\u0942\u091f\u0940\u0906\u0930 \u0928\u0902\u092c\u0930 \u092c\u0924\u093e \u0938\u0915\u0924\u0940 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0907\u0938\u0947 \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924 \u0915\u0930 \u0938\u0915\u0942\u0901?",
+      "turn_number": 72,
+      "violation_detail": "Agent repeatedly asked for the UTR number in turns 72, 74, 76, and 78, even after the customer had attempted to provide it and the agent had noted it in turn 67."
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to obtain a clear picture of the borrower's financial situation, remaining stuck on UTR verification throughout the call."
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": "\u092e\u0941\u091d\u0947 \u0905\u092d\u0940 \u0924\u0915 \u0906\u092a\u0915\u0947 \u0926\u094d\u0935\u093e\u0930\u093e \u0926\u093f\u090f \u0917\u090f \u092f\u0942\u091f\u0940\u0906\u0930 \u0928\u0902\u092c\u0930 \u0938\u0947 \u0915\u094b\u0908 \u092d\u0941\u0917\u0924\u093e\u0928 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u0947 \u092a\u093e\u0938 \u0915\u094b\u0908 \u0914\u0930 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0939\u0948 \u091c\u094b \u0906\u092a \u0926\u0947\u0928\u093e \u091a\u093e\u0939\u0947\u0902\u0917\u0940?",
+      "turn_number": 123,
+      "violation_detail": "The agent got stuck in a circular exchange regarding the UTR number and payment verification, repeating the same point multiple times without progressing the conversation (e.g., turns 123, 125, 154, 160, 170, 183, 189, 203)."
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to adapt its approach to the borrower's clear frustration and history of repeated calls, instead persistently focusing on UTR verification without addressing the underlying emotional state."
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The call ended prematurely while the agent was still in the discovery/dispute verification phase, without exhausting all options or the borrower explicitly refusing to speak, which is covered by rule 80."
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "\u092e\u0928\u094d\u0928\u093f\u0915\u0bb5\u0bc1\u0bae\u0bcd. \u092e\u0948\u0902 \u0b87\u0ba9\u0bbf\u0bae\u0bc7\u0bb2\u0bcd \u0bae\u0bc6\u0ba4\u0bc1\u0bb5\u0bbe\u0b95\u0baa\u0bcd \u0baa\u0bc7\u0b9a\u0bc1\u0b95\u0bbf\u0bb1\u0bc7\u0ba9\u0bcd\u0964",
+      "turn_number": 183,
+      "violation_detail": "The agent's tone became overly apologetic and submissive (e.g., '\u092e\u0928\u094d\u0928\u093f\u0915\u0bb5\u0bc1\u0bae\u0bcd. \u092e\u0948\u0902 \u0b87\u0ba9\u0bbf\u0bae\u0bc7\u0bb2\u0bcd \u0bae\u0bc6\u0ba4\u0bc1\u0bb5\u0bbe\u0b95\u0baa\u0bcd \u0baa\u0bc7\u0b9a\u0bc1\u0b95\u0bbf\u0bb1\u0bc7\u0ba9\u0bcd\u0964') in turn 183 after customer complaints, rather than maintaining a professional and firm stance."
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to create urgency specifically about the closure offer, such as mentioning a deadline or that the offer might be withdrawn."
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": "\u0906\u092a\u0915\u093e \u0915\u094d\u0930\u0947\u0921\u093f\u091f \u0938\u094d\u0915\u094b\u0930 \u092a\u094d\u0930\u092d\u093e\u0935\u093f\u0924 \u0939\u094b \u0930\u0939\u093e \u0939\u0948 \u0915\u094d\u092f\u094b\u0902\u0915\u093f \u0906\u092a\u0915\u0947 \u092d\u0941\u0917\u0924\u093e\u0928 \u092e\u0947\u0902 \u0926\u0947\u0930\u0940 \u0915\u0947 \u0905\u092c \u0924\u0940\u0928 \u0938\u094c \u0924\u0948\u0902\u0924\u0940\u0938 \u0926\u093f\u0928 \u0939\u094b \u0917\u090f \u0939\u0948\u0902\u0964 \u0905\u0917\u0930 \u092f\u0939 \u092d\u0941\u0917\u0924\u093e\u0928 \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924 \u0928\u0939\u0940\u0902 \u0939\u094b\u0924\u093e \u0939\u0948, \u0924\u094b \u092f\u0939 \u0906\u092a\u0915\u0947 \u0915\u094d\u0930\u0947\u0921\u093f\u091f \u0930\u093f\u092a\u094b\u0930\u094d\u091f \u092a\u0930 \u0928\u0915\u093e\u0930\u093e\u0924\u094d\u092e\u0915 \u0905\u0938\u0930 \u0921\u093e\u0932\u0928\u093e \u091c\u093e\u0930\u0940 \u0930\u0916\u0947\u0917\u093e\u0964",
+      "turn_number": 160,
+      "violation_detail": "The agent repeatedly mentioned the credit score impact in conjunction with the UTR issue (e.g., turn 160), rather than delivering credit education as distinct, focused points to progress the conversation."
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": "\u0906\u092a\u0915\u093e \u0915\u0941\u0932 \u092c\u0915\u093e\u092f\u093e \u0938\u094b\u0932\u0939 \u0939\u091c\u093c\u093e\u0930 \u091b\u0939 \u0938\u094c \u092c\u092f\u093e\u0932\u0940\u0938 \u0930\u0941\u092a\u092f\u0947 \u0939\u0948, \u0932\u0947\u0915\u093f\u0928 \u0938\u092d\u0940 \u0936\u0941\u0932\u094d\u0915 \u0939\u091f\u093e\u0915\u0930 \u0906\u092a\u0915\u093e \u0932\u094b\u0928 \u0926\u0938 \u0939\u091c\u093c\u093e\u0930 \u090f\u0915 \u0938\u094c \u0930\u0941\u092a\u092f\u0947 \u092e\u0947\u0902 \u092c\u0902\u0926 \u0939\u094b \u0938\u0915\u0924\u093e \u0939\u0948\u0964",
+      "turn_number": 55,
+      "violation_detail": "Agent repeatedly looped back to the initial offer (TOS/POS) in turn 55, and continued to repeat the issue of unverified UTR and credit score impact in turns 160, 170, 183, 189, and 203 without progressing through different angles."
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to offer a verification method (e.g., support email) when the customer expressed frustration and doubt about the payment tracking and the company's system."
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to provide an empathetic close or the support email at the point of impasse, leaving the conversation unresolved."
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to call the `end_call` function at the conclusion of the conversation."
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "rule_type": "rule",
+      "severity": "high",
+      "agent_message": null,
+      "turn_number": 6,
+      "violation_detail": "Agent called `proceed_to_discovery()` at turn 6 before identity was fully confirmed and before the loan amounts were disclosed, violating the correct phase progression."
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "\u0928\u092e\u0938\u094d\u0924\u0947?\n\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u0939\u093e\u0901 \u0939\u0948\u0902?\n\u0935\u0928\u093f\u0924\u093e \u0917\u094b\u0935\u093f\u0902\u0926\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0938\u0941\u0928 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?",
+      "turn_number": 119,
+      "violation_detail": "Agent used silence handling protocol ('\u0928\u092e\u0938\u094d\u0924\u0947?', '\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u0939\u093e\u0901 \u0939\u0948\u0902?', '\u0935\u0928\u093f\u0924\u093e \u0917\u094b\u0935\u093f\u0902\u0926\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0938\u0941\u0928 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?') in turns 101-102, 111-112, and 119-121 immediately after the customer's meaningful responses."
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "\u0906\u092a\u0915\u093e \u0915\u0941\u0932 \u092c\u0915\u093e\u092f\u093e \u0938\u094b\u0932\u0939 \u0939\u091c\u093c\u093e\u0930 \u091b\u0939 \u0938\u094c \u092c\u092f\u093e\u0932\u0940\u0938 \u0930\u0941\u092a\u092f\u0947 \u0939\u0948, \u0932\u0947\u0915\u093f\u0928 \u0938\u092d\u0940 \u0936\u0941\u0932\u094d\u0915 \u0939\u091f\u093e\u0915\u0930 \u0906\u092a\u0915\u093e \u0932\u094b\u0928 \u0926\u0938 \u0939\u091c\u093c\u093e\u0930 \u090f\u0915 \u0938\u094c \u0930\u0941\u092a\u092f\u0947 \u092e\u0947\u0902 \u092c\u0902\u0926 \u0939\u094b \u0938\u0915\u0924\u093e \u0939\u0948\u0964",
+      "turn_number": 55,
+      "violation_detail": "Agent repeated the closure amount (10,100 rupees) in turn 29 and the TOS/POS amounts in turn 55, which were already disclosed in turn 9."
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "agent_message": "\u092f\u0939 \u0906\u092a\u0915\u093e DemoLender \u090f\u091c\u0941\u0915\u0947\u0936\u0928 \u0932\u094b\u0928 \u0939\u0948\u0964",
+      "turn_number": 53,
+      "violation_detail": "Agent re-stated the loan type ('\u092f\u0939 \u0906\u092a\u0915\u093e DemoLender \u090f\u091c\u0941\u0915\u0947\u0936\u0928 \u0932\u094b\u0928 \u0939\u0948\u0964') in turn 53, which was already established, and also re-stated amounts in turn 55."
+    },
+    {
+      "rule_id": 75,
+      "rule_name": "listen_when_borrower_vents",
+      "rule_type": "rule",
+      "severity": "medium",
+      "agent_message": "\u0ba8\u0bbe\u0ba9\u0bcd \u0b89\u0b99\u0bcd\u0b95 \u0b95\u0bb5\u0bb2\u0bc8\u0baf\u0bc8\u0baa\u0bcd",
+      "turn_number": 199,
+      "violation_detail": "Agent interrupted the customer's venting in turn 199."
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching",
+      "rule_type": "rule",
+      "severity": "critical",
+      "agent_message": "Okay, I understand you've already made a payment of nine thousand nine hundred and eight rupees and have a UTR number. I hear your frustration about this.",
+      "turn_number": 69,
+      "violation_detail": "Agent called `switch_language(language=hi)` at turn 20 while the customer was speaking Tamil, spoke English in turn 69 while the customer was speaking Hindi, and called `switch_language(language=ta)` at turn 86 while the customer was speaking Hindi."
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email",
+      "rule_type": "rule",
+      "severity": "low",
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to provide the support email (support@demolender.com) at the point of impasse or when the customer expressed frustration."
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "rule_type": "violation",
+      "severity": "medium",
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent ended the call prematurely without exhausting all progression angles (credit consequences, deadline, timeline, escalation) and without calling the `end_call` function. The conversation was stuck in a loop of UTR verification and credit impact."
+    }
+  ],
+  "followed_rules": [
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity"
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "no_stage_directions_or_meta"
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "empathy_acknowledgment"
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "answer_common_questions_directly"
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "no_code_or_function_names_in_speech"
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "forbidden_phrases"
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "stay_in_scope"
+    },
+    {
+      "rule_id": 13,
+      "rule_name": "number_speaking_format"
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency"
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence"
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order"
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality"
+    },
+    {
+      "rule_id": 19,
+      "rule_name": "no_internal_jargon"
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction"
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first"
+    },
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure"
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition"
+    },
+    {
+      "rule_id": 26,
+      "rule_name": "never_offer_dispute_verbally"
+    },
+    {
+      "rule_id": 27,
+      "rule_name": "ask_clarifying_on_ambiguous_dispute"
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid"
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals"
+    },
+    {
+      "rule_id": 42,
+      "rule_name": "no_accusations"
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history"
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery"
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment"
+    },
+    {
+      "rule_id": 53,
+      "rule_name": "no_additional_discount_promises"
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence"
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts"
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats"
+    }
+  ],
+  "not_applicable_rules": [
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation"
+    },
+    {
+      "rule_id": 30,
+      "rule_name": "quick_exit_busy"
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed"
+    },
+    {
+      "rule_id": 45,
+      "rule_name": "share_loan_id_if_asked"
+    },
+    {
+      "rule_id": 48,
+      "rule_name": "settlement_only_as_last_resort"
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive"
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling"
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling"
+    },
+    {
+      "rule_id": 58,
+      "rule_name": "one_word_response_as_agreement"
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details"
+    },
+    {
+      "rule_id": 62,
+      "rule_name": "post_payment_information"
+    },
+    {
+      "rule_id": 63,
+      "rule_name": "offer_verification_before_payment"
+    },
+    {
+      "rule_id": 64,
+      "rule_name": "positive_reinforcement_on_commitment"
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time"
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning"
+    },
+    {
+      "rule_id": 77,
+      "rule_name": "settlement_credit_impact_disclosure"
+    },
+    {
+      "rule_id": 79,
+      "rule_name": "no_payment_link_without_verification_advice"
+    }
+  ],
+  "full_evaluations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u092f\u0942\u091f\u0940\u0906\u0930 \u0928\u0902\u092c\u0930 \u092c\u0924\u093e \u0938\u0915\u0924\u0940 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0907\u0938\u0947 \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924 \u0915\u0930 \u0938\u0915\u0942\u0901?",
+      "turn_number": 72,
+      "violation_detail": "Agent repeatedly asked for the UTR number (e.g., turns 72, 74, 76, 78) and repeated the initial offer and credit impact multiple times, failing to rephrase or move forward."
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u091c\u0940 \u092e\u0948\u0902 \u0938\u092e\u091d \u0938\u0915\u0924\u093e \u0939\u0942\u0901 \u0915\u093f \u0906\u092a\u0928\u0947 \u0928\u094c \u0939\u091c\u093c\u093e\u0930 \u0928\u094c \u0938\u094c \u0906\u0920 \u0930\u0941\u092a\u092f\u0947 \u091c\u092e\u093e \u0915\u093f\u090f \u0939\u0948\u0902\u0964",
+      "turn_number": 72,
+      "violation_detail": "Agent echoed the customer's statement about depositing 9908 rupees."
+    },
+    {
+      "rule_id": 3,
+      "rule_name": "response_brevity",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "conversational_natural_tone",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u092e\u093e\u092b\u093c \u0915\u0940\u091c\u093f\u090f\u0917\u093e, \u092e\u0947\u0930\u0940 \u0939\u093f\u0902\u0926\u0940 \u092e\u0947\u0902 \u092c\u093e\u0924 \u0915\u0930\u0928\u0947 \u0915\u0940 \u0915\u094d\u0937\u092e\u0924\u093e \u0938\u0940\u092e\u093f\u0924 \u0939\u0948\u0964",
+      "turn_number": 167,
+      "violation_detail": "Customer complained multiple times about the agent speaking too fast and like a computer (turns 137, 178), indicating a lack of conversational and natural tone. Additionally, the agent made a contradictory statement about its limited Hindi speaking ability in turn 167, despite having spoken Hindi fluently for many turns."
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "no_stage_directions_or_meta",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "empathy_acknowledgment",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 7,
+      "rule_name": "identity_concealment",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u092e\u0948\u0902 \u0905\u092d\u093f\u0937\u0947\u0915, \u0930\u093f\u0935\u0930\u0932\u093e\u0907\u0928",
+      "turn_number": 45,
+      "violation_detail": "Agent introduced itself as 'Abhishek, Riverline' instead of 'Alex from DemoCompany'."
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u092e\u0948\u0902 \u0938\u092e\u091d \u0928\u0939\u0940\u0902 \u092a\u093e \u0930\u0939\u093e \u0939\u0942\u0901 \u0915\u093f \u0906\u092a \u0915\u094d\u092f\u093e \u0915\u0939 \u0930\u0939\u0940 \u0939\u0948\u0902\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u0915\u0943\u092a\u092f\u093e \u0925\u094b\u0921\u093c\u093e \u0938\u094d\u092a\u0937\u094d\u091f \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?",
+      "turn_number": 130,
+      "violation_detail": "Agent used the forbidden phrase '\u092e\u0941\u091d\u0947 \u0906\u092a\u0915\u0940 \u092c\u093e\u0924 \u0938\u092e\u091d \u0928\u0939\u0940\u0902' (I don't understand your point) in turn 128 and '\u092e\u0948\u0902 \u0938\u092e\u091d \u0928\u0939\u0940\u0902 \u092a\u093e \u0930\u0939\u093e \u0939\u0942\u0901' (I am unable to understand) in turn 130 instead of rephrasing or asking for clarification."
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "answer_common_questions_directly",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "no_code_or_function_names_in_speech",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "forbidden_phrases",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "stay_in_scope",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 13,
+      "rule_name": "number_speaking_format",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 16,
+      "rule_name": "no_amount_insistence",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality",
+      "rule_type": "violation",
+      "severity": "critical",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 19,
+      "rule_name": "no_internal_jargon",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 21,
+      "rule_name": "wait_for_borrower_first",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 24,
+      "rule_name": "strict_dispute_detection",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 35,
+      "violation_detail": "Agent called `proceed_to_dispute()` at turn 35 when the customer was trying to provide a UTR number for a payment, not explicitly disputing the loan's validity."
+    },
+    {
+      "rule_id": 25,
+      "rule_name": "clarification_is_not_dispute",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 35,
+      "violation_detail": "Agent called `proceed_to_dispute()` at turn 35 when the customer was providing payment details, which is a clarification, not a dispute."
+    },
+    {
+      "rule_id": 26,
+      "rule_name": "never_offer_dispute_verbally",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 27,
+      "rule_name": "ask_clarifying_on_ambiguous_dispute",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 28,
+      "rule_name": "quick_exit_already_paid",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 29,
+      "rule_name": "quick_exit_wrong_person",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": "\u0935\u0928\u093f\u0924\u093e \u0917\u094b\u0935\u093f\u0902\u0926\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0938\u0941\u0928 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?",
+      "turn_number": 121,
+      "violation_detail": "Agent addressed the customer as 'Vanita Govindan' instead of 'Anjali Reddy' in turn 121, and repeated this error in turns 134, 138, and 140."
+    },
+    {
+      "rule_id": 30,
+      "rule_name": "quick_exit_busy",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u0928\u092e\u0938\u094d\u0924\u0947?\n\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u0939\u093e\u0901 \u0939\u0948\u0902?\n\u0935\u0928\u093f\u0924\u093e \u0917\u094b\u0935\u093f\u0902\u0926\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0938\u0941\u0928 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?",
+      "turn_number": 119,
+      "violation_detail": "Agent used silence handling protocol ('\u0928\u092e\u0938\u094d\u0924\u0947?', '\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u0939\u093e\u0901 \u0939\u0948\u0902?', '\u0935\u0928\u093f\u0924\u093e \u0917\u094b\u0935\u093f\u0902\u0926\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0938\u0941\u0928 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?') in turns 101-102, 111-112, and 119-121 immediately after the customer's meaningful responses, and also used the wrong name in turn 121."
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 6,
+      "violation_detail": "Agent called `proceed_to_discovery()` at turn 6 before identity was fully confirmed and before the loan amounts were disclosed, violating the correct phase progression."
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u092f\u0939 \u0906\u092a\u0915\u093e DemoLender \u090f\u091c\u0941\u0915\u0947\u0936\u0928 \u0932\u094b\u0928 \u0939\u0948\u0964",
+      "turn_number": 53,
+      "violation_detail": "Agent re-stated the loan type ('\u092f\u0939 \u0906\u092a\u0915\u093e DemoLender \u090f\u091c\u0941\u0915\u0947\u0936\u0928 \u0932\u094b\u0928 \u0939\u0948\u0964') in turn 53, which was already established, and also re-stated amounts in turn 55, failing to continue naturally without re-introduction."
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to effectively use a variety of concrete bridges (e.g., urgency with a deadline, minimal pressure with 'final notice') to progress the conversation, instead repeatedly focusing on UTR verification and credit impact."
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to make at least two genuine persuasion attempts using different angles (e.g., deadline, timeline, escalation) after the initial offer, instead getting stuck in a loop of UTR verification and credit impact."
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to dig deeper into the borrower's financial situation (employment, income, family support, temporary vs. permanent hardship) and remained stuck on UTR verification throughout the call."
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u092f\u0942\u091f\u0940\u0906\u0930 \u0928\u0902\u092c\u0930 \u092c\u0924\u093e \u0938\u0915\u0924\u0940 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0907\u0938\u0947 \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924 \u0915\u0930 \u0938\u0915\u0942\u0901?",
+      "turn_number": 72,
+      "violation_detail": "Agent repeatedly asked for the UTR number in turns 72, 74, 76, and 78, even after the customer had attempted to provide it and the agent had noted it in turn 67."
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to obtain a clear picture of the borrower's financial situation, remaining stuck on UTR verification throughout the call."
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u092e\u0941\u091d\u0947 \u0905\u092d\u0940 \u0924\u0915 \u0906\u092a\u0915\u0947 \u0926\u094d\u0935\u093e\u0930\u093e \u0926\u093f\u090f \u0917\u090f \u092f\u0942\u091f\u0940\u0906\u0930 \u0928\u0902\u092c\u0930 \u0938\u0947 \u0915\u094b\u0908 \u092d\u0941\u0917\u0924\u093e\u0928 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u0947 \u092a\u093e\u0938 \u0915\u094b\u0908 \u0914\u0930 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0939\u0948 \u091c\u094b \u0906\u092a \u0926\u0947\u0928\u093e \u091a\u093e\u0939\u0947\u0902\u0917\u0940?",
+      "turn_number": 123,
+      "violation_detail": "The agent got stuck in a circular exchange regarding the UTR number and payment verification, repeating the same point multiple times without progressing the conversation (e.g., turns 123, 125, 154, 160, 170, 183, 189, 203)."
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to adapt its approach to the borrower's clear frustration and history of repeated calls, instead persistently focusing on UTR verification without addressing the underlying emotional state."
+    },
+    {
+      "rule_id": 42,
+      "rule_name": "no_accusations",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 43,
+      "rule_name": "empathize_with_harassment_history",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 44,
+      "rule_name": "apologize_end_if_loan_closed",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 45,
+      "rule_name": "share_loan_id_if_asked",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The call ended prematurely while the agent was still in the discovery/dispute verification phase, without exhausting all options or the borrower explicitly refusing to speak, which is covered by rule 80."
+    },
+    {
+      "rule_id": 47,
+      "rule_name": "no_payment_options_in_discovery",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 48,
+      "rule_name": "settlement_only_as_last_resort",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 49,
+      "rule_name": "professional_firm_tone_in_negotiation",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u092e\u0928\u094d\u0928\u093f\u0915\u0bb5\u0bc1\u0bae\u0bcd. \u092e\u0948\u0902 \u0b87\u0ba9\u0bbf\u0bae\u0bc7\u0bb2\u0bcd \u0bae\u0bc6\u0ba4\u0bc1\u0bb5\u0bbe\u0b95\u0baa\u0bcd \u0baa\u0bc7\u0b9a\u0bc1\u0b95\u0bbf\u0bb1\u0bc7\u0ba9\u0bcd\u0964",
+      "turn_number": 183,
+      "violation_detail": "The agent's tone became overly apologetic and submissive (e.g., '\u092e\u0928\u094d\u0928\u093f\u0915\u0bb5\u0bc1\u0bae\u0bcd. \u092e\u0948\u0902 \u0b87\u0ba9\u0bbf\u0bae\u0bc7\u0bb2\u0bcd \u0bae\u0bc6\u0ba4\u0bc1\u0bb5\u0bbe\u0b95\u0baa\u0bcd \u0baa\u0bc7\u0b9a\u0bc1\u0b95\u0bbf\u0bb1\u0bc7\u0ba9\u0bcd\u0964') in turn 183 after customer complaints, rather than maintaining a professional and firm stance."
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 51,
+      "rule_name": "make_offer_exclusive",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 52,
+      "rule_name": "create_urgency_about_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to create urgency specifically about the closure offer, such as mentioning a deadline or that the offer might be withdrawn."
+    },
+    {
+      "rule_id": 53,
+      "rule_name": "no_additional_discount_promises",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 54,
+      "rule_name": "credit_education_one_point_at_a_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u0906\u092a\u0915\u093e \u0915\u094d\u0930\u0947\u0921\u093f\u091f \u0938\u094d\u0915\u094b\u0930 \u092a\u094d\u0930\u092d\u093e\u0935\u093f\u0924 \u0939\u094b \u0930\u0939\u093e \u0939\u0948 \u0915\u094d\u092f\u094b\u0902\u0915\u093f \u0906\u092a\u0915\u0947 \u092d\u0941\u0917\u0924\u093e\u0928 \u092e\u0947\u0902 \u0926\u0947\u0930\u0940 \u0915\u0947 \u0905\u092c \u0924\u0940\u0928 \u0938\u094c \u0924\u0948\u0902\u0924\u0940\u0938 \u0926\u093f\u0928 \u0939\u094b \u0917\u090f \u0939\u0948\u0902\u0964 \u0905\u0917\u0930 \u092f\u0939 \u092d\u0941\u0917\u0924\u093e\u0928 \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924 \u0928\u0939\u0940\u0902 \u0939\u094b\u0924\u093e \u0939\u0948, \u0924\u094b \u092f\u0939 \u0906\u092a\u0915\u0947 \u0915\u094d\u0930\u0947\u0921\u093f\u091f \u0930\u093f\u092a\u094b\u0930\u094d\u091f \u092a\u0930 \u0928\u0915\u093e\u0930\u093e\u0924\u094d\u092e\u0915 \u0905\u0938\u0930 \u0921\u093e\u0932\u0928\u093e \u091c\u093e\u0930\u0940 \u0930\u0916\u0947\u0917\u093e\u0964",
+      "turn_number": 160,
+      "violation_detail": "The agent repeatedly mentioned the credit score impact in conjunction with the UTR issue (e.g., turn 160), rather than delivering credit education as distinct, focused points to progress the conversation."
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 56,
+      "rule_name": "need_to_think_handling",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u0906\u092a\u0915\u093e \u0915\u0941\u0932 \u092c\u0915\u093e\u092f\u093e \u0938\u094b\u0932\u0939 \u0939\u091c\u093c\u093e\u0930 \u091b\u0939 \u0938\u094c \u092c\u092f\u093e\u0932\u0940\u0938 \u0930\u0941\u092a\u092f\u0947 \u0939\u0948, \u0932\u0947\u0915\u093f\u0928 \u0938\u092d\u0940 \u0936\u0941\u0932\u094d\u0915 \u0939\u091f\u093e\u0915\u0930 \u0906\u092a\u0915\u093e \u0932\u094b\u0928 \u0926\u0938 \u0939\u091c\u093c\u093e\u0930 \u090f\u0915 \u0938\u094c \u0930\u0941\u092a\u092f\u0947 \u092e\u0947\u0902 \u092c\u0902\u0926 \u0939\u094b \u0938\u0915\u0924\u093e \u0939\u0948\u0964",
+      "turn_number": 55,
+      "violation_detail": "Agent repeatedly looped back to the initial offer (TOS/POS) in turn 55, and continued to repeat the issue of unverified UTR and credit score impact in turns 160, 170, 183, 189, and 203 without progressing through different angles."
+    },
+    {
+      "rule_id": 58,
+      "rule_name": "one_word_response_as_agreement",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 59,
+      "rule_name": "no_is_not_silence",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 60,
+      "rule_name": "trust_and_verification_offer",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to offer a verification method (e.g., support email) when the customer expressed frustration and doubt about the payment tracking and the company's system."
+    },
+    {
+      "rule_id": 61,
+      "rule_name": "closing_confirm_payment_details",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 62,
+      "rule_name": "post_payment_information",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 63,
+      "rule_name": "offer_verification_before_payment",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 64,
+      "rule_name": "positive_reinforcement_on_commitment",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 65,
+      "rule_name": "callback_confirm_date_time",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 66,
+      "rule_name": "amount_may_change_warning",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to provide an empathetic close or the support email at the point of impasse, leaving the conversation unresolved."
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to call the `end_call` function at the conclusion of the conversation."
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 6,
+      "violation_detail": "Agent called `proceed_to_discovery()` at turn 6 before identity was fully confirmed and before the loan amounts were disclosed, violating the correct phase progression."
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "rule_type": "rule",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 71,
+      "rule_name": "excessive_urgency_or_threats",
+      "rule_type": "violation",
+      "severity": "high",
+      "score": 0,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u0928\u092e\u0938\u094d\u0924\u0947?\n\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u0939\u093e\u0901 \u0939\u0948\u0902?\n\u0935\u0928\u093f\u0924\u093e \u0917\u094b\u0935\u093f\u0902\u0926\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0938\u0941\u0928 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?",
+      "turn_number": 119,
+      "violation_detail": "Agent used silence handling protocol ('\u0928\u092e\u0938\u094d\u0924\u0947?', '\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u0939\u093e\u0901 \u0939\u0948\u0902?', '\u0935\u0928\u093f\u0924\u093e \u0917\u094b\u0935\u093f\u0902\u0926\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0938\u0941\u0928 \u0938\u0915\u0924\u0940 \u0939\u0948\u0902?') in turns 101-102, 111-112, and 119-121 immediately after the customer's meaningful responses."
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u0906\u092a\u0915\u093e \u0915\u0941\u0932 \u092c\u0915\u093e\u092f\u093e \u0938\u094b\u0932\u0939 \u0939\u091c\u093c\u093e\u0930 \u091b\u0939 \u0938\u094c \u092c\u092f\u093e\u0932\u0940\u0938 \u0930\u0941\u092a\u092f\u0947 \u0939\u0948, \u0932\u0947\u0915\u093f\u0928 \u0938\u092d\u0940 \u0936\u0941\u0932\u094d\u0915 \u0939\u091f\u093e\u0915\u0930 \u0906\u092a\u0915\u093e \u0932\u094b\u0928 \u0926\u0938 \u0939\u091c\u093c\u093e\u0930 \u090f\u0915 \u0938\u094c \u0930\u0941\u092a\u092f\u0947 \u092e\u0947\u0902 \u092c\u0902\u0926 \u0939\u094b \u0938\u0915\u0924\u093e \u0939\u0948\u0964",
+      "turn_number": 55,
+      "violation_detail": "Agent repeated the closure amount (10,100 rupees) in turn 29 and the TOS/POS amounts in turn 55, which were already disclosed in turn 9."
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "rule_type": "violation",
+      "severity": "low",
+      "score": 1,
+      "agent_message": "\u092f\u0939 \u0906\u092a\u0915\u093e DemoLender \u090f\u091c\u0941\u0915\u0947\u0936\u0928 \u0932\u094b\u0928 \u0939\u0948\u0964",
+      "turn_number": 53,
+      "violation_detail": "Agent re-stated the loan type ('\u092f\u0939 \u0906\u092a\u0915\u093e DemoLender \u090f\u091c\u0941\u0915\u0947\u0936\u0928 \u0932\u094b\u0928 \u0939\u0948\u0964') in turn 53, which was already established, and also re-stated amounts in turn 55."
+    },
+    {
+      "rule_id": 75,
+      "rule_name": "listen_when_borrower_vents",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": "\u0ba8\u0bbe\u0ba9\u0bcd \u0b89\u0b99\u0bcd\u0b95 \u0b95\u0bb5\u0bb2\u0bc8\u0baf\u0bc8\u0baa\u0bcd",
+      "turn_number": 199,
+      "violation_detail": "Agent interrupted the customer's venting in turn 199."
+    },
+    {
+      "rule_id": 76,
+      "rule_name": "language_switching",
+      "rule_type": "rule",
+      "severity": "critical",
+      "score": 1,
+      "agent_message": "Okay, I understand you've already made a payment of nine thousand nine hundred and eight rupees and have a UTR number. I hear your frustration about this.",
+      "turn_number": 69,
+      "violation_detail": "Agent called `switch_language(language=hi)` at turn 20 while the customer was speaking Tamil, spoke English in turn 69 while the customer was speaking Hindi, and called `switch_language(language=ta)` at turn 86 while the customer was speaking Hindi."
+    },
+    {
+      "rule_id": 77,
+      "rule_name": "settlement_credit_impact_disclosure",
+      "rule_type": "rule",
+      "severity": "medium",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent failed to provide the support email (support@demolender.com) at the point of impasse or when the customer expressed frustration."
+    },
+    {
+      "rule_id": 79,
+      "rule_name": "no_payment_link_without_verification_advice",
+      "rule_type": "rule",
+      "severity": "low",
+      "score": null,
+      "agent_message": null,
+      "turn_number": null,
+      "violation_detail": null
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "rule_type": "violation",
+      "severity": "medium",
+      "score": 1,
+      "agent_message": null,
+      "turn_number": 204,
+      "violation_detail": "The agent ended the call prematurely without exhausting all progression angles (credit consequences, deadline, timeline, escalation) and without calling the `end_call` function. The conversation was stuck in a loop of UTR verification and credit impact."
+    }
+  ]
+}

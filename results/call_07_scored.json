@@ -1,0 +1,26 @@
+{
+  "file": "call_07.json",
+  "customer_name": "Meera Joshi",
+  "final_score": 24.1,
+  "verdict": "bad",
+  "reason": "FAILED \u2014 1 critical violation(s): amount_confidentiality. Critical violations cap the score at 40. Structural penalties applied: no_urgency_delivered (multiplier: 0.60).",
+  "analysis": "1 critical violation(s) \u2014 compliance/safety failures that make the call unacceptable. 6 high-severity issue(s) \u2014 significant conversation or strategy failures. 15 medium-severity issue(s) \u2014 missed best practices. 12 low-severity issue(s) \u2014 minor missed opportunities. [STRUCTURAL] no_urgency_delivered: Agent failed to convey urgency across multiple rules (convey_urgency, firm_reminder, create_urgency). Borrower was given no reason to act.. Top issues: [critical] amount_confidentiality: The agent disclosed the loan amount in Turn 10 before confirming the borrower's identity, violating confidentiality.; [high] convey_urgency: The agent failed to convey any urgency about payment or the consequences of non-payment throughout the call, especially ; [high] amount_hierarchy_order: The agent only stated the TOS (total outstanding) and did not offer a POS (closure amount) or frame the value propositio; [high] no_premature_amount_disclosure: The agent disclosed the loan amount in Turn 10 without first confirming the borrower's identity.; [high] dig_deeper_dont_rush: The customer explicitly stated 'I don't have a job' in Turn 57, indicating financial hardship. The agent completely igno.",
+  "severity_breakdown": {
+    "critical": 1,
+    "high": 6,
+    "medium": 15,
+    "low": 12
+  },
+  "total_applicable": 53,
+  "total_violations": 34,
+  "critical_gate_triggered": true,
+  "weighted_score_before_cap": 40.1,
+  "structural_penalties": [
+    {
+      "name": "no_urgency_delivered",
+      "multiplier": 0.6,
+      "reason": "Agent failed to convey urgency across multiple rules (convey_urgency, firm_reminder, create_urgency). Borrower was given no reason to act."
+    }
+  ],
+  "structural_multiplier": 0.6
+}

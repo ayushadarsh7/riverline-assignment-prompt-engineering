@@ -1,0 +1,20 @@
+{
+  "file": "call_07_simulated.json",
+  "customer_name": "Meera Joshi",
+  "final_score": 89.6,
+  "verdict": "good",
+  "reason": "PASSED \u2014 Score 89.6 meets threshold 65. 6 minor violation(s).",
+  "analysis": "3 high-severity issue(s) \u2014 significant conversation or strategy failures. 2 medium-severity issue(s) \u2014 missed best practices. 1 low-severity issue(s) \u2014 minor missed opportunities. Top issues: [high] no_premature_amount_disclosure: Agent disclosed the purpose of the call (seeking Meera Joshi) before confirming identity, potentially revealing sensitiv; [high] correct_phase_transitions: The agent ended the call in the opening phase without transitioning through discovery or negotiation. The call was extre; [high] identity_verification_before_amounts: The agent asked 'Is Meera Joshi there?' before confirming identity. While not disclosing financial details, this questio; [medium] never_end_call_in_discovery_prematurely: The agent ended the call prematurely during the opening phase without attempting to verify identity or understand the cu; [medium] premature_call_ending: The call was extremely short (10 turns) and the agent ended it without exhausting any options. The customer's responses .",
+  "severity_breakdown": {
+    "critical": 0,
+    "high": 3,
+    "medium": 2,
+    "low": 1
+  },
+  "total_applicable": 79,
+  "total_violations": 6,
+  "critical_gate_triggered": false,
+  "weighted_score_before_cap": 89.6,
+  "structural_penalties": [],
+  "structural_multiplier": 1.0
+}

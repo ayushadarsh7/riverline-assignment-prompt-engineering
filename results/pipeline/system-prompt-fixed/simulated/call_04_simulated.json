@@ -1,0 +1,330 @@
+{
+  "customer_name": "Vikram Patel",
+  "pending_amount": "fifty thousand",
+  "closure_amount": "zero",
+  "settlement_amount": "",
+  "transcript": [
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Am I speaking with Vikram Patel?"
+    },
+    {
+      "speaker": "customer",
+      "text": "I know that's wrong."
+    },
+    {
+      "speaker": "agent",
+      "text": "Is Vikram Patel there?"
+    },
+    {
+      "speaker": "customer",
+      "text": "I right now, I'm not working anywhere."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you are frustrated, and that is completely fair. Can you tell me what is concerning you the most?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Jobless. Alright."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you are currently unemployed. I want to see if there is a better path forward."
+    },
+    {
+      "speaker": "customer",
+      "text": "Actually, after"
+    },
+    {
+      "speaker": "agent",
+      "text": "Could you let me know who I am speaking with?"
+    },
+    {
+      "speaker": "customer",
+      "text": "I think the next month, or the after month."
+    },
+    {
+      "speaker": "agent",
+      "text": "I need to confirm I have the right person before I can continue. Is this Vikram Patel?"
+    },
+    {
+      "speaker": "customer",
+      "text": "It will take two to three months."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for confirming. Your total outstanding is fifty thousand rupees. But we can remove all charges and close your loan at just zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes, sir. Yes. Yes. Actually, it's my name, but due to some reasons, it wouldn't have be happening. I think it will take more to do three months."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you are facing some difficulties right now. You can close your loan at zero rupees instead of fifty thousand. This offer is available now."
+    },
+    {
+      "speaker": "customer",
+      "text": "No. That's"
+    },
+    {
+      "speaker": "agent",
+      "text": "This zero closure offer is available now. You must act on this before it expires. Failure to pay will result in escalation."
+    },
+    {
+      "speaker": "customer",
+      "text": "No. What? Sorry. Tell me. I didn't hear you at that time. So that is why I I said it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. Your total outstanding is fifty thousand rupees. We can remove all charges and close your loan at zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Will you repeat it once again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "We can remove all charges and close your loan at zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. Yeah."
+    },
+    {
+      "speaker": "agent",
+      "text": "This zero closure offer is available now. You must act on this before it expires. Failure to pay will result in escalation."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Are you still there?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Alright. Yes."
+    },
+    {
+      "speaker": "agent",
+      "text": "You can close your loan at zero rupees instead of fifty thousand. That saves you the difference."
+    },
+    {
+      "speaker": "customer",
+      "text": "Obviously, that would I know comes up near about XX,XXX something. No?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Let me verify the exact figures for you."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. Tell me."
+    },
+    {
+      "speaker": "agent",
+      "text": "Your total outstanding is fifty thousand rupees. We can remove all charges and close your loan at zero rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Second one."
+    },
+    {
+      "speaker": "agent",
+      "text": "This zero closure offer is available now. You must act on this before it expires. Failure to pay will result in escalation."
+    },
+    {
+      "speaker": "customer",
+      "text": "Alright."
+    },
+    {
+      "speaker": "agent",
+      "text": "When can you arrange this payment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Are you there?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. I am."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you are facing some difficulties right now. You can close your loan at zero rupees instead of fifty thousand. This offer is available now."
+    },
+    {
+      "speaker": "customer",
+      "text": "Great."
+    },
+    {
+      "speaker": "agent",
+      "text": "This zero closure offer is available now. You must act on this before it expires. Failure to pay will result in escalation."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Are you still there?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. I am. Yeah."
+    },
+    {
+      "speaker": "agent",
+      "text": "You can close your loan at zero rupees instead of fifty thousand. That saves you the difference."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Are you there?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Am getting your voice."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you are currently unemployed. I want to see if there is a better path forward."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes. Okay."
+    },
+    {
+      "speaker": "agent",
+      "text": "You can close your loan at zero rupees instead of fifty thousand. This offer is available now."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. Go for it, ma'am."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you are currently unemployed. I want to see if there is a better path forward."
+    },
+    {
+      "speaker": "customer",
+      "text": "I need to pay. I I am going to pay."
+    },
+    {
+      "speaker": "agent",
+      "text": "That is a great decision. When can you arrange this payment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "What? Sorry?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can close your loan at zero rupees instead of fifty thousand. This offer is available now."
+    },
+    {
+      "speaker": "customer",
+      "text": "No. Right now, I'm not able to pay. Right?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand that you are not able to pay right now. When can you arrange this payment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Just give me some time. So that I'll pay after"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. How much time do you need to arrange the payment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "after that, I will make it settle."
+    },
+    {
+      "speaker": "agent",
+      "text": "It will take two to three months."
+    },
+    {
+      "speaker": "customer",
+      "text": "Alright. The payment is okay, but"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand that you are not able to pay right now. When can you arrange this payment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "that you should do a callback now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I can schedule a callback for you. When would be a good time?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Tomorrow at ten"
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, I have scheduled a callback for tomorrow at 10 AM. Please keep in mind that the amount may change if we wait too long."
+    },
+    {
+      "speaker": "customer",
+      "text": "Okay. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for your time. Goodbye."
+    },
+    {
+      "speaker": "customer",
+      "text": "Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Goodbye."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 14,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 57,
+      "function": "proceed_to_negotiation",
+      "params": {}
+    },
+    {
+      "turn": 70,
+      "function": "schedule_callback",
+      "params": {
+        "datetime": "2025-03-31T10:00:00"
+      }
+    },
+    {
+      "turn": 73,
+      "function": "end_call",
+      "params": {
+        "reason": "callback_scheduled"
+      }
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "call_id": "call_07",
+  "original": {
+    "score": 24.1,
+    "verdict": "bad",
+    "total_violations": 34,
+    "severity_breakdown": {
+      "critical": 1,
+      "high": 6,
+      "medium": 15,
+      "low": 12
+    }
+  },
+  "simulated": {
+    "score": 89.6,
+    "verdict": "good",
+    "total_violations": 6,
+    "severity_breakdown": {
+      "critical": 0,
+      "high": 3,
+      "medium": 2,
+      "low": 1
+    }
+  },
+  "improvement": {
+    "score_delta": 65.5,
+    "violations_fixed": 28,
+    "new_issues": 0,
+    "persistent_issues": 6
+  },
+  "fixed_violations": [
+    {
+      "rule_id": 1,
+      "rule_name": "phrase_repetition",
+      "severity": "low"
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "echoing_customer",
+      "severity": "low"
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "never_say_i_do_not_understand",
+      "severity": "low"
+    },
+    {
+      "rule_id": 14,
+      "rule_name": "convey_urgency",
+      "severity": "high"
+    },
+    {
+      "rule_id": 15,
+      "rule_name": "firm_reminder_on_hesitation",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 17,
+      "rule_name": "amount_hierarchy_order",
+      "severity": "high"
+    },
+    {
+      "rule_id": 18,
+      "rule_name": "amount_confidentiality",
+      "severity": "critical"
+    },
+    {
+      "rule_id": 20,
+      "rule_name": "no_repeated_introduction",
+      "severity": "low"
+    },
+    {
+      "rule_id": 23,
+      "rule_name": "tos_pos_value_proposition",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 31,
+      "rule_name": "silence_handling_protocol",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 32,
+      "rule_name": "proceed_to_discovery_after_disclosure",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 33,
+      "rule_name": "continue_naturally_no_re_intro",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 34,
+      "rule_name": "use_concrete_bridges",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 35,
+      "rule_name": "short_responses_not_refusals",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 36,
+      "rule_name": "two_attempt_rule_before_ending",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 37,
+      "rule_name": "dig_deeper_dont_rush",
+      "severity": "high"
+    },
+    {
+      "rule_id": 38,
+      "rule_name": "never_repeat_same_question",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 39,
+      "rule_name": "only_proceed_after_clear_picture",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 40,
+      "rule_name": "anti_stuck_circular_exchange",
+      "severity": "low"
+    },
+    {
+      "rule_id": 41,
+      "rule_name": "borrower_classification",
+      "severity": "low"
+    },
+    {
+      "rule_id": 50,
+      "rule_name": "never_quote_tos_as_payment",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 55,
+      "rule_name": "cannot_afford_handling",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 57,
+      "rule_name": "conversation_progression_no_looping",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 67,
+      "rule_name": "impasse_empathetic_close",
+      "severity": "low"
+    },
+    {
+      "rule_id": 72,
+      "rule_name": "hello_after_meaningful_response",
+      "severity": "low"
+    },
+    {
+      "rule_id": 73,
+      "rule_name": "do_not_repeat_already_disclosed_amounts",
+      "severity": "low"
+    },
+    {
+      "rule_id": 74,
+      "rule_name": "do_not_re_state_name_company_amounts",
+      "severity": "low"
+    },
+    {
+      "rule_id": 78,
+      "rule_name": "provide_support_email",
+      "severity": "low"
+    }
+  ],
+  "new_violations": [],
+  "persistent_violations": [
+    {
+      "rule_id": 22,
+      "rule_name": "no_premature_amount_disclosure",
+      "severity": "high"
+    },
+    {
+      "rule_id": 46,
+      "rule_name": "never_end_call_in_discovery_prematurely",
+      "severity": "medium"
+    },
+    {
+      "rule_id": 68,
+      "rule_name": "must_call_end_call",
+      "severity": "low"
+    },
+    {
+      "rule_id": 69,
+      "rule_name": "correct_phase_transitions",
+      "severity": "high"
+    },
+    {
+      "rule_id": 70,
+      "rule_name": "identity_verification_before_amounts",
+      "severity": "high"
+    },
+    {
+      "rule_id": 80,
+      "rule_name": "premature_call_ending",
+      "severity": "medium"
+    }
+  ],
+  "side_by_side_first_turns": [
+    {
+      "turn": 1,
+      "original": "[AGENT] Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?",
+      "simulated": "[CUSTOMER] Hello?"
+    },
+    {
+      "turn": 2,
+      "original": "[AGENT] Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment? Hello?",
+      "simulated": "[AGENT] Hello? Am I speaking with Meera Joshi?"
+    },
+    {
+      "turn": 3,
+      "original": "[AGENT] Are you there?",
+      "simulated": "[CUSTOMER] Hello? Hello, sir?"
+    },
+    {
+      "turn": 4,
+      "original": "[CUSTOMER] Hello?",
+      "simulated": "[AGENT] Is Meera Joshi there?"
+    },
+    {
+      "turn": 5,
+      "original": "[AGENT] Okay, give me just a moment...",
+      "simulated": "[CUSTOMER] Sir, can I connect to the? Anyone is available?"
+    },
+    {
+      "turn": 6,
+      "original": "[CUSTOMER] Hello? Hello, sir?",
+      "simulated": "[AGENT] Could you let me know who I am speaking with?"
+    },
+    {
+      "turn": 7,
+      "original": "[AGENT] Hello? Hello, sir? Yes, I can hear you.",
+      "simulated": "[CUSTOMER] 21?"
+    },
+    {
+      "turn": 8,
+      "original": "[CUSTOMER] Sir, can I connect to the?",
+      "simulated": "[AGENT] I need to confirm I have the right person before I can continue. Is this Meera Joshi?"
+    },
+    {
+      "turn": 9,
+      "original": "[CUSTOMER] Anyone is available?",
+      "simulated": "[CUSTOMER] Hello?"
+    },
+    {
+      "turn": 10,
+      "original": "[AGENT] I am Alex from DemoCompany, and I'm calling regarding your DemoLender loan. We have fifty-five thousand three hundred and thirty-five rupees pending on the account.",
+      "simulated": "[AGENT] I will try calling back at a better time."
+    },
+    {
+      "turn": 11,
+      "original": "[CUSTOMER] 21?"
+    },
+    {
+      "turn": 12,
+      "original": "[AGENT] I'm sorry, I didn't catch that. Could you please repeat it?"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "file": "call_10_simulated.json",
+  "customer_name": "Ravi Gupta",
+  "final_score": 59.9,
+  "verdict": "bad",
+  "reason": "POOR \u2014 Weighted score 59.9 is below threshold 65. 9 violation(s) found. Structural penalties applied: call_too_short (multiplier: 0.70).",
+  "analysis": "4 high-severity issue(s) \u2014 significant conversation or strategy failures. 3 medium-severity issue(s) \u2014 missed best practices. 2 low-severity issue(s) \u2014 minor missed opportunities. [STRUCTURAL] call_too_short: Call had only 14 turns without a valid quick-exit reason (wrong person, voicemail, already paid). Agent likely gave up too quickly.. Top issues: [high] convey_urgency: The agent conveyed urgency but did not sufficiently emphasize the serious consequences for the borrower's financial futu; [high] dig_deeper_dont_rush: The agent moved to negotiation/closing without asking follow-up questions about the borrower's financial situation. Afte; [high] correct_phase_transitions: The agent transitioned to the negotiation/closing phase prematurely without completing the discovery phase. After the bo; [high] excessive_urgency_or_threats: The agent used phrases like 'Failure to pay will result in escalation' and 'Further delays may lead to additional collec; [medium] never_end_call_in_discovery_prematurely: The agent ended the call prematurely in the discovery phase. The borrower asked a question in turn 9 ('Why are you pulli.",
+  "severity_breakdown": {
+    "critical": 0,
+    "high": 4,
+    "medium": 3,
+    "low": 2
+  },
+  "total_applicable": 80,
+  "total_violations": 9,
+  "critical_gate_triggered": false,
+  "weighted_score_before_cap": 85.6,
+  "structural_penalties": [
+    {
+      "name": "call_too_short",
+      "multiplier": 0.7,
+      "reason": "Call had only 14 turns without a valid quick-exit reason (wrong person, voicemail, already paid). Agent likely gave up too quickly."
+    }
+  ],
+  "structural_multiplier": 0.7
+}
